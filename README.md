@@ -26,8 +26,8 @@
 
 ## Project Backlog
 
-- **Develop Themes:** Help target users (software developers) to predict number of of reviews and ratings of their apps and therefore gauge potential popularity of their apps. Users can improve and make adjustment to their current version based on the results and potentially increase revenue.
-- **Epics**
+ - **Develop Themes:** Help target users (software developers) to predict number of of reviews and ratings of their apps and therefore gauge potential popularity of their apps. Users can improve and make adjustment to their current version based on the results and potentially increase revenue.
+ - **Epics**
 	-  Exploratory Data Analysis to explore the relationship between variables and determine which subset of variable to use. (user input related)
 		- Stories:
 		1. *Merge two data sets (1 point)*
@@ -41,11 +41,15 @@
 		- Stories:
 		1. *Run a simple linear regression model to check the R square, variable importance and residual plot to determine what advanced model to use. (2 point)*
 		2. *Run Neural Network, Random Forest Model to predict the number of reviews and ratings. Making sure the model hit the performance metrics. (4 points)*
+	
+	 - Build Pipeline
+
 	- Web App Development to build interactive features that allow users to enter their data to get predictions.
 		- Stories:
 		1. Create interactive page allow the user to enter the attributes of their apps, attributes should be corresponds to the parameters used in the models. (5 points)
 		2. For certain attributes, enable users to click on instead of simple text entry for diverse user experience. (2 points)
 		3. Predict and show the number of reviews and ratings for the specific file on the same page in 20 seconds. (2 points)
+		4. Test run the app . 
 
 ## Repo structure 
 
@@ -172,7 +176,7 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1OTg1ODIxMywxMDUwNDIxNjM4LDIzMD
-c3NDk5NSwtMTg1MzM4NzQ3OCwtNDAyMTE2NjUsLTIwNjM2MzA2
-MTNdfQ==
+eyJoaXN0b3J5IjpbLTE4NDA1MTE2MDMsMTA1MDQyMTYzOCwyMz
+A3NzQ5OTUsLTE4NTMzODc0NzgsLTQwMjExNjY1LC0yMDYzNjMw
+NjEzXX0=
 -->
