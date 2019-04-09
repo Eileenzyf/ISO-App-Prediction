@@ -1,4 +1,4 @@
-# Example project repository
+# IOS App Store Project Repository
 
 <!-- toc -->
 
@@ -168,5 +168,6 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwMjExNjY1LC0yMDYzNjMwNjEzXX0=
+eyJoaXN0b3J5IjpbLTE4NTMzODc0NzgsLTQwMjExNjY1LC0yMD
+YzNjMwNjEzXX0=
 -->
