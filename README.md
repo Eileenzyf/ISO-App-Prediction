@@ -22,7 +22,7 @@
  - **Mission**: Enable users to input the features of their IOS apps and predict number of reviews and rating that specific app will receive and thus its popularity based on its features.
  - **Success criteria**: 
    - Model performance: R square. The final model is expected to have a R squared 20% higher than the initial simple linear regression model.
-   - Business sense: Ask the user to rate the app (thumbs up or thumbs down) and calculate the ratio. Potentially increase users' 
+   - Business sense: Ask the user to rate the app (thumbs up or thumbs down) and calculate the ratio. Potentially increase users' revenue. 
 
 ## Project Backlog
 
@@ -40,7 +40,7 @@
 	- Model Building to predict the number of reviews and ratings using a set of parameters.
 		- Stories:
 		1. *Run a simple linear regression model to check the R square, variable importance and residual plot to determine what advanced model to use. (2 point)*
-		2.
+		2. Run Neural Network, Random Forest Model to predict 
 	- Web App Development to build interactive features that allow users to enter their data to get predictions.
 
 ## Repo structure 
@@ -168,6 +168,6 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0NTcxMzI0NiwtMTg1MzM4NzQ3OCwtND
-AyMTE2NjUsLTIwNjM2MzA2MTNdfQ==
+eyJoaXN0b3J5IjpbNjU0NjQ1Mjg3LC0xODUzMzg3NDc4LC00MD
+IxMTY2NSwtMjA2MzYzMDYxM119
 -->
