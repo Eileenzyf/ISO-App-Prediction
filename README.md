@@ -22,8 +22,12 @@
  - **Mission**: Enable users to input the features of their IOS apps and predict number of reviews and rating that specific app will receive
    and thus its popularity based on its features.
 
-**Success criteria**: Users play 80% of recommended songs more than once. 
+**Success criteria**: 
+- Model performance: R square. The final model is expected to have a R squared 20% higher than the initial simple linear regression
 
+model.
+
+- Business sense: Ask the user to rate the app (thumbs up or thumbs down) and calculate the ratio.
 
 _Note_: Project charters should actually be more detailed than this! But this is where the charter belongs.  
 
@@ -152,5 +156,5 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTM3MzQ0NDNdfQ==
+eyJoaXN0b3J5IjpbLTIwNjM2MzA2MTNdfQ==
 -->
