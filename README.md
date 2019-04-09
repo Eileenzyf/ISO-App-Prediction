@@ -40,7 +40,7 @@
 	- Model Building to predict the number of reviews and ratings using a set of parameters.
 		- Stories:
 		1. *Run a simple linear regression model to check the R square, variable importance and residual plot to determine what advanced model to use. (2 point)*
-		2. Run Neural Network, Random Forest Model to predict 
+		2. Run Neural Network, Random Forest Model to predict the number of reviews and ratings. 
 	- Web App Development to build interactive features that allow users to enter their data to get predictions.
 
 ## Repo structure 
@@ -168,6 +168,6 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU0NjQ1Mjg3LC0xODUzMzg3NDc4LC00MD
-IxMTY2NSwtMjA2MzYzMDYxM119
+eyJoaXN0b3J5IjpbLTM4NTAxNDQzOCwtMTg1MzM4NzQ3OCwtND
+AyMTE2NjUsLTIwNjM2MzA2MTNdfQ==
 -->
