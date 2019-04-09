@@ -45,7 +45,7 @@
 		- Stories:
 		1. Create interactive page allow the user to enter the attributes of their apps, attributes should be corresponds to the parameters used in the models. (5 points)
 		2. For certain attributes, enable users to click on instead of simple text entry for diverse user experience. (2 points)
-		3. Predict and show the number of reviews and ratings for the specific file on the same page in 30 
+		3. Predict and show the number of reviews and ratings for the specific file on the same page in 20 seconds. (2 points)
 
 ## Repo structure 
 
@@ -172,7 +172,7 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNzg4Nzg4OSwxMDUwNDIxNjM4LDIzMD
+eyJoaXN0b3J5IjpbLTQ1OTg1ODIxMywxMDUwNDIxNjM4LDIzMD
 c3NDk5NSwtMTg1MzM4NzQ3OCwtNDAyMTE2NjUsLTIwNjM2MzA2
 MTNdfQ==
 -->
