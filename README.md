@@ -28,6 +28,8 @@
 
 ### Project Backlog
 
+**Backlog to be completed in the first two weeks are italicized*
+
  - **Develop Themes:** Help target users (software developers) to predict number of of reviews and ratings of their apps and therefore gauge potential popularity of their apps. Users can improve and make adjustment to their current version based on the results and potentially increase revenue.
  - **Epics**
 	-  Exploratory Data Analysis to explore the relationship between variables and determine which subset of variable to use. (user input related)
@@ -182,8 +184,8 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2NTE4MTY1NSwtMTAyNjMwMzQ3MywxNT
-Y4OTEyNjg0LDExMDcyNzk5MTMsLTQwMDYxMzM1NiwxMDUwNDIx
-NjM4LDIzMDc3NDk5NSwtMTg1MzM4NzQ3OCwtNDAyMTE2NjUsLT
-IwNjM2MzA2MTNdfQ==
+eyJoaXN0b3J5IjpbMTQwOTM4MjAzNiwxNTY1MTgxNjU1LC0xMD
+I2MzAzNDczLDE1Njg5MTI2ODQsMTEwNzI3OTkxMywtNDAwNjEz
+MzU2LDEwNTA0MjE2MzgsMjMwNzc0OTk1LC0xODUzMzg3NDc4LC
+00MDIxMTY2NSwtMjA2MzYzMDYxM119
 -->
