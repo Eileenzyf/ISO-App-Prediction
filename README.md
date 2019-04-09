@@ -49,10 +49,12 @@
 		 2. From AWS to Web App (4 points)
 	- Web App Development to build interactive features that allow users to enter their data to get predictions.
 		- Stories:
-		1. Create interactive page allow the user to enter the attributes of their apps, attributes should be corresponds to the parameters used in the models. (5 points)
-		2. For certain attributes, enable users to click on instead of simple text entry for diverse user experience. (2 points)
-		3. Predict and show the number of reviews and ratings for the specific file on the same page in 20 seconds. (2 points)
-		4. Test run the app to evaluate the performance. (4 points)
+		1. Web page design, basic layout (1 points)
+		2. Create interactive page allow the user to enter the attributes of their apps, attributes should be corresponds to the parameters used in the models. (5 points)
+		3. For certain attributes, enable users to click on instead of simple text entry for diverse user experience. (2 points)
+		4. Predict and show the number of reviews and ratings for the specific file on the same page in 20 seconds. (2 points)
+		5. Aesthetic design, color palette, font, format details. (
+		6. Test run the app to evaluate the performance. (4 points)
 
 ## Repo structure 
 
@@ -179,7 +181,8 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2ODkxMjY4NCwxMTA3Mjc5OTEzLC00MD
-A2MTMzNTYsMTA1MDQyMTYzOCwyMzA3NzQ5OTUsLTE4NTMzODc0
-NzgsLTQwMjExNjY1LC0yMDYzNjMwNjEzXX0=
+eyJoaXN0b3J5IjpbLTE4MjQ3OTkzODcsMTU2ODkxMjY4NCwxMT
+A3Mjc5OTEzLC00MDA2MTMzNTYsMTA1MDQyMTYzOCwyMzA3NzQ5
+OTUsLTE4NTMzODc0NzgsLTQwMjExNjY1LC0yMDYzNjMwNjEzXX
+0=
 -->
