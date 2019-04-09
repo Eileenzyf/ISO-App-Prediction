@@ -41,7 +41,7 @@
 		2. *Split the data set to training and test set (1 point)*
 	- Model Building to predict the number of reviews and ratings using a set of attributes.
 		- Stories:
-		1. *Run a simple linear regression model to use its R square  as the naive baseline. variable importance and residual plot to determine what advanced model to use. (2 point)*
+		1. *Run a simple linear regression model to use its R square as the naive baseline. Check variable importance and residual plot to determine what advanced model to use. (2 point)*
 		2. *Run Neural Network, Random Forest Model to predict the number of reviews and ratings. Making sure the model hit the performance metrics. (4 points)*
 		3. [Icebox] Text analysis or sentiment analysis of app descriptions to see the correlation between certain words and popularity of the apps.
 	- Build Pipeline
@@ -179,7 +179,7 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTc2NTEyNzIsMTEwNzI3OTkxMywtND
-AwNjEzMzU2LDEwNTA0MjE2MzgsMjMwNzc0OTk1LC0xODUzMzg3
-NDc4LC00MDIxMTY2NSwtMjA2MzYzMDYxM119
+eyJoaXN0b3J5IjpbMTU2ODkxMjY4NCwxMTA3Mjc5OTEzLC00MD
+A2MTMzNTYsMTA1MDQyMTYzOCwyMzA3NzQ5OTUsLTE4NTMzODc0
+NzgsLTQwMjExNjY1LC0yMDYzNjMwNjEzXX0=
 -->
