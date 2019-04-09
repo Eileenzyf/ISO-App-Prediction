@@ -43,7 +43,8 @@
 		2. *Run Neural Network, Random Forest Model to predict the number of reviews and ratings. Making sure the model hit the performance metrics. (4 points)*
 	- Web App Development to build interactive features that allow users to enter their data to get predictions.
 		- Stories:
-		1. Create interactive page allow the user to enter the attribute 
+		1. Create interactive page allow the user to enter the attributes of their apps, attributes should be corresponds to the parameters used in the models. 
+		2. For certraiEnable users to click on the categories
 
 ## Repo structure 
 
@@ -170,7 +171,7 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5Mjg1MjY3MSwxMDUwNDIxNjM4LDIzMD
-c3NDk5NSwtMTg1MzM4NzQ3OCwtNDAyMTE2NjUsLTIwNjM2MzA2
-MTNdfQ==
+eyJoaXN0b3J5IjpbNjc4OTgxOTMyLDEwNTA0MjE2MzgsMjMwNz
+c0OTk1LC0xODUzMzg3NDc4LC00MDIxMTY2NSwtMjA2MzYzMDYx
+M119
 -->
