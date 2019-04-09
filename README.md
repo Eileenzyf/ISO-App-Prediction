@@ -24,20 +24,10 @@
    - Model performance: R square. The final model is expected to have a R squared 20% higher than the initial simple linear regression model.
    - Business sense: Ask the user to rate the app (thumbs up or thumbs down) and calculate the ratio.
 
-##Project Backlog
+## Project Backlog
 
-- **Develop Themes:** Help target users (software developers) to predict number of of reviews and ratings of their apps and therefore
-
-gauge potential popularity of their apps. Users can improve and make
-
-adjustment to their current version based on the results and
-
-potentially increase revenue.
-
-  
-
+- **Develop Themes:** Help target users (software developers) to predict number of of reviews and ratings of their apps and therefore gauge potential popularity of their apps. Users can improve and make adjustment to their current version based on the results and potentially increase revenue.
 - **Epics**
-
 -  Exploratory Data Analysis to explore the relationship between variables and determine which subset to use.
 
 - Stories:
@@ -191,5 +181,6 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2MDc0MDYzMSwtMjA2MzYzMDYxM119
+eyJoaXN0b3J5IjpbLTEwMjI0NTM5MzEsLTIwNjM2MzA2MTNdfQ
+==
 -->
