@@ -37,7 +37,7 @@
 		- Stories:
 		1. *Variable transformation (1 point)*
 		2. *Split the data set to training and test set (1 point)*
-	- Model Building to predict the number of reviews and ratings using a set of parameters.
+	- Model Building to predict the number of reviews and ratings using a set of attributes.
 		- Stories:
 		1. *Run a simple linear regression model to check the R square, variable importance and residual plot to determine what advanced model to use. (2 point)*
 		2. *Run Neural Network, Random Forest Model to predict the number of reviews and ratings. Making sure the model hit the performance metrics. (4 points)*
@@ -168,6 +168,6 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjMwNzc0OTk1LC0xODUzMzg3NDc4LC00MD
-IxMTY2NSwtMjA2MzYzMDYxM119
+eyJoaXN0b3J5IjpbLTE5NzIwNjU4NiwyMzA3NzQ5OTUsLTE4NT
+MzODc0NzgsLTQwMjExNjY1LC0yMDYzNjMwNjEzXX0=
 -->
