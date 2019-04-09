@@ -28,19 +28,19 @@
 
 - **Develop Themes:** Help target users (software developers) to predict number of of reviews and ratings of their apps and therefore gauge potential popularity of their apps. Users can improve and make adjustment to their current version based on the results and potentially increase revenue.
 - **Epics**
-	-  Exploratory Data Analysis to explore the relationship between variables and determine which subset to use.
+	-  Exploratory Data Analysis to explore the relationship between variables and determine which subset of variable to use. (user input related)
 		- Stories:
 		1. *Merge two data sets (1 point)*
 		2. *Data cleaning, check NA values and duplicates. (1 point)*
 		3. *Distribution of each variables, check multicollinearity and outliners (1 point)*
-	- Data Engineering
+	- Feature Engineering
 		- Stories:
 		1. *Variable transformation (1 point)*
 		2. *Split the data set to training and test set (1 point)*
 	- Model Building to predict the number of reviews and ratings using a set of parameters.
 		- Stories:
 		1. *Run a simple linear regression model to check the R square, variable importance and residual plot to determine what advanced model to use. (2 point)*
-		2. *Run Neural Network, Random Forest Model to predict the number of reviews and ratings. (4 points)*
+		2. *Run Neural Network, Random Forest Model to predict the number of reviews and ratings. Making sure (4 points)*
 	- Web App Development to build interactive features that allow users to enter their data to get predictions.
 
 ## Repo structure 
@@ -168,6 +168,6 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTU5MjEyMzYsLTE4NTMzODc0NzgsLT
-QwMjExNjY1LC0yMDYzNjMwNjEzXX0=
+eyJoaXN0b3J5IjpbNjk1MTIxOTc4LC0xODUzMzg3NDc4LC00MD
+IxMTY2NSwtMjA2MzYzMDYxM119
 -->
