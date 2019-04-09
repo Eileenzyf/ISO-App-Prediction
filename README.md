@@ -22,7 +22,7 @@
  - **Mission**: Enable users to input the features of their IOS apps and predict number of reviews and rating that specific app will receive and thus its popularity based on its features.
  - **Success criteria**: 
    - Model performance: R square. The final model is expected to have a R squared 20% higher than the initial simple linear regression model.
-   - Business sense: Ask the user to rate the app (thumbs up or thumbs down) and calculate the ratio.
+   - Business sense: Ask the user to rate the app (thumbs up or thumbs down) and calculate the ratio. Potentially increase users' 
 
 ## Project Backlog
 
@@ -168,6 +168,6 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTMzODc0NzgsLTQwMjExNjY1LC0yMD
-YzNjMwNjEzXX0=
+eyJoaXN0b3J5IjpbMTM0NTcxMzI0NiwtMTg1MzM4NzQ3OCwtND
+AyMTE2NjUsLTIwNjM2MzA2MTNdfQ==
 -->
