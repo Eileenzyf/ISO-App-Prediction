@@ -28,31 +28,19 @@
 
 - **Develop Themes:** Help target users (software developers) to predict number of of reviews and ratings of their apps and therefore gauge potential popularity of their apps. Users can improve and make adjustment to their current version based on the results and potentially increase revenue.
 - **Epics**
--  Exploratory Data Analysis to explore the relationship between variables and determine which subset to use.
-
-- Stories:
-
-1. *Merge two data sets (1 point)*
-
-2. *Data cleaning, check NA values and duplicates. (1 point)*
-
-3. *Distribution of each variables, check multicollinearity and outliners (1 point)*
-
-- Data Engineering
-
-- Stories:
-
-1. *Variable transformation (1 point)*
-
-2. *Split the data set to training and test set (1 point)*
-
-- Model Building to predict the number of reviews and ratings using a set of parameters.
-
-- Stories:
-
-1. *Run a simple linear regression model to check the R square, variable importance and residual plot to determine what advanced model to use. (2 point)*
-
-2.
+	-  Exploratory Data Analysis to explore the relationship between variables and determine which subset to use.
+		- Stories:
+		1. *Merge two data sets (1 point)*
+		2. *Data cleaning, check NA values and duplicates. (1 point)*
+		3. *Distribution of each variables, check multicollinearity and outliners (1 point)*
+	- Data Engineering
+		- Stories:
+		1. *Variable transformation (1 point)*
+		2. *Split the data set to training and test set (1 point)*
+	- Model Building to predict the number of reviews and ratings using a set of parameters.
+		- Stories:
+		1. *Run a simple linear regression model to check the R square, variable importance and residual plot to determine what advanced model to use. (2 point)*
+		2.
 
 - Web App Development to build interactive features that allow users to enter their data to get predictions.
 
@@ -181,6 +169,5 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjI0NTM5MzEsLTIwNjM2MzA2MTNdfQ
-==
+eyJoaXN0b3J5IjpbLTQxNTU1ODI4MywtMjA2MzYzMDYxM119
 -->
