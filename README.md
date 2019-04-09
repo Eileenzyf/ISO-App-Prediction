@@ -24,8 +24,6 @@
    - Model performance: R square. The final model is expected to have a R squared 20% higher than the initial simple linear regression model.
    - Business sense: Ask the user to rate the app (thumbs up or thumbs down) and calculate the ratio.
 
-_Note_: Project charters should actually be more detailed than this! But this is where the charter belongs.  
-
 ## Repo structure 
 
 ```
@@ -151,6 +149,5 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzY4MzA2ODYsLTIwNjM2MzA2MTNdfQ
-==
+eyJoaXN0b3J5IjpbLTEyNzQ2MDQ1OSwtMjA2MzYzMDYxM119
 -->
