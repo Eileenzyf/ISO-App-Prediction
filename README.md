@@ -43,7 +43,7 @@
 		2. *Run Neural Network, Random Forest Model to predict the number of reviews and ratings. Making sure the model hit the performance metrics. (4 points)*
 	- Web App Development to build interactive features that allow users to enter their data to get predictions.
 		- Stories:
-		1. *(2 point)*
+		1. *S(2 point)*
 
 ## Repo structure 
 
@@ -170,6 +170,7 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MDQyMTYzOCwyMzA3NzQ5OTUsLTE4NT
-MzODc0NzgsLTQwMjExNjY1LC0yMDYzNjMwNjEzXX0=
+eyJoaXN0b3J5IjpbLTE4Mzk0NzQ0MzUsMTA1MDQyMTYzOCwyMz
+A3NzQ5OTUsLTE4NTMzODc0NzgsLTQwMjExNjY1LC0yMDYzNjMw
+NjEzXX0=
 -->
