@@ -46,7 +46,7 @@
 		 -	**Story 1:** Set up the environment 
 		 -	**Story 2:** Move algorithm from local to AWS 
 		 -	**Story 3:** Run and save the trained model 
-		 -	**Story 4:** Set up the data pipeline 
+		 -	**Story 4:** Set up the data pipeline (e.g. RDS)
 	- **Epic 5:** Web App Development to build interactive features that allow users to enter their data to get predictions.
 		-	**Story 1:** Writing the backend using Flask app. 
 		-	**Story 2:** Web page design, basic layout 
@@ -204,11 +204,11 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTMwODYwNTQzLDIwMTYwMDk1MjUsMzgxMj
-g2MDQ2LC0xNTQ5MzY2MjkyLC0xOTQzMTg4NDU1LC0xOTM2NDg0
-MDgwLDEwMTA0NDIzODcsNjA1Mzk2NjI3LDE3MTY4ODI5NjMsMT
-QwOTM4MjAzNiwxNTY1MTgxNjU1LC0xMDI2MzAzNDczLDE1Njg5
-MTI2ODQsMTEwNzI3OTkxMywtNDAwNjEzMzU2LDEwNTA0MjE2Mz
-gsMjMwNzc0OTk1LC0xODUzMzg3NDc4LC00MDIxMTY2NSwtMjA2
-MzYzMDYxM119
+eyJoaXN0b3J5IjpbMjA1MzU5MjY1NSwyMDE2MDA5NTI1LDM4MT
+I4NjA0NiwtMTU0OTM2NjI5MiwtMTk0MzE4ODQ1NSwtMTkzNjQ4
+NDA4MCwxMDEwNDQyMzg3LDYwNTM5NjYyNywxNzE2ODgyOTYzLD
+E0MDkzODIwMzYsMTU2NTE4MTY1NSwtMTAyNjMwMzQ3MywxNTY4
+OTEyNjg0LDExMDcyNzk5MTMsLTQwMDYxMzM1NiwxMDUwNDIxNj
+M4LDIzMDc3NDk5NSwtMTg1MzM4NzQ3OCwtNDAyMTE2NjUsLTIw
+NjM2MzA2MTNdfQ==
 -->
