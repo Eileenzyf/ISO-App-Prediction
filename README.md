@@ -57,9 +57,9 @@
 		3. For certain attributes, enable users to click on instead of simple text entry for diverse user experience. (2 points)
 		4. Predict and show the number of reviews and ratings for the specific file on the same page in 20 seconds. (2 points)
 		5. Aesthetic design, color palette, font, format details. (2 points)
-	 - Running the application
-	 1. Set up the environment
-	 2. Config Flask App
+	 - [Icebox] Running the application
+	 1. [Icebox] Set up the environment
+	 2. [Icebox] Config Flask App
 		 Test run the app to evaluate the performance. (4 points)
 
 ## Repo structure 
@@ -187,9 +187,9 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU5NzQ3NjE3LDYwNTM5NjYyNywxNzE2OD
-gyOTYzLDE0MDkzODIwMzYsMTU2NTE4MTY1NSwtMTAyNjMwMzQ3
-MywxNTY4OTEyNjg0LDExMDcyNzk5MTMsLTQwMDYxMzM1NiwxMD
-UwNDIxNjM4LDIzMDc3NDk5NSwtMTg1MzM4NzQ3OCwtNDAyMTE2
-NjUsLTIwNjM2MzA2MTNdfQ==
+eyJoaXN0b3J5IjpbMTAxMDQ0MjM4Nyw2MDUzOTY2MjcsMTcxNj
+g4Mjk2MywxNDA5MzgyMDM2LDE1NjUxODE2NTUsLTEwMjYzMDM0
+NzMsMTU2ODkxMjY4NCwxMTA3Mjc5OTEzLC00MDA2MTMzNTYsMT
+A1MDQyMTYzOCwyMzA3NzQ5OTUsLTE4NTMzODc0NzgsLTQwMjEx
+NjY1LC0yMDYzNjMwNjEzXX0=
 -->
