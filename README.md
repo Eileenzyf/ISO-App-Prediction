@@ -58,7 +58,12 @@
 	 - **Epic 6:** Running the application
 		 -	**Story 1:** Test run the app to evaluate the performance. (8 points)
 - **Backlog**
-	- epci
+	- Epic 1 story 1 (1 point)
+	- Epic 1 story 2 (1 point)
+	- Epic 1 story 3 (1 point)
+	- Epic 2 story 1 (1 point)
+	- Epic 2 story 2 (1 point)
+	- 
  - **Icebox**
 	 1. Text analysis or sentiment analysis of app descriptions to see the correlation between certain words and popularity of the apps.
 	 2. Set up the data pipeline 
@@ -190,7 +195,7 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1OTEzNDYwNiwtMTU0OTM2NjI5MiwtMT
+eyJoaXN0b3J5IjpbMTI4NTQ3MzM2MCwtMTU0OTM2NjI5MiwtMT
 k0MzE4ODQ1NSwtMTkzNjQ4NDA4MCwxMDEwNDQyMzg3LDYwNTM5
 NjYyNywxNzE2ODgyOTYzLDE0MDkzODIwMzYsMTU2NTE4MTY1NS
 wtMTAyNjMwMzQ3MywxNTY4OTEyNjg0LDExMDcyNzk5MTMsLTQw
