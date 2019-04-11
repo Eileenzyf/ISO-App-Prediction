@@ -53,11 +53,12 @@
 		 4. Set up the data pipeline (4 points)
 	- **Epic 5:** Web App Development to build interactive features that allow users to enter their data to get predictions.
 		- Stories:
-		1. Web page design, basic layout (1 points)
-		2. Create interactive page allow the user to enter the attributes of their apps, attributes should be corresponds to the parameters used in the models. (8 points)
-		3. For certain attributes, enable users to click on instead of simple text entry for diverse user experience. (2 points)
-		4. Predict and show the number of reviews and ratings for the specific file on the same page in 20 seconds. (2 points)
-		5. Aesthetic design, color palette, font, format details. (4 points)
+		1. [Icebox] Writing the backend using Flask app. 
+		2. Web page design, basic layout (1 points)
+		3. Create interactive page allow the user to enter the attributes of their apps, attributes should be corresponds to the parameters used in the models. (8 points)
+		4. For certain attributes, enable users to click on instead of simple text entry for diverse user experience. (2 points)
+		5. Predict and show the number of reviews and ratings for the specific file on the same page in 20 seconds. (2 points)
+		6. Aesthetic design, color palette, font, format details. (4 points)
 	 - [Icebox] **Epic 6:** Running the application
 		 - Stories:
 		 1. Test run the app to evaluate the performance. (8 points)
@@ -187,10 +188,10 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDMxODg0NTUsLTE5MzY0ODQwODAsMT
-AxMDQ0MjM4Nyw2MDUzOTY2MjcsMTcxNjg4Mjk2MywxNDA5Mzgy
-MDM2LDE1NjUxODE2NTUsLTEwMjYzMDM0NzMsMTU2ODkxMjY4NC
-wxMTA3Mjc5OTEzLC00MDA2MTMzNTYsMTA1MDQyMTYzOCwyMzA3
-NzQ5OTUsLTE4NTMzODc0NzgsLTQwMjExNjY1LC0yMDYzNjMwNj
-EzXX0=
+eyJoaXN0b3J5IjpbLTE1NDkzNjYyOTIsLTE5NDMxODg0NTUsLT
+E5MzY0ODQwODAsMTAxMDQ0MjM4Nyw2MDUzOTY2MjcsMTcxNjg4
+Mjk2MywxNDA5MzgyMDM2LDE1NjUxODE2NTUsLTEwMjYzMDM0Nz
+MsMTU2ODkxMjY4NCwxMTA3Mjc5OTEzLC00MDA2MTMzNTYsMTA1
+MDQyMTYzOCwyMzA3NzQ5OTUsLTE4NTMzODc0NzgsLTQwMjExNj
+Y1LC0yMDYzNjMwNjEzXX0=
 -->
