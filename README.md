@@ -57,6 +57,8 @@
 		-	**Story 6:** Aesthetic design, color palette, font, format details. (4 points)
 	 - **Epic 6:** Running the application
 		 -	**Story 1:** Test run the app to evaluate the performance. (8 points)
+- **Backlog**
+	- epci
  - **Icebox**
 	 1. Text analysis or sentiment analysis of app descriptions to see the correlation between certain words and popularity of the apps.
 	 2. Set up the data pipeline 
@@ -188,7 +190,7 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExNDg4NjczMiwtMTU0OTM2NjI5MiwtMT
+eyJoaXN0b3J5IjpbLTQ1OTEzNDYwNiwtMTU0OTM2NjI5MiwtMT
 k0MzE4ODQ1NSwtMTkzNjQ4NDA4MCwxMDEwNDQyMzg3LDYwNTM5
 NjYyNywxNzE2ODgyOTYzLDE0MDkzODIwMzYsMTU2NTE4MTY1NS
 wtMTAyNjMwMzQ3MywxNTY4OTEyNjg0LDExMDcyNzk5MTMsLTQw
