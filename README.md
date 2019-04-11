@@ -48,9 +48,9 @@
 		3. [Icebox] Text analysis or sentiment analysis of app descriptions to see the correlation between certain words and popularity of the apps.
 	- [Icebox] Build Pipeline
 		 1. [Icebox] Set up the environment
-		 2. Move algorithm from local to AWS (4 points)
-		 3. Run and save the trained model (2 points)
-		 4. Set up the data pipeline (4 points)
+		 2. Move algorithm from local to AWS 
+		 3. Run and save the trained model 
+		 4. Set up the data pipeline 
 	- Web App Development to build interactive features that allow users to enter their data to get predictions.
 		- Stories:
 		1. Web page design, basic layout (1 points)
@@ -186,9 +186,9 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3MjY5OTg5OSwxMDEwNDQyMzg3LDYwNT
-M5NjYyNywxNzE2ODgyOTYzLDE0MDkzODIwMzYsMTU2NTE4MTY1
-NSwtMTAyNjMwMzQ3MywxNTY4OTEyNjg0LDExMDcyNzk5MTMsLT
-QwMDYxMzM1NiwxMDUwNDIxNjM4LDIzMDc3NDk5NSwtMTg1MzM4
-NzQ3OCwtNDAyMTE2NjUsLTIwNjM2MzA2MTNdfQ==
+eyJoaXN0b3J5IjpbLTExMDE5NTQ3MjcsMTAxMDQ0MjM4Nyw2MD
+UzOTY2MjcsMTcxNjg4Mjk2MywxNDA5MzgyMDM2LDE1NjUxODE2
+NTUsLTEwMjYzMDM0NzMsMTU2ODkxMjY4NCwxMTA3Mjc5OTEzLC
+00MDA2MTMzNTYsMTA1MDQyMTYzOCwyMzA3NzQ5OTUsLTE4NTMz
+ODc0NzgsLTQwMjExNjY1LC0yMDYzNjMwNjEzXX0=
 -->
