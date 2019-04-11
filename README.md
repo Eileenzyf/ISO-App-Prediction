@@ -75,8 +75,9 @@
  - **Icebox**
 	 1. Text analysis or sentiment analysis of app descriptions to see the correlation between certain words and popularity of the apps.
 	 2. Set up the data pipeline 
-	 3. Writing the backend using Flask app. 
-	 4. Running the application
+	 3. Move algorithm from local to AWS
+	 4. Writing the backend using Flask app. 
+	 5. Running the application
 
 ## Repo structure 
 
@@ -203,7 +204,7 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNzM0NDY2NywtMTU0OTM2NjI5MiwtMT
+eyJoaXN0b3J5IjpbLTUzMjE3MDcxMSwtMTU0OTM2NjI5MiwtMT
 k0MzE4ODQ1NSwtMTkzNjQ4NDA4MCwxMDEwNDQyMzg3LDYwNTM5
 NjYyNywxNzE2ODgyOTYzLDE0MDkzODIwMzYsMTU2NTE4MTY1NS
 wtMTAyNjMwMzQ3MywxNTY4OTEyNjg0LDExMDcyNzk5MTMsLTQw
