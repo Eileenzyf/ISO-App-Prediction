@@ -37,13 +37,12 @@
 		-	**Story 2:** *Data cleaning, check NA values and duplicates. (1 point)*
 		-	**Story 3:** *Distribution of each variables, check multicollinearity and outliners (1 point)*
 	- **Epic 2:** Feature Engineering
-		-	**Story :** *Variable transformation (1 point)*
-		2. *Split the data set to training and test set (1 point)*
+		-	**Story 1:** *Variable transformation (1 point)*
+		-	**Story 2:**. *Split the data set to training and test set (1 point)*
 	- **Epic 3:** Model Building to predict the number of reviews and ratings using a set of attributes.
-		- Stories:
-		1. *Run a simple linear regression model to use its R square as the naive baseline. Check variable importance and residual plot to determine what advanced model to use. (2 point)*
-		2. *Run Neural Network, Random Forest Model to predict the number of reviews and ratings. Making sure the model hit the performance metrics. (4 points)*
-		3. [Icebox] Text analysis or sentiment analysis of app descriptions to see the correlation between certain words and popularity of the apps.
+		-	**Story 1:** *Run a simple linear regression model to use its R square as the naive baseline. Check variable importance and residual plot to determine what advanced model to use. (2 point)*
+		-	**Story 2:** *Run Neural Network, Random Forest Model to predict the number of reviews and ratings. Making sure the model hit the performance metrics. (4 points)*
+		-	**Story 3:** [Icebox] Text analysis or sentiment analysis of app descriptions to see the correlation between certain words and popularity of the apps.
 	-  **Epic 4:** Build Pipeline
 		 1. Set up the environment (1 point)
 		 2. Move algorithm from local to AWS (4 points)
@@ -191,10 +190,10 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTAwNzEyNDUsLTE1NDkzNjYyOTIsLT
-E5NDMxODg0NTUsLTE5MzY0ODQwODAsMTAxMDQ0MjM4Nyw2MDUz
-OTY2MjcsMTcxNjg4Mjk2MywxNDA5MzgyMDM2LDE1NjUxODE2NT
-UsLTEwMjYzMDM0NzMsMTU2ODkxMjY4NCwxMTA3Mjc5OTEzLC00
-MDA2MTMzNTYsMTA1MDQyMTYzOCwyMzA3NzQ5OTUsLTE4NTMzOD
-c0NzgsLTQwMjExNjY1LC0yMDYzNjMwNjEzXX0=
+eyJoaXN0b3J5IjpbLTQxMjk2NTM0LC0xNTQ5MzY2MjkyLC0xOT
+QzMTg4NDU1LC0xOTM2NDg0MDgwLDEwMTA0NDIzODcsNjA1Mzk2
+NjI3LDE3MTY4ODI5NjMsMTQwOTM4MjAzNiwxNTY1MTgxNjU1LC
+0xMDI2MzAzNDczLDE1Njg5MTI2ODQsMTEwNzI3OTkxMywtNDAw
+NjEzMzU2LDEwNTA0MjE2MzgsMjMwNzc0OTk1LC0xODUzMzg3ND
+c4LC00MDIxMTY2NSwtMjA2MzYzMDYxM119
 -->
