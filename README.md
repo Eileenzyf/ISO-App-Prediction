@@ -23,7 +23,7 @@
  - **Vision**: The ever-changing mobile landscape is a challenging space to navigate. While the number of mobile apps has been increasing over the past few years, the competition has became more and more intense. Therefore, it is crucial for software developers to improve their competitive advantage and understand the existing strategy to drive growth. This project will allow the users to predict the their apps' potential ratings and popularity based on its current features and therefore help developers to improve their apps.
  - **Mission**: The "IOS App Store" project will use two data sets that contains attributes of 10k ios apps. The project enables users to input the features of their IOS apps and predict number of reviews and rating that specific app will receive, which indicates its popularity.
  - **Success criteria**: 
-   - Model performance: R square. The final model is expected to have a R squared 20% higher than the initial simple linear regression model.
+   - Model performance: R square. The final model is expected to improve R squared by 20% compared to the initial simple linear regression model.
    - Business sense: Ask the user to rate the app (thumbs up or thumbs down) and calculate the ratio. Potentially increase users' revenue. 
 
 ### Project Planning
@@ -36,11 +36,11 @@
 		-	**Story 3:** Distribution of each variables, check multicollinearity and outliners 
 	- **Epic 2:** Feature Engineering
 		-	**Story 1:** Variable transformation 
-		-	**Story 2:** Split the data set to training and test set 
 	- **Epic 3:** Model Building to predict the number of reviews and ratings using a set of attributes.
-		-	**Story 1:** Run a simple linear regression model to use its R square as the naive baseline. Check variable importance and residual plot to determine what advanced model to use. 
-		-	**Story 2:** Run Neural Network, Random Forest Model to predict the number of reviews and ratings. Making sure the model hit the performance metrics. 
-		-	**Story 3:** Text analysis or sentiment analysis of app descriptions to see the correlation between certain words and popularity of the apps.
+		- **Story 1:** Split the data set to training and test set 
+		-	**Story 2:** Run a simple linear regression model to use its R square as the naive baseline. Check variable importance and residual plot to determine what advanced model to use. 
+		-	**Story 3:** Run Neural Network, Random Forest Model to predict the number of reviews and ratings. Making sure the model hit the performance metrics. 
+		-	**Story 4:** Text analysis or sentiment analysis of app descriptions to see the correlation between certain words and popularity of the apps.
 	-  **Epic 4:** Build Pipeline
 		 -	**Story 1:** Set up the environment 
 		 -	**Story 2:** Move algorithm from local to AWS 
@@ -202,7 +202,7 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwMzQ0NDM3OSwyMDE2MDA5NTI1LDM4MT
+eyJoaXN0b3J5IjpbMTc4NTUyNTg3MywyMDE2MDA5NTI1LDM4MT
 I4NjA0NiwtMTU0OTM2NjI5MiwtMTk0MzE4ODQ1NSwtMTkzNjQ4
 NDA4MCwxMDEwNDQyMzg3LDYwNTM5NjYyNywxNzE2ODgyOTYzLD
 E0MDkzODIwMzYsMTU2NTE4MTY1NSwtMTAyNjMwMzQ3MywxNTY4
