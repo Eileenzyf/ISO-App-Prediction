@@ -54,12 +54,12 @@
 	- [Icebox] Web App Development to build interactive features that allow users to enter their data to get predictions.
 		- Stories:
 		1. Web page design, basic layout (1 points)
-		2. Create interactive page allow the user to enter the attributes of their apps, attributes should be corresponds to the parameters used in the models. (5 points)
+		2. Create interactive page allow the user to enter the attributes of their apps, attributes should be corresponds to the parameters used in the models. (8 points)
 		3. For certain attributes, enable users to click on instead of simple text entry for diverse user experience. (2 points)
 		4. Predict and show the number of reviews and ratings for the specific file on the same page in 20 seconds. (2 points)
-		5. Aesthetic design, color palette, font, format details. (2 points)
+		5. Aesthetic design, color palette, font, format details. (4 points)
 	 - [Icebox] Running the application
-	 1. Test run the app to evaluate the performance. 
+	 1. Test run the app to evaluate the performance. (8 points)
 
 ## Repo structure 
 
@@ -186,9 +186,9 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ3NTk4NjI1LDEwMTA0NDIzODcsNjA1Mz
-k2NjI3LDE3MTY4ODI5NjMsMTQwOTM4MjAzNiwxNTY1MTgxNjU1
-LC0xMDI2MzAzNDczLDE1Njg5MTI2ODQsMTEwNzI3OTkxMywtND
-AwNjEzMzU2LDEwNTA0MjE2MzgsMjMwNzc0OTk1LC0xODUzMzg3
-NDc4LC00MDIxMTY2NSwtMjA2MzYzMDYxM119
+eyJoaXN0b3J5IjpbLTE5MzY0ODQwODAsMTAxMDQ0MjM4Nyw2MD
+UzOTY2MjcsMTcxNjg4Mjk2MywxNDA5MzgyMDM2LDE1NjUxODE2
+NTUsLTEwMjYzMDM0NzMsMTU2ODkxMjY4NCwxMTA3Mjc5OTEzLC
+00MDA2MTMzNTYsMTA1MDQyMTYzOCwyMzA3NzQ5OTUsLTE4NTMz
+ODc0NzgsLTQwMjExNjY1LC0yMDYzNjMwNjEzXX0=
 -->
