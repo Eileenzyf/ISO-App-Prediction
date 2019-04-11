@@ -28,29 +28,27 @@
 
 ### Project Planning
 
-**Backlog to be completed in the first two weeks are italicized*
-
  - **Develop Themes:** Help target users (software developers) to predict number of of reviews and ratings of their apps and therefore gauge potential popularity of their apps. Users can improve and make adjustment to their current version based on the results and potentially increase revenue.
  - **Epics**
 	-  **Epic 1:** Exploratory Data Analysis to explore the relationship between variables and determine which subset of variable to use. (user input related)
-		-	**Story 1:** *Merge two data sets (1 point)*
-		-	**Story 2:** *Data cleaning, check NA values and duplicates. (1 point)*
-		-	**Story 3:** *Distribution of each variables, check multicollinearity and outliners (1 point)*
+		-	**Story 1:** Merge two data sets
+		-	**Story 2:** Data cleaning, check NA values and duplicates. 
+		-	**Story 3:** Distribution of each variables, check multicollinearity and outliners 
 	- **Epic 2:** Feature Engineering
-		-	**Story 1:** *Variable transformation (1 point)*
-		-	**Story 2:**. *Split the data set to training and test set (1 point)*
+		-	**Story 1:** Variable transformation 
+		-	**Story 2:** Split the data set to training and test set 
 	- **Epic 3:** Model Building to predict the number of reviews and ratings using a set of attributes.
-		-	**Story 1:** *Run a simple linear regression model to use its R square as the naive baseline. Check variable importance and residual plot to determine what advanced model to use. (2 point)*
-		-	**Story 2:** *Run Neural Network, Random Forest Model to predict the number of reviews and ratings. Making sure the model hit the performance metrics. (4 points)*
+		-	**Story 1:** Run a simple linear regression model to use its R square as the naive baseline. Check variable importance and residual plot to determine what advanced model to use. 
+		-	**Story 2:** Run Neural Network, Random Forest Model to predict the number of reviews and ratings. Making sure the model hit the performance metrics. 
 		-	**Story 3:** Text analysis or sentiment analysis of app descriptions to see the correlation between certain words and popularity of the apps.
 	-  **Epic 4:** Build Pipeline
-		 -	**Story 1:** Set up the environment (1 point)
+		 -	**Story 1:** Set up the environment 
 		 -	**Story 2:** Move algorithm from local to AWS 
-		 -	**Story 3:** Run and save the trained model (2 points)
+		 -	**Story 3:** Run and save the trained model 
 		 -	**Story 4:** Set up the data pipeline 
 	- **Epic 5:** Web App Development to build interactive features that allow users to enter their data to get predictions.
 		-	**Story 1:** Writing the backend using Flask app. 
-		-	**Story 2:** Web page design, basic layout (1 points)
+		-	**Story 2:** Web page design, basic layout 
 		-	**Story 3:** Create interactive page allow the user to enter the attributes of their apps, attributes should be corresponds to the parameters used in the models. (8 points)
 		-	**Story 4:** For certain attributes, enable users to click on instead of simple text entry for diverse user experience. (2 points)
 		-	**Story 5:** Predict and show the number of reviews and ratings for the specific file on the same page in 20 seconds. (2 points)
@@ -204,10 +202,10 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzMjE3MDcxMSwtMTU0OTM2NjI5MiwtMT
-k0MzE4ODQ1NSwtMTkzNjQ4NDA4MCwxMDEwNDQyMzg3LDYwNTM5
-NjYyNywxNzE2ODgyOTYzLDE0MDkzODIwMzYsMTU2NTE4MTY1NS
-wtMTAyNjMwMzQ3MywxNTY4OTEyNjg0LDExMDcyNzk5MTMsLTQw
-MDYxMzM1NiwxMDUwNDIxNjM4LDIzMDc3NDk5NSwtMTg1MzM4Nz
-Q3OCwtNDAyMTE2NjUsLTIwNjM2MzA2MTNdfQ==
+eyJoaXN0b3J5IjpbNzc5NTE3NjcyLC0xNTQ5MzY2MjkyLC0xOT
+QzMTg4NDU1LC0xOTM2NDg0MDgwLDEwMTA0NDIzODcsNjA1Mzk2
+NjI3LDE3MTY4ODI5NjMsMTQwOTM4MjAzNiwxNTY1MTgxNjU1LC
+0xMDI2MzAzNDczLDE1Njg5MTI2ODQsMTEwNzI3OTkxMywtNDAw
+NjEzMzU2LDEwNTA0MjE2MzgsMjMwNzc0OTk1LC0xODUzMzg3ND
+c4LC00MDIxMTY2NSwtMjA2MzYzMDYxM119
 -->
