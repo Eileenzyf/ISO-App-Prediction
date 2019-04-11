@@ -56,17 +56,22 @@
 		-	**Story 5:** Predict and show the number of reviews and ratings for the specific file on the same page in 20 seconds. (2 points)
 		-	**Story 6:** Aesthetic design, color palette, font, format details. (4 points)
 	 - **Epic 6:** Running the application
-		 -	**Story 1:** Test run the app to evaluate the performance. (8 points)
+		 -	**Story 1:** Test run the app to evaluate the performance.
 - **Backlog**
-	- Epic 1 story 1 (1 point)
+	- Epic 1 story 1 (1 point) 
 	- Epic 1 story 2 (1 point)
 	- Epic 1 story 3 (1 point)
 	- Epic 2 story 1 (1 point)
 	- Epic 2 story 2 (1 point)
-	- Epic 3 story 1 (2 point)
-	- Epic 3 story 2 (4 point)
-	- Epic 3 story 1 (2 point)
-	- Epic 4 story 3 (4 point)
+	- Epic 3 story 1 (2 points)
+	- Epic 3 story 2 (4 points)
+	- Epic 4 story 1 (1 point)
+	- Epic 4 story 3 (2 points)
+	- Epic 5 story 2 (1 point)
+	- Epic 5 story 3 (8 points)
+	- Epic 5 story 4 (2 points)
+	- Epic 5 story 5 (2 points)
+	- Epic 5 story 5 (4 points)
  - **Icebox**
 	 1. Text analysis or sentiment analysis of app descriptions to see the correlation between certain words and popularity of the apps.
 	 2. Set up the data pipeline 
@@ -198,10 +203,10 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDg5ODczODcsLTE1NDkzNjYyOTIsLT
-E5NDMxODg0NTUsLTE5MzY0ODQwODAsMTAxMDQ0MjM4Nyw2MDUz
-OTY2MjcsMTcxNjg4Mjk2MywxNDA5MzgyMDM2LDE1NjUxODE2NT
-UsLTEwMjYzMDM0NzMsMTU2ODkxMjY4NCwxMTA3Mjc5OTEzLC00
-MDA2MTMzNTYsMTA1MDQyMTYzOCwyMzA3NzQ5OTUsLTE4NTMzOD
-c0NzgsLTQwMjExNjY1LC0yMDYzNjMwNjEzXX0=
+eyJoaXN0b3J5IjpbLTczMzUxODI3NSwtMTU0OTM2NjI5MiwtMT
+k0MzE4ODQ1NSwtMTkzNjQ4NDA4MCwxMDEwNDQyMzg3LDYwNTM5
+NjYyNywxNzE2ODgyOTYzLDE0MDkzODIwMzYsMTU2NTE4MTY1NS
+wtMTAyNjMwMzQ3MywxNTY4OTEyNjg0LDExMDcyNzk5MTMsLTQw
+MDYxMzM1NiwxMDUwNDIxNjM4LDIzMDc3NDk5NSwtMTg1MzM4Nz
+Q3OCwtNDAyMTE2NjUsLTIwNjM2MzA2MTNdfQ==
 -->
