@@ -58,13 +58,13 @@
 	 - **Epic 6:** Running the application
 		 -	**Story 1:** Test run the app to evaluate the performance.
 - **Backlog**
-	- Epic 1 story 1 (1 point) 
-	- Epic 1 story 2 (1 point)
-	- Epic 1 story 3 (1 point)
-	- Epic 2 story 1 (1 point)
-	- Epic 2 story 2 (1 point)
-	- Epic 3 story 1 (2 points)
-	- Epic 3 story 2 (4 points)
+	- Epic 1 story 1 (1 point) --planned in 2 weeks
+	- Epic 1 story 2 (1 point) --planned in 2 weeks
+	- Epic 1 story 3 (1 point) --planned in 2 weeks
+	- Epic 2 story 1 (1 point) --planned in 2 weeks
+	- Epic 2 story 2 (1 point) --planned in 2 weeks
+	- Epic 3 story 1 (2 points) --planned in 2 weeks
+	- Epic 3 story 2 (4 points) --planned in 2 weeks
 	- Epic 4 story 1 (1 point)
 	- Epic 4 story 3 (2 points)
 	- Epic 5 story 2 (1 point)
@@ -203,7 +203,7 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczMzUxODI3NSwtMTU0OTM2NjI5MiwtMT
+eyJoaXN0b3J5IjpbMTQxNzM0NDY2NywtMTU0OTM2NjI5MiwtMT
 k0MzE4ODQ1NSwtMTkzNjQ4NDA4MCwxMDEwNDQyMzg3LDYwNTM5
 NjYyNywxNzE2ODgyOTYzLDE0MDkzODIwMzYsMTU2NTE4MTY1NS
 wtMTAyNjMwMzQ3MywxNTY4OTEyNjg0LDExMDcyNzk5MTMsLTQw
