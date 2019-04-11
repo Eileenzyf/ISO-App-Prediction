@@ -51,15 +51,16 @@
 		 2. Move algorithm from local to AWS (4 points)
 		 3. Run and save the trained model (2 points)
 		 4. Set up the data pipeline (4 points)
-	- [Icebox] **Epic 5:** Web App Development to build interactive features that allow users to enter their data to get predictions.
+	- **Epic 5:** Web App Development to build interactive features that allow users to enter their data to get predictions.
 		- Stories:
 		1. Web page design, basic layout (1 points)
 		2. Create interactive page allow the user to enter the attributes of their apps, attributes should be corresponds to the parameters used in the models. (8 points)
 		3. For certain attributes, enable users to click on instead of simple text entry for diverse user experience. (2 points)
 		4. Predict and show the number of reviews and ratings for the specific file on the same page in 20 seconds. (2 points)
 		5. Aesthetic design, color palette, font, format details. (4 points)
-	 - [Icebox] Running the application
-	 1. Test run the app to evaluate the performance. (8 points)
+	 - [Icebox] **Epic 6:** Running the application
+		 - Stories:
+		 1. Test run the app to evaluate the performance. (8 points)
 
 ## Repo structure 
 
@@ -186,10 +187,10 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NDEyMTA3NiwtMTkzNjQ4NDA4MCwxMD
-EwNDQyMzg3LDYwNTM5NjYyNywxNzE2ODgyOTYzLDE0MDkzODIw
-MzYsMTU2NTE4MTY1NSwtMTAyNjMwMzQ3MywxNTY4OTEyNjg0LD
-ExMDcyNzk5MTMsLTQwMDYxMzM1NiwxMDUwNDIxNjM4LDIzMDc3
-NDk5NSwtMTg1MzM4NzQ3OCwtNDAyMTE2NjUsLTIwNjM2MzA2MT
-NdfQ==
+eyJoaXN0b3J5IjpbLTE5NDMxODg0NTUsLTE5MzY0ODQwODAsMT
+AxMDQ0MjM4Nyw2MDUzOTY2MjcsMTcxNjg4Mjk2MywxNDA5Mzgy
+MDM2LDE1NjUxODE2NTUsLTEwMjYzMDM0NzMsMTU2ODkxMjY4NC
+wxMTA3Mjc5OTEzLC00MDA2MTMzNTYsMTA1MDQyMTYzOCwyMzA3
+NzQ5OTUsLTE4NTMzODc0NzgsLTQwMjExNjY1LC0yMDYzNjMwNj
+EzXX0=
 -->
