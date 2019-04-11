@@ -47,11 +47,11 @@
 		2. *Run Neural Network, Random Forest Model to predict the number of reviews and ratings. Making sure the model hit the performance metrics. (4 points)*
 		3. [Icebox] Text analysis or sentiment analysis of app descriptions to see the correlation between certain words and popularity of the apps.
 	- [Icebox] Build Pipeline
-		 1. [Icebox] Set up the environment
-		 2. Move algorithm from local to AWS 
-		 3. Run and save the trained model 
-		 4. Set up the data pipeline 
-	- Web App Development to build interactive features that allow users to enter their data to get predictions.
+		 1. Set up the environment (1 point)
+		 2. Move algorithm from local to AWS (4 points)
+		 3. Run and save the trained model (2 points)
+		 4. Set up the data pipeline (4 points)
+	- [Icebox] Web App Development to build interactive features that allow users to enter their data to get predictions.
 		- Stories:
 		1. Web page design, basic layout (1 points)
 		2. Create interactive page allow the user to enter the attributes of their apps, attributes should be corresponds to the parameters used in the models. (5 points)
@@ -186,9 +186,9 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDE5NTQ3MjcsMTAxMDQ0MjM4Nyw2MD
-UzOTY2MjcsMTcxNjg4Mjk2MywxNDA5MzgyMDM2LDE1NjUxODE2
-NTUsLTEwMjYzMDM0NzMsMTU2ODkxMjY4NCwxMTA3Mjc5OTEzLC
-00MDA2MTMzNTYsMTA1MDQyMTYzOCwyMzA3NzQ5OTUsLTE4NTMz
-ODc0NzgsLTQwMjExNjY1LC0yMDYzNjMwNjEzXX0=
+eyJoaXN0b3J5IjpbMjQ3NTk4NjI1LDEwMTA0NDIzODcsNjA1Mz
+k2NjI3LDE3MTY4ODI5NjMsMTQwOTM4MjAzNiwxNTY1MTgxNjU1
+LC0xMDI2MzAzNDczLDE1Njg5MTI2ODQsMTEwNzI3OTkxMywtND
+AwNjEzMzU2LDEwNTA0MjE2MzgsMjMwNzc0OTk1LC0xODUzMzg3
+NDc4LC00MDIxMTY2NSwtMjA2MzYzMDYxM119
 -->
