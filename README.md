@@ -26,7 +26,7 @@
    - Model performance: R square. The final model is expected to have a R squared 20% higher than the initial simple linear regression model.
    - Business sense: Ask the user to rate the app (thumbs up or thumbs down) and calculate the ratio. Potentially increase users' revenue. 
 
-### Project Backlog
+### Project Planning
 
 **Backlog to be completed in the first two weeks are italicized*
 
@@ -185,8 +185,9 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxNjg4Mjk2MywxNDA5MzgyMDM2LDE1Nj
-UxODE2NTUsLTEwMjYzMDM0NzMsMTU2ODkxMjY4NCwxMTA3Mjc5
-OTEzLC00MDA2MTMzNTYsMTA1MDQyMTYzOCwyMzA3NzQ5OTUsLT
-E4NTMzODc0NzgsLTQwMjExNjY1LC0yMDYzNjMwNjEzXX0=
+eyJoaXN0b3J5IjpbNjA1Mzk2NjI3LDE3MTY4ODI5NjMsMTQwOT
+M4MjAzNiwxNTY1MTgxNjU1LC0xMDI2MzAzNDczLDE1Njg5MTI2
+ODQsMTEwNzI3OTkxMywtNDAwNjEzMzU2LDEwNTA0MjE2MzgsMj
+MwNzc0OTk1LC0xODUzMzg3NDc4LC00MDIxMTY2NSwtMjA2MzYz
+MDYxM119
 -->
