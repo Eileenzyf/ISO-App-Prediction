@@ -62,6 +62,9 @@
 	 - [Icebox] **Epic 6:** Running the application
 		 - Stories:
 		 1. Test run the app to evaluate the performance. (8 points)
+ - Icebox
+	 1. Text analysis or sentiment analysis of app descriptions to see the correlation between certain words and popularity of the apps.
+	 2. 
 
 ## Repo structure 
 
@@ -188,10 +191,10 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQxNTYwODY0LC0xNTQ5MzY2MjkyLC0xOT
-QzMTg4NDU1LC0xOTM2NDg0MDgwLDEwMTA0NDIzODcsNjA1Mzk2
-NjI3LDE3MTY4ODI5NjMsMTQwOTM4MjAzNiwxNTY1MTgxNjU1LC
-0xMDI2MzAzNDczLDE1Njg5MTI2ODQsMTEwNzI3OTkxMywtNDAw
-NjEzMzU2LDEwNTA0MjE2MzgsMjMwNzc0OTk1LC0xODUzMzg3ND
-c4LC00MDIxMTY2NSwtMjA2MzYzMDYxM119
+eyJoaXN0b3J5IjpbLTE5Njc3NzE5ODYsLTE1NDkzNjYyOTIsLT
+E5NDMxODg0NTUsLTE5MzY0ODQwODAsMTAxMDQ0MjM4Nyw2MDUz
+OTY2MjcsMTcxNjg4Mjk2MywxNDA5MzgyMDM2LDE1NjUxODE2NT
+UsLTEwMjYzMDM0NzMsMTU2ODkxMjY4NCwxMTA3Mjc5OTEzLC00
+MDA2MTMzNTYsMTA1MDQyMTYzOCwyMzA3NzQ5OTUsLTE4NTMzOD
+c0NzgsLTQwMjExNjY1LC0yMDYzNjMwNjEzXX0=
 -->
