@@ -57,7 +57,7 @@
 		3. For certain attributes, enable users to click on instead of simple text entry for diverse user experience. (2 points)
 		4. Predict and show the number of reviews and ratings for the specific file on the same page in 20 seconds. (2 points)
 		5. Aesthetic design, color palette, font, format details. (2 points)
-	-Running the application 
+	 - Running the application
 		7. Test run the app to evaluate the performance. (4 points)
 
 ## Repo structure 
@@ -185,8 +185,8 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ2NzA4NzE0LDE0MDkzODIwMzYsMTU2NT
-E4MTY1NSwtMTAyNjMwMzQ3MywxNTY4OTEyNjg0LDExMDcyNzk5
-MTMsLTQwMDYxMzM1NiwxMDUwNDIxNjM4LDIzMDc3NDk5NSwtMT
-g1MzM4NzQ3OCwtNDAyMTE2NjUsLTIwNjM2MzA2MTNdfQ==
+eyJoaXN0b3J5IjpbODM4NjA1ODYsMTQwOTM4MjAzNiwxNTY1MT
+gxNjU1LC0xMDI2MzAzNDczLDE1Njg5MTI2ODQsMTEwNzI3OTkx
+MywtNDAwNjEzMzU2LDEwNTA0MjE2MzgsMjMwNzc0OTk1LC0xOD
+UzMzg3NDc4LC00MDIxMTY2NSwtMjA2MzYzMDYxM119
 -->
