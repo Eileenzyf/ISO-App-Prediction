@@ -50,9 +50,9 @@
 		-	**Story 1:** Writing the backend using Flask app. 
 		-	**Story 2:** Web page design, basic layout 
 		-	**Story 3:** Create interactive page allow the user to enter the attributes of their apps, attributes should be corresponds to the parameters used in the models. (8 points)
-		-	**Story 4:** For certain attributes, enable users to click on instead of simple text entry for diverse user experience. (2 points)
-		-	**Story 5:** Predict and show the number of reviews and ratings for the specific file on the same page in 20 seconds. (2 points)
-		-	**Story 6:** Aesthetic design, color palette, font, format details. (4 points)
+		-	**Story 4:** For certain attributes, enable users to click on instead of simple text entry for diverse user experience. 
+		-	**Story 5:** Predict and show the number of reviews and ratings for the specific file on the same page in 20 seconds. 
+		-	**Story 6:** Aesthetic design, color palette, font, format details.
 	 - **Epic 6:** Running the application
 		 -	**Story 1:** Test run the app to evaluate the performance.
 - **Backlog**
@@ -202,7 +202,7 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc5NTE3NjcyLC0xNTQ5MzY2MjkyLC0xOT
+eyJoaXN0b3J5IjpbMzgxMjg2MDQ2LC0xNTQ5MzY2MjkyLC0xOT
 QzMTg4NDU1LC0xOTM2NDg0MDgwLDEwMTA0NDIzODcsNjA1Mzk2
 NjI3LDE3MTY4ODI5NjMsMTQwOTM4MjAzNiwxNTY1MTgxNjU1LC
 0xMDI2MzAzNDczLDE1Njg5MTI2ODQsMTEwNzI3OTkxMywtNDAw
