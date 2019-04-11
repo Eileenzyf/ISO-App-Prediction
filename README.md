@@ -44,8 +44,8 @@
 		-	**Story 2:** *Run Neural Network, Random Forest Model to predict the number of reviews and ratings. Making sure the model hit the performance metrics. (4 points)*
 		-	**Story 3:** Text analysis or sentiment analysis of app descriptions to see the correlation between certain words and popularity of the apps.
 	-  **Epic 4:** Build Pipeline
-		 -	**Story 1:**. Set up the environment (1 point)
-		 -	**Story 2:**. Move algorithm from local to AWS (4 points)
+		 -	**Story 1:** Set up the environment (1 point)
+		 -	**Story 2:** Move algorithm from local to AWS 
 		 -	**Story 3:** Run and save the trained model (2 points)
 		 -	**Story 4:** Set up the data pipeline 
 	- **Epic 5:** Web App Development to build interactive features that allow users to enter their data to get predictions.
@@ -63,7 +63,10 @@
 	- Epic 1 story 3 (1 point)
 	- Epic 2 story 1 (1 point)
 	- Epic 2 story 2 (1 point)
-	- 
+	- Epic 3 story 1 (2 point)
+	- Epic 3 story 2 (4 point)
+	- Epic 3 story 1 (2 point)
+	- Epic 4 story 3 (4 point)
  - **Icebox**
 	 1. Text analysis or sentiment analysis of app descriptions to see the correlation between certain words and popularity of the apps.
 	 2. Set up the data pipeline 
@@ -195,10 +198,10 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4NTQ3MzM2MCwtMTU0OTM2NjI5MiwtMT
-k0MzE4ODQ1NSwtMTkzNjQ4NDA4MCwxMDEwNDQyMzg3LDYwNTM5
-NjYyNywxNzE2ODgyOTYzLDE0MDkzODIwMzYsMTU2NTE4MTY1NS
-wtMTAyNjMwMzQ3MywxNTY4OTEyNjg0LDExMDcyNzk5MTMsLTQw
-MDYxMzM1NiwxMDUwNDIxNjM4LDIzMDc3NDk5NSwtMTg1MzM4Nz
-Q3OCwtNDAyMTE2NjUsLTIwNjM2MzA2MTNdfQ==
+eyJoaXN0b3J5IjpbLTEzNDg5ODczODcsLTE1NDkzNjYyOTIsLT
+E5NDMxODg0NTUsLTE5MzY0ODQwODAsMTAxMDQ0MjM4Nyw2MDUz
+OTY2MjcsMTcxNjg4Mjk2MywxNDA5MzgyMDM2LDE1NjUxODE2NT
+UsLTEwMjYzMDM0NzMsMTU2ODkxMjY4NCwxMTA3Mjc5OTEzLC00
+MDA2MTMzNTYsMTA1MDQyMTYzOCwyMzA3NzQ5OTUsLTE4NTMzOD
+c0NzgsLTQwMjExNjY1LC0yMDYzNjMwNjEzXX0=
 -->
