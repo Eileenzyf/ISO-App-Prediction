@@ -50,7 +50,7 @@
 		 1. Set up the environment (1 point)
 		 2. Move algorithm from local to AWS (4 points)
 		 3. Run and save the trained model (2 points)
-		 4. Set up the data pipeline 
+		 4. [Icebox] Set up the data pipeline 
 	- **Epic 5:** Web App Development to build interactive features that allow users to enter their data to get predictions.
 		- Stories:
 		1. [Icebox] Writing the backend using Flask app. 
@@ -64,7 +64,9 @@
 		 1. Test run the app to evaluate the performance. (8 points)
  - Icebox
 	 1. Text analysis or sentiment analysis of app descriptions to see the correlation between certain words and popularity of the apps.
-	 2. 
+	 2. Set up the data pipeline 
+	 3. Writing the backend using Flask app. 
+	 4. Running the application
 
 ## Repo structure 
 
@@ -191,7 +193,7 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Njc3NzE5ODYsLTE1NDkzNjYyOTIsLT
+eyJoaXN0b3J5IjpbLTIwNzY2NjIzNDIsLTE1NDkzNjYyOTIsLT
 E5NDMxODg0NTUsLTE5MzY0ODQwODAsMTAxMDQ0MjM4Nyw2MDUz
 OTY2MjcsMTcxNjg4Mjk2MywxNDA5MzgyMDM2LDE1NjUxODE2NT
 UsLTEwMjYzMDM0NzMsMTU2ODkxMjY4NCwxMTA3Mjc5OTEzLC00
