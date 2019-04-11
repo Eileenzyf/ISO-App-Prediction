@@ -58,7 +58,7 @@
 		4. Predict and show the number of reviews and ratings for the specific file on the same page in 20 seconds. (2 points)
 		5. Aesthetic design, color palette, font, format details. (2 points)
 	 - Running the application
-		7. Test run the app to evaluate the performance. (4 points)
+		 Test run the app to evaluate the performance. (4 points)
 
 ## Repo structure 
 
@@ -185,8 +185,8 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM4NjA1ODYsMTQwOTM4MjAzNiwxNTY1MT
-gxNjU1LC0xMDI2MzAzNDczLDE1Njg5MTI2ODQsMTEwNzI3OTkx
-MywtNDAwNjEzMzU2LDEwNTA0MjE2MzgsMjMwNzc0OTk1LC0xOD
-UzMzg3NDc4LC00MDIxMTY2NSwtMjA2MzYzMDYxM119
+eyJoaXN0b3J5IjpbMTcxNjg4Mjk2MywxNDA5MzgyMDM2LDE1Nj
+UxODE2NTUsLTEwMjYzMDM0NzMsMTU2ODkxMjY4NCwxMTA3Mjc5
+OTEzLC00MDA2MTMzNTYsMTA1MDQyMTYzOCwyMzA3NzQ5OTUsLT
+E4NTMzODc0NzgsLTQwMjExNjY1LC0yMDYzNjMwNjEzXX0=
 -->
