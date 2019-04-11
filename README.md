@@ -53,10 +53,10 @@
 		-	**Story 2:** Web page design, basic layout (1 points)
 		-	**Story 3:** Create interactive page allow the user to enter the attributes of their apps, attributes should be corresponds to the parameters used in the models. (8 points)
 		-	**Story 4:** For certain attributes, enable users to click on instead of simple text entry for diverse user experience. (2 points)
-		-	**Story 5:**. Predict and show the number of reviews and ratings for the specific file on the same page in 20 seconds. (2 points)
-		-	**Story 6:**. Aesthetic design, color palette, font, format details. (4 points)
+		-	**Story 5:** Predict and show the number of reviews and ratings for the specific file on the same page in 20 seconds. (2 points)
+		-	**Story 6:** Aesthetic design, color palette, font, format details. (4 points)
 	 - [Icebox] **Epic 6:** Running the application
-		 -	**Story 1:**. Test run the app to evaluate the performance. (8 points)
+		 -	**Story 1:** Test run the app to evaluate the performance. (8 points)
  - **Icebox**
 	 1. Text analysis or sentiment analysis of app descriptions to see the correlation between certain words and popularity of the apps.
 	 2. Set up the data pipeline 
@@ -188,10 +188,10 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc4MTcwMjQsLTE1NDkzNjYyOTIsLTE5ND
-MxODg0NTUsLTE5MzY0ODQwODAsMTAxMDQ0MjM4Nyw2MDUzOTY2
-MjcsMTcxNjg4Mjk2MywxNDA5MzgyMDM2LDE1NjUxODE2NTUsLT
-EwMjYzMDM0NzMsMTU2ODkxMjY4NCwxMTA3Mjc5OTEzLC00MDA2
-MTMzNTYsMTA1MDQyMTYzOCwyMzA3NzQ5OTUsLTE4NTMzODc0Nz
-gsLTQwMjExNjY1LC0yMDYzNjMwNjEzXX0=
+eyJoaXN0b3J5IjpbODM1ODkwODY4LC0xNTQ5MzY2MjkyLC0xOT
+QzMTg4NDU1LC0xOTM2NDg0MDgwLDEwMTA0NDIzODcsNjA1Mzk2
+NjI3LDE3MTY4ODI5NjMsMTQwOTM4MjAzNiwxNTY1MTgxNjU1LC
+0xMDI2MzAzNDczLDE1Njg5MTI2ODQsMTEwNzI3OTkxMywtNDAw
+NjEzMzU2LDEwNTA0MjE2MzgsMjMwNzc0OTk1LC0xODUzMzg3ND
+c4LC00MDIxMTY2NSwtMjA2MzYzMDYxM119
 -->
