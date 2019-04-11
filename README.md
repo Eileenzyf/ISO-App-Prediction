@@ -33,12 +33,11 @@
  - **Develop Themes:** Help target users (software developers) to predict number of of reviews and ratings of their apps and therefore gauge potential popularity of their apps. Users can improve and make adjustment to their current version based on the results and potentially increase revenue.
  - **Epics**
 	-  **Epic 1:** Exploratory Data Analysis to explore the relationship between variables and determine which subset of variable to use. (user input related)
-		**Story 1 ** *Merge two data sets (1 point)*
-		2. *Data cleaning, check NA values and duplicates. (1 point)*
-		3. *Distribution of each variables, check multicollinearity and outliners (1 point)*
+		-	**Story 1:** *Merge two data sets (1 point)*
+		-	**Story 2:** *Data cleaning, check NA values and duplicates. (1 point)*
+		-	**Story 3:** *Distribution of each variables, check multicollinearity and outliners (1 point)*
 	- **Epic 2:** Feature Engineering
-		- Stories:
-		1. *Variable transformation (1 point)*
+		-	**Story :** *Variable transformation (1 point)*
 		2. *Split the data set to training and test set (1 point)*
 	- **Epic 3:** Model Building to predict the number of reviews and ratings using a set of attributes.
 		- Stories:
@@ -192,10 +191,10 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU1ODQ3MDMzLC0xNTQ5MzY2MjkyLC0xOT
-QzMTg4NDU1LC0xOTM2NDg0MDgwLDEwMTA0NDIzODcsNjA1Mzk2
-NjI3LDE3MTY4ODI5NjMsMTQwOTM4MjAzNiwxNTY1MTgxNjU1LC
-0xMDI2MzAzNDczLDE1Njg5MTI2ODQsMTEwNzI3OTkxMywtNDAw
-NjEzMzU2LDEwNTA0MjE2MzgsMjMwNzc0OTk1LC0xODUzMzg3ND
-c4LC00MDIxMTY2NSwtMjA2MzYzMDYxM119
+eyJoaXN0b3J5IjpbLTE1MTAwNzEyNDUsLTE1NDkzNjYyOTIsLT
+E5NDMxODg0NTUsLTE5MzY0ODQwODAsMTAxMDQ0MjM4Nyw2MDUz
+OTY2MjcsMTcxNjg4Mjk2MywxNDA5MzgyMDM2LDE1NjUxODE2NT
+UsLTEwMjYzMDM0NzMsMTU2ODkxMjY4NCwxMTA3Mjc5OTEzLC00
+MDA2MTMzNTYsMTA1MDQyMTYzOCwyMzA3NzQ5OTUsLTE4NTMzOD
+c0NzgsLTQwMjExNjY1LC0yMDYzNjMwNjEzXX0=
 -->
