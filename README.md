@@ -71,11 +71,11 @@
 	- Epic 5 story 5 (2 points)
 	- Epic 5 story 5 (4 points)
  - **Icebox**
-	 1. Text analysis or sentiment analysis of app descriptions to see the correlation between certain words and popularity of the apps.
-	 2. Set up the data pipeline 
-	 3. Move algorithm from local to AWS
-	 4. Writing the backend using Flask app. 
-	 5. Running the application
+	 1. Epic 3 story 3
+	 2. Epic 4 story 2
+	 3. Epic 4 story 4
+	 4. Epic 5 story 1 
+	 5. Epic 6
 
 ## Repo structure 
 
@@ -202,10 +202,11 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgxMjg2MDQ2LC0xNTQ5MzY2MjkyLC0xOT
-QzMTg4NDU1LC0xOTM2NDg0MDgwLDEwMTA0NDIzODcsNjA1Mzk2
-NjI3LDE3MTY4ODI5NjMsMTQwOTM4MjAzNiwxNTY1MTgxNjU1LC
-0xMDI2MzAzNDczLDE1Njg5MTI2ODQsMTEwNzI3OTkxMywtNDAw
-NjEzMzU2LDEwNTA0MjE2MzgsMjMwNzc0OTk1LC0xODUzMzg3ND
-c4LC00MDIxMTY2NSwtMjA2MzYzMDYxM119
+eyJoaXN0b3J5IjpbMjAxNjAwOTUyNSwzODEyODYwNDYsLTE1ND
+kzNjYyOTIsLTE5NDMxODg0NTUsLTE5MzY0ODQwODAsMTAxMDQ0
+MjM4Nyw2MDUzOTY2MjcsMTcxNjg4Mjk2MywxNDA5MzgyMDM2LD
+E1NjUxODE2NTUsLTEwMjYzMDM0NzMsMTU2ODkxMjY4NCwxMTA3
+Mjc5OTEzLC00MDA2MTMzNTYsMTA1MDQyMTYzOCwyMzA3NzQ5OT
+UsLTE4NTMzODc0NzgsLTQwMjExNjY1LC0yMDYzNjMwNjEzXX0=
+
 -->
