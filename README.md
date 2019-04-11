@@ -37,10 +37,11 @@
 	- **Epic 2:** Feature Engineering
 		-	**Story 1:** Variable transformation 
 	- **Epic 3:** Model Building to predict the number of reviews and ratings using a set of attributes.
-		- **Story 1:** Split the data set to training and test set 
+		-  **Story 1:** Split the data set to training and test set 
 		-	**Story 2:** Run a simple linear regression model to use its R square as the naive baseline. Check variable importance and residual plot to determine what advanced model to use. 
 		-	**Story 3:** Run Neural Network, Random Forest Model to predict the number of reviews and ratings. Making sure the model hit the performance metrics. 
-		-	**Story 4:** Text analysis or sentiment analysis of app descriptions to see the correlation between certain words and popularity of the apps.
+		-	**Story 4:** If models above don’t perform well as expected, try more such as gradient boosting, GAM, etc.
+		-	**Story 5:** Text analysis or sentiment analysis of app descriptions to see the correlation between certain words and popularity of the apps.
 	-  **Epic 4:** Build Pipeline
 		 -	**Story 1:** Set up the environment 
 		 -	**Story 2:** Move algorithm from local to AWS 
@@ -60,9 +61,9 @@
 	- Epic 1 story 2 (1 point) --planned in 2 weeks
 	- Epic 1 story 3 (1 point) --planned in 2 weeks
 	- Epic 2 story 1 (1 point) --planned in 2 weeks
-	- Epic 2 story 2 (1 point) --planned in 2 weeks
-	- Epic 3 story 1 (2 points) --planned in 2 weeks
-	- Epic 3 story 2 (4 points) --planned in 2 weeks
+	- Epic 3 story 1 (1 point) --planned in 2 weeks
+	- Epic 3 story 2 (2 points) --planned in 2 weeks
+	- Epic 3 story 3 (4 points) --planned in 2 weeks
 	- Epic 4 story 1 (1 point)
 	- Epic 4 story 3 (2 points)
 	- Epic 5 story 2 (1 point)
@@ -71,11 +72,12 @@
 	- Epic 5 story 5 (2 points)
 	- Epic 5 story 5 (4 points)
  - **Icebox**
-	 1. Epic 3 story 3
-	 2. Epic 4 story 2
-	 3. Epic 4 story 4
-	 4. Epic 5 story 1 
-	 5. Epic 6
+	 1. Epic 3 story 4
+	 2. Epic 3 story 5
+	 3. Epic 4 story 2
+	 4. Epic 4 story 4
+	 5. Epic 5 story 1 
+	 6. Epic 6
 
 ## Repo structure 
 
@@ -202,11 +204,11 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4NTUyNTg3MywyMDE2MDA5NTI1LDM4MT
-I4NjA0NiwtMTU0OTM2NjI5MiwtMTk0MzE4ODQ1NSwtMTkzNjQ4
-NDA4MCwxMDEwNDQyMzg3LDYwNTM5NjYyNywxNzE2ODgyOTYzLD
-E0MDkzODIwMzYsMTU2NTE4MTY1NSwtMTAyNjMwMzQ3MywxNTY4
-OTEyNjg0LDExMDcyNzk5MTMsLTQwMDYxMzM1NiwxMDUwNDIxNj
-M4LDIzMDc3NDk5NSwtMTg1MzM4NzQ3OCwtNDAyMTE2NjUsLTIw
-NjM2MzA2MTNdfQ==
+eyJoaXN0b3J5IjpbNTMwODYwNTQzLDIwMTYwMDk1MjUsMzgxMj
+g2MDQ2LC0xNTQ5MzY2MjkyLC0xOTQzMTg4NDU1LC0xOTM2NDg0
+MDgwLDEwMTA0NDIzODcsNjA1Mzk2NjI3LDE3MTY4ODI5NjMsMT
+QwOTM4MjAzNiwxNTY1MTgxNjU1LC0xMDI2MzAzNDczLDE1Njg5
+MTI2ODQsMTEwNzI3OTkxMywtNDAwNjEzMzU2LDEwNTA0MjE2Mz
+gsMjMwNzc0OTk1LC0xODUzMzg3NDc4LC00MDIxMTY2NSwtMjA2
+MzYzMDYxM119
 -->
