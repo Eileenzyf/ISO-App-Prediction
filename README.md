@@ -21,7 +21,7 @@
 ### Project Charter
 
  - **Vision**: The ever-changing mobile landscape is a challenging space to navigate. While the number of mobile apps has been increasing over the past few years, the competition has became more and more intense. Therefore, it is crucial for software developers to improve their competitive advantage and understand the existing strategy to drive growth. This project will allow the users to predict the their apps' potential ratings and popularity based on its current features and therefore help developers to improve their apps.
- - **Mission**: Enable users to input the features of their IOS apps and predict number of reviews and rating that specific app will receive and thus its popularity based on its features.
+ - **Mission**: The "IOS App Store" project will use Enable users to input the features of their IOS apps and predict number of reviews and rating that specific app will receive, which indicates its popularity.
  - **Success criteria**: 
    - Model performance: R square. The final model is expected to have a R squared 20% higher than the initial simple linear regression model.
    - Business sense: Ask the user to rate the app (thumbs up or thumbs down) and calculate the ratio. Potentially increase users' revenue. 
@@ -202,11 +202,11 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxNjAwOTUyNSwzODEyODYwNDYsLTE1ND
-kzNjYyOTIsLTE5NDMxODg0NTUsLTE5MzY0ODQwODAsMTAxMDQ0
-MjM4Nyw2MDUzOTY2MjcsMTcxNjg4Mjk2MywxNDA5MzgyMDM2LD
-E1NjUxODE2NTUsLTEwMjYzMDM0NzMsMTU2ODkxMjY4NCwxMTA3
-Mjc5OTEzLC00MDA2MTMzNTYsMTA1MDQyMTYzOCwyMzA3NzQ5OT
-UsLTE4NTMzODc0NzgsLTQwMjExNjY1LC0yMDYzNjMwNjEzXX0=
-
+eyJoaXN0b3J5IjpbLTcwMjE1MzE4OCwyMDE2MDA5NTI1LDM4MT
+I4NjA0NiwtMTU0OTM2NjI5MiwtMTk0MzE4ODQ1NSwtMTkzNjQ4
+NDA4MCwxMDEwNDQyMzg3LDYwNTM5NjYyNywxNzE2ODgyOTYzLD
+E0MDkzODIwMzYsMTU2NTE4MTY1NSwtMTAyNjMwMzQ3MywxNTY4
+OTEyNjg0LDExMDcyNzk5MTMsLTQwMDYxMzM1NiwxMDUwNDIxNj
+M4LDIzMDc3NDk5NSwtMTg1MzM4NzQ3OCwtNDAyMTE2NjUsLTIw
+NjM2MzA2MTNdfQ==
 -->
