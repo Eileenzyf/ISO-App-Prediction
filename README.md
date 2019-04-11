@@ -46,11 +46,11 @@
 		1. *Run a simple linear regression model to use its R square as the naive baseline. Check variable importance and residual plot to determine what advanced model to use. (2 point)*
 		2. *Run Neural Network, Random Forest Model to predict the number of reviews and ratings. Making sure the model hit the performance metrics. (4 points)*
 		3. [Icebox] Text analysis or sentiment analysis of app descriptions to see the correlation between certain words and popularity of the apps.
-	- [Icebox] **Epic 4:** Build Pipeline
+	-  **Epic 4:** Build Pipeline
 		 1. Set up the environment (1 point)
 		 2. Move algorithm from local to AWS (4 points)
 		 3. Run and save the trained model (2 points)
-		 4. Set up the data pipeline (4 points)
+		 4. Set up the data pipeline 
 	- **Epic 5:** Web App Development to build interactive features that allow users to enter their data to get predictions.
 		- Stories:
 		1. [Icebox] Writing the backend using Flask app. 
@@ -188,10 +188,10 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDkzNjYyOTIsLTE5NDMxODg0NTUsLT
-E5MzY0ODQwODAsMTAxMDQ0MjM4Nyw2MDUzOTY2MjcsMTcxNjg4
-Mjk2MywxNDA5MzgyMDM2LDE1NjUxODE2NTUsLTEwMjYzMDM0Nz
-MsMTU2ODkxMjY4NCwxMTA3Mjc5OTEzLC00MDA2MTMzNTYsMTA1
-MDQyMTYzOCwyMzA3NzQ5OTUsLTE4NTMzODc0NzgsLTQwMjExNj
-Y1LC0yMDYzNjMwNjEzXX0=
+eyJoaXN0b3J5IjpbNTQxNTYwODY0LC0xNTQ5MzY2MjkyLC0xOT
+QzMTg4NDU1LC0xOTM2NDg0MDgwLDEwMTA0NDIzODcsNjA1Mzk2
+NjI3LDE3MTY4ODI5NjMsMTQwOTM4MjAzNiwxNTY1MTgxNjU1LC
+0xMDI2MzAzNDczLDE1Njg5MTI2ODQsMTEwNzI3OTkxMywtNDAw
+NjEzMzU2LDEwNTA0MjE2MzgsMjMwNzc0OTk1LC0xODUzMzg3ND
+c4LC00MDIxMTY2NSwtMjA2MzYzMDYxM119
 -->
