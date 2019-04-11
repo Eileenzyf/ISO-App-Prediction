@@ -58,6 +58,8 @@
 		4. Predict and show the number of reviews and ratings for the specific file on the same page in 20 seconds. (2 points)
 		5. Aesthetic design, color palette, font, format details. (2 points)
 	 - Running the application
+	 1. Set up the environment
+	 2. Config Flask App
 		 Test run the app to evaluate the performance. (4 points)
 
 ## Repo structure 
@@ -185,9 +187,9 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA1Mzk2NjI3LDE3MTY4ODI5NjMsMTQwOT
-M4MjAzNiwxNTY1MTgxNjU1LC0xMDI2MzAzNDczLDE1Njg5MTI2
-ODQsMTEwNzI3OTkxMywtNDAwNjEzMzU2LDEwNTA0MjE2MzgsMj
-MwNzc0OTk1LC0xODUzMzg3NDc4LC00MDIxMTY2NSwtMjA2MzYz
-MDYxM119
+eyJoaXN0b3J5IjpbNTU5NzQ3NjE3LDYwNTM5NjYyNywxNzE2OD
+gyOTYzLDE0MDkzODIwMzYsMTU2NTE4MTY1NSwtMTAyNjMwMzQ3
+MywxNTY4OTEyNjg0LDExMDcyNzk5MTMsLTQwMDYxMzM1NiwxMD
+UwNDIxNjM4LDIzMDc3NDk5NSwtMTg1MzM4NzQ3OCwtNDAyMTE2
+NjUsLTIwNjM2MzA2MTNdfQ==
 -->
