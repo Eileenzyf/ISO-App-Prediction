@@ -32,26 +32,26 @@
 
  - **Develop Themes:** Help target users (software developers) to predict number of of reviews and ratings of their apps and therefore gauge potential popularity of their apps. Users can improve and make adjustment to their current version based on the results and potentially increase revenue.
  - **Epics**
-	-  Exploratory Data Analysis to explore the relationship between variables and determine which subset of variable to use. (user input related)
+	-  **Epic 1:** Exploratory Data Analysis to explore the relationship between variables and determine which subset of variable to use. (user input related)
 		- Stories:
 		1. *Merge two data sets (1 point)*
 		2. *Data cleaning, check NA values and duplicates. (1 point)*
 		3. *Distribution of each variables, check multicollinearity and outliners (1 point)*
-	- Feature Engineering
+	- **Epic 2:** Feature Engineering
 		- Stories:
 		1. *Variable transformation (1 point)*
 		2. *Split the data set to training and test set (1 point)*
-	- Model Building to predict the number of reviews and ratings using a set of attributes.
+	- **Epic 3:** Model Building to predict the number of reviews and ratings using a set of attributes.
 		- Stories:
 		1. *Run a simple linear regression model to use its R square as the naive baseline. Check variable importance and residual plot to determine what advanced model to use. (2 point)*
 		2. *Run Neural Network, Random Forest Model to predict the number of reviews and ratings. Making sure the model hit the performance metrics. (4 points)*
 		3. [Icebox] Text analysis or sentiment analysis of app descriptions to see the correlation between certain words and popularity of the apps.
-	- [Icebox] Build Pipeline
+	- [Icebox] **Epic 4:** Build Pipeline
 		 1. Set up the environment (1 point)
 		 2. Move algorithm from local to AWS (4 points)
 		 3. Run and save the trained model (2 points)
 		 4. Set up the data pipeline (4 points)
-	- [Icebox] Web App Development to build interactive features that allow users to enter their data to get predictions.
+	- [Icebox] **Epic 5:** Web App Development to build interactive features that allow users to enter their data to get predictions.
 		- Stories:
 		1. Web page design, basic layout (1 points)
 		2. Create interactive page allow the user to enter the attributes of their apps, attributes should be corresponds to the parameters used in the models. (8 points)
@@ -186,9 +186,10 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzY0ODQwODAsMTAxMDQ0MjM4Nyw2MD
-UzOTY2MjcsMTcxNjg4Mjk2MywxNDA5MzgyMDM2LDE1NjUxODE2
-NTUsLTEwMjYzMDM0NzMsMTU2ODkxMjY4NCwxMTA3Mjc5OTEzLC
-00MDA2MTMzNTYsMTA1MDQyMTYzOCwyMzA3NzQ5OTUsLTE4NTMz
-ODc0NzgsLTQwMjExNjY1LC0yMDYzNjMwNjEzXX0=
+eyJoaXN0b3J5IjpbLTI4NDEyMTA3NiwtMTkzNjQ4NDA4MCwxMD
+EwNDQyMzg3LDYwNTM5NjYyNywxNzE2ODgyOTYzLDE0MDkzODIw
+MzYsMTU2NTE4MTY1NSwtMTAyNjMwMzQ3MywxNTY4OTEyNjg0LD
+ExMDcyNzk5MTMsLTQwMDYxMzM1NiwxMDUwNDIxNjM4LDIzMDc3
+NDk5NSwtMTg1MzM4NzQ3OCwtNDAyMTE2NjUsLTIwNjM2MzA2MT
+NdfQ==
 -->
