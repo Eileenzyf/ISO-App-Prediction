@@ -97,7 +97,7 @@ def create_db(engine=None, engine_string=None):
 	if engine is None:
 		#RDS = eval(args.RDS) # evaluate string to bool
 		#logger.info("RDS:%s"%RDS)
-		engine = sql.create_engine(get_engine_string(RDS = RDS))
+		engine = sql.create_engine(get_engine_string(RDS = True))
 
 	Base.metadata.create_all(engine)
 	logging.info("database created")
