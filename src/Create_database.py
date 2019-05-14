@@ -101,7 +101,7 @@ if __name__ == "__main__":
 	session = Session()
 
 	use1 = user_input(size_bytes='28899', price=3.99, rating_count=345, cont_rating='4+', 
-		prime_genre='Games', sup_devices_num=4, ipadSc_urls_num=6, lang_num=6, app_desc='Games are fun')
+		prime_genre='Games', sup_devices_num=4, ipadSc_urls_num=6, lang_num=6, app_desc='Games are fun', prediction = 4.5)
 	session.add(use1)
 	session.commit()
 
