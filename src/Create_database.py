@@ -11,7 +11,7 @@ from sqlalchemy.ext.declarative import declarative_base
 import argparse
 import ConnectRDS
 
-logging.basicConfig(level=logging.info, filename="logfile")
+logging.basicConfig(level=logging.INFO, filename="logfile")
 logger = logging.getLogger('Create_database')
 
 
