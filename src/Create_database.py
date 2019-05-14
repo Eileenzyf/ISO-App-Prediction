@@ -10,8 +10,7 @@ from sqlalchemy.ext.declarative import declarative_base
 import argparse
 import ConnectRDS
 
-logging.basicConfig(level=logging.info, filename="logfile", filemode="a+",
-                        format="%(asctime)-15s %(levelname)-8s %(message)s")
+logging.basicConfig(level=logging.info, filename="logfile")
 logger = logging.getLogger('Create_database')
 
 
