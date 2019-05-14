@@ -121,7 +121,7 @@ if __name__ == "__main__":
 	#args = parser.parse_args()
 
 
-	create_db()
+	engine = create_db()
 
 	query = "SELECT * FROM user_input"
 	df = pd.read_sql(query, con=engine)
