@@ -97,7 +97,7 @@ if __name__ == "__main__":
 	create_db(engine=ConnectRDS.engine)
 
 	# create a db session
-	Session = sessionmaker(bind=engine)  
+	Session = sessionmaker(bind=ConnectRDS.engine)  
 	session = Session()
 
 	use1 = user_input(size_bytes='28899', price=3.99, rating_count=345, cont_rating='4+', 
@@ -108,7 +108,7 @@ if __name__ == "__main__":
 	logger.info("Data added")
 
 	query = "SELECT * FROM user_input"
-	df = pd.read_sql(query, con=engine)
+	df = pd.read_sql(query, con=ConnectRDS.engine)
 	session.close()
 
 
