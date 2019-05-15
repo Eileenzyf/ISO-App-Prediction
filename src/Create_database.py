@@ -144,7 +144,7 @@ if __name__ == "__main__":
 	engine = create_db()
 
 
-	Session = get_session(bind=engine)  
+	Session = sessionmaker(bind=engine)  
 	session = Session()
 
 	read_appstore(session, 'nw-eileenzhang-test','AppleStore.csv')
