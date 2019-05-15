@@ -25,7 +25,7 @@ class appstore(Base):
 	__tablename__ = 'appstore'
 
 	app_id = Column(String(100), primary_key=True, unique=True, nullable=False)
-	track_name = Column(String(100), unique=False, nullable=False)
+	track_name = Column(Text, unique=False, nullable=False)
 	size_bytes = Column(String(100), unique=False, nullable=False)
 	currency = Column(String(100), unique=False, nullable=False)
 	price = Column(Float, unique=False, nullable=False)
@@ -50,7 +50,7 @@ class appStore_description(Base):
 	__tablename__ = 'appStore_description'
 
 	app_id = Column(String(100), primary_key=True, unique=True, nullable=False)
-	track_name = Column(String(100), unique=False, nullable=False)
+	track_name = Column(Text, unique=False, nullable=False)
 	size_bytes = Column(String(100), unique=False, nullable=False)
 	app_desc = Column(Text, unique=False, nullable=False)
 
