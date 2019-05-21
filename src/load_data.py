@@ -4,7 +4,7 @@ import argparse
 s3 = boto3.client('s3')
 
 def load_data(args):
-	"""read the data from the data source
+	"""read the data from the data sources
 	Args:
 		args (str): strings entered from the commend. 
 
