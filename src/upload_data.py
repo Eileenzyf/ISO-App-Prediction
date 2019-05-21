@@ -5,7 +5,7 @@ s3 = boto3.client('s3')
 
 
 def upload_data(args):
-	"""upload the data to the target s3 bucket
+	"""upload the dataset to the target s3 bucket
 	Args:
 		args (str): strings entered from the commend. 
 
