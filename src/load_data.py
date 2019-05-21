@@ -9,7 +9,7 @@ def load_data(args):
 		args (str): strings entered from the commend. 
 
 	Returns:
-		df (:py:class:`pandas.DataFrame`): Dowloaded csv file. 
+		df (:py:class:`pandas.DataFrame`): Download csv file. 
 	"""
 	s3.download_file(args.bucket, args.filename, args.savename)
 
