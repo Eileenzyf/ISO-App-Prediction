@@ -105,7 +105,7 @@ def read_appstore(session, bucketname, filename):
 	Returns:
 		df (:py:class:`pandas.DataFrame`): Appstore dataframe
 	"""
-
+	#connect to S3
 	client = boto3.client('s3')
 	obj = client.get_object(Bucket = bucketname, Key = filename)
 	data = pd.read_csv(obj['Body'])
