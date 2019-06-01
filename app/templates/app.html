@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<title>IOS App Rating</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- <body background="homepage.jpg">
+</body> -->
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://c.pxhere.com/photos/da/90/mobile_phone_cell_phone_holding_hold_iphone-1245623.jpg!d');
+  min-height: 100%;
+}
+
+
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+.submission{text-align: center;}
+</style>
+<body class="w3-light-grey">
+<!--   <p>
+         <a href = "{{ url_for('index') }}"></a>
+  </p> -->
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <a href = "{{ url_for('index') }}"></a>
+  <div class="w3-bar w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide w3-text-white">EZ</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small w3-text-white">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Header with full-height image -->
+  <header class="bgimg" id="home">
+    <div class="w3-display-left w3-text-white" style="padding:48px">
+      <span class="w3-jumbo w3-hide-small">Make Your App Popular Today</span><br>
+      <span class="w3-xxlarge w3-hide-large w3-hide-medium">Make Your App Popular Today</span><br>
+      <span class="w3-large">Predicting the success of your app with only one click.</span>
+      <p><a href="#rating" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Start Rating Now</a></p>
+    </div> 
+    <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+  </header>
+
+  <!-- Rating Section -->
+  <div class="innerpage" style="padding:80px 16px" id="rating">
+    <!-- <div class="w3-panel w3-padding-16 w3-black w3-opacity w3-card w3-hover-opacity-off"> -->
+    <div class="w3-center w3-padding-30">
+      <span class="w3-xxxlarge w3-bottombar w3-border-dark-grey w3-padding-16">Rate Your App</span>
+    </div>
+        <p class="w3-center w3-large">Please fill out the following fields</p>
+         <div class="row", style="margin:0 -16px;">
+          <form style="margin:auto;width:60%" action="{{ url_for('add_entry') }}" target="_blank" method=post class=add-entry>
+            <div class="w3-col w3-half">
+              <p><input class="w3-input w3-border" type="number" placeholder="Size (bytes)" required name="size_bytes"></p>
+              <p><input class="w3-input w3-border" type="text" placeholder="Price" required name="price"></p>
+              <p><input class="w3-input w3-border" type="number" placeholder="# of Supported Devices" required name="sup_devices_num"></p>
+              <p><input class="w3-input w3-border" type="number" placeholder="# of screenshots showed for Display" required name="ipadSc_urls_num"></p>
+              <p><input class="w3-input w3-border" type="number" placeholder="# of Supported Languages" required name="lang_num"></p>
+          </div>
+            <div class="w3-col w3-half">
+              <p><input class="w3-input w3-border" type="number" placeholder="Total Rating Counts Recieved" required name="rating_count_tot"></p>
+              <p><input class="w3-input w3-border" type="number" placeholder="Rating Counts for the lastest version" required name="rating_count_ver"></p>
+              <p><input class="w3-input w3-border" type="text" placeholder="Content Rating" required name="cont_rating"></p>
+              <p><input class="w3-input w3-border" type="text" placeholder="Primary Genre" required name="prime_genre"></p>
+              <p><input class="w3-input w3-border" type="text" placeholder="App Description" required name="app_desc"></p>
+            </div>
+          <div class="submission">
+              <p><button class="w3-center w3-button w3-black w3-padding-large" type="submit">Get Prediction</button></p>
+          </div>
+        </form>
+     <!--  </div> -->
+  </div>
+
+  <!-- "/action_page.php" -->
+  <!-- Contact -->
+  <!-- <div class="w3-container">
+    <h2>Rate Your App</h2>
+    <p>Let us book your next trip!</p>
+    <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+    <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+    <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p><button class="w3-button w3-black w3-padding-large" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div> -->
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,59 @@
+model:
+  name: IOS Appstore App rating predictor
+  author: Eileen Zhang
+  version: A1
+  description: A model that predicts user rating for app store applications. 
+    - regressor
+  dependencies: requirement.txt
+
+load_data:
+  how: load_from_s3
+  load_from_s3:
+    s3_bucket: nw-eileenzhang-test
+    filename: [AppleStore.csv,appleStore_description.csv]
+    columns_1: ['id', 'size_bytes', 'price', 'rating_count_tot', 'rating_count_ver','user_rating',
+                'user_rating_ver', 'cont_rating','prime_genre','sup_devices.num', 'ipadSc_urls.num', 'lang.num']
+    columns_2: ['id','app_desc']
+  save_data: app.csv
+
+generate_features:
+  choose_features:
+    features_to_use: [size_bytes, price, rating_count_tot, rating_count_ver,
+                      cont_rating,prime_genre,sup_devices_num, ipadSc_urls_num, lang_num, app_desc]
+    target: user_rating
+  save_features: app_processed.csv
+
+train_model:
+  method: random_forest
+  get_target:
+    target: user_rating
+  split_data:
+    train_size: 0.8
+    test_size: 0.2
+    random_state: 42
+    save_split_prefix: app
+  params:
+     min_samples_leaf: 6
+     min_samples_split: 5
+     n_estimators: 500
+     random_state: 42
+  choose_features:
+    features_to_use: [size_bytes, price, sup_devices_num, ipadSc_urls_num, lang_num,
+                      rating_count_before, isNotFree, 12+, 17+, 4+,
+                      Education, Entertainment, Games, isGame, descLen]
+  save_tmo: models/app-prediction.pkl
+
+score_model:
+  path_to_tmo: models/app-prediction.pkl
+  choose_features:
+    features_to_use: [size_bytes, price, sup_devices_num, ipadSc_urls_num, lang_num,
+                      rating_count_before, isNotFree, 12+, 17+, 4+,
+                      Education, Entertainment, Games, isGame, descLen]
+  save_scores: models/app_test_scores.csv
+
+evaluate_model:
+  path_to_tmo: models/app-prediction.pkl
+  metrics: [r2, accuracy]
+
+
+

@@ -1,0 +1,10 @@
+DEBUG = True
+LOGGING_CONFIG = "config/logging/local.conf"
+PORT = 3000
+APP_NAME = "IOS App Prediction"
+SQLALCHEMY_DATABASE_URI = 'sqlite:///../data/user_input.db'
+PATH_TO_MODEL = 'models/app-prediction.pkl'
+SQLALCHEMY_TRACK_MODIFICATIONS = True
+HOST = "0.0.0.0"
+SQLALCHEMY_ECHO = False  # If true, SQL for queries made will be printed
+MAX_ROWS_SHOW = 100
