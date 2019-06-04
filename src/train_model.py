@@ -12,8 +12,8 @@ from sklearn import metrics
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
 
-from load_data import load_data
-from generate_features import get_target, choose_features
+from src.load_data import load_data
+from src.generate_features import get_target, choose_features
 
 logging.basicConfig(level=logging.INFO, filename="logfile")
 logger = logging.getLogger(__name__)

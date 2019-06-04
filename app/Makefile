@@ -37,6 +37,15 @@ venv: avcproject/bin/activate
 app: app.py
 	python app.py
 
+test:
+	py.test
+
+clean-tests:
+	rm -rf .pytest_cache
+	rm -r test/model
+# 	mkdir test/model/test
+# 	touch test/model/test/.gitkeep
+	
 clean-env:
 	rm -r avcproject
 
