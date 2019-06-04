@@ -7,7 +7,7 @@ import re
 import pandas as pd
 import numpy as np
 
-from src.load_data import load_data
+from load_data import load_data
 
 logging.basicConfig(level=logging.INFO, filename="logfile")
 logger = logging.getLogger(__name__)

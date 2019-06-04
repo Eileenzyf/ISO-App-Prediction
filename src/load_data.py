@@ -5,14 +5,16 @@ import numpy as np
 import logging
 import glob
 import yaml
+import requests
 
 logging.basicConfig(level=logging.INFO, filename="logfile")
 logger = logging.getLogger(__name__)
 
 def load_from_s3(s3_bucket, filename, columns_1, columns_2):
-	s3 = boto3.client('s3')
 	for file in filename:
-		s3.download_file(s3_bucket,file,"data/"+file)
+                sourceurl = 'https://nw-eileenzhang-test.s3-us-west-2.amazonaws.com/'+file
+                r = requests.get(sourceurl)
+                open('../data/'+file, 'wb').write(r.content)
 
 	#import data
 	data1 = pd.read_csv('../data/AppleStore.csv', index_col = 0)
