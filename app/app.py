@@ -3,6 +3,8 @@ import pickle
 import sklearn
 import pandas as pd
 import os
+import sys
+sys.path.insert(0, '../src')
 from sklearn.ensemble import RandomForestRegressor
 from flask import render_template, request, redirect, url_for
 import logging.config
@@ -10,8 +12,10 @@ import logging.config
 # from app.models import Tracks
 import numpy as np
 from flask import Flask
-from src.Create_database import user_input
+from Create_database import user_input
 from flask_sqlalchemy import SQLAlchemy
+from os import path
+
 
 # Initialize the Flask application
 app = Flask(__name__)
@@ -22,9 +26,8 @@ app.config.from_pyfile('../config/flask_config.py')
 # Define LOGGING_CONFIG in flask_config.py - path to config file for setting
 # up the logger (e.g. config/logging/local.conf)
 logging.config.fileConfig(app.config["LOGGING_CONFIG"])
-logger = logging.getLogger("penny-lane")
+logger = logging.getLogger("IOS-app")
 logger.debug('Test log')
-
 # Initialize the database
 db = SQLAlchemy(app)
 

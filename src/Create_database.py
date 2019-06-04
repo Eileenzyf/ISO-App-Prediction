@@ -39,7 +39,7 @@ class user_input(Base):
 	prediction = Column(Float, unique=False, nullable=False)
 
 	def __repr__(self):
-		user_repr = "<user_input(Id='%s', size_bytes='%s', price='%s', rating_count='%s', cont_rating_tot='%s', cont_rating_tot='%s', prime_genre='%s', sup_devices_num='%s', ipadSc_urls_num='%s', lang_num='%s', app_desc='%s')>"
+		user_repr = "<user_input(Id='%s', size_bytes='%s', price='%s', rating_count='%s', cont_rating_tot='%s', cont_rating_ver='%s', prime_genre='%s', sup_devices_num='%s', ipadSc_urls_num='%s', lang_num='%s', app_desc='%s')>"
 		return user_repr % (self.Id, self.size_bytes, self.price, self.rating_count, self.cont_rating_tot, self.cont_rating_ver, self.prime_genre, self.sup_devices_num, self.ipadSc_urls_num, self.lang_num, self.app_desc)
 
 def get_engine_string(RDS = False):
@@ -79,7 +79,7 @@ def create_db(engine=None, engine_string=None):
 		# engine = sql.create_engine(engine_string)
 
 	if engine is None:
-		engine = sql.create_engine(get_engine_string(RDS = False))
+		engine = sql.create_engine(get_engine_string(RDS = True))
 
 	print(engine)
 	Base.metadata.create_all(engine)

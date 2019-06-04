@@ -12,12 +12,11 @@ logging.config.fileConfig(app.config["LOGGING_CONFIG"])
 logger = logging.getLogger("run-iso-app")
 logger.debug('Test log')
 
-from src.Create_database import create_db, user_input
+from src.Create_database import create_db, user_input, get_engine_string
 from src.load_data import run_loading
 from src.generate_features import run_features
 from src.train_model import run_training
 from src.score_model import run_scoring
-
 
 def run_app(args):
     app.run(debug=app.config["DEBUG"], port=app.config["PORT"], host=app.config["HOST"])
@@ -41,7 +40,7 @@ if __name__ == '__main__':
     sb_create.add_argument("--lang_num", default=1, help="Number of support languages")
     sb_create.add_argument("--app_desc", default = 'Games are fun', help="Application descriptions")
 
-    sb_create.add_argument("--engine_string", default='sqlite:///../data/user_input.db',
+    sb_create.add_argument("--engine_string", default=get_engine_string(RDS=True),
                            help="SQLAlchemy connection URI for database")
     sb_create.set_defaults(func=create_db)
 
