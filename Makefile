@@ -34,8 +34,8 @@ venv: avcproject/bin/activate
 	
 
 # Run the Flask application
-app: app.py
-	python app.py
+app: app/app.py
+	python app/app.py
 
 test:
 	py.test

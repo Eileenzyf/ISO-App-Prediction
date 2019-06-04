@@ -4,7 +4,7 @@ import sklearn
 import pandas as pd
 import os
 import sys
-sys.path.insert(0, '../src')
+sys.path.insert(0, 'src')
 from sklearn.ensemble import RandomForestRegressor
 from flask import render_template, request, redirect, url_for
 import logging.config
