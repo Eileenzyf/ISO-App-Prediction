@@ -34,27 +34,24 @@ db = SQLAlchemy(app)
 
 @app.route('/')
 def index():
-    """Main view that lists songs in the database.
-    Create view into index page that uses data queried from Track database and
-    inserts it into the msiapp/templates/index.html template.
+    """Main view that depplays the homepage and allow the user to start rating. 
     Returns: rendered html template
     """
-
+    #return the homepage
     try:
-        #user_input = db.session.query(user_input).limit(app.config["MAX_ROWS_SHOW"]).all()
-        #logger.debug("Index page accessed")
         return render_template('app.html')
     except:
-        logger.warning("Not able to display tracks, error page returned")
+        logger.warning("Not able to display homepage, error page returned")
         return render_template('error.html')
 
 
 @app.route('/add', methods=['POST','GET'])
 def add_entry():
-    """View that process a POST with new song input
-    :return: redirect to index page
+    """View that process a POST with new user_input
+    :return: direct to prediction page
     """
 
+    #downlaod the data from the web
     try:
         logger.info("start retrieving!")
         size_bytes=request.form['size_bytes']
@@ -82,15 +79,16 @@ def add_entry():
 
         df.loc[0] = [size_bytes, price, rating_count_tot, rating_count_ver, cont_rating, prime_genre, sup_devices_num, ipadSc_urls_num, lang_num, app_desc]
 
+        #change the datatype to predict later
         df.size_bytes = df.size_bytes.astype("float")
         df.price = df.price.astype("float")
         df.rating_count_tot = df.rating_count_tot.astype("float")
         df.rating_count_ver = df.rating_count_ver.astype("float")
-        #df.cont_rating = df.cont_rating.astype("float")
         df.sup_devices_num = df.sup_devices_num.astype("int")
         df.ipadSc_urls_num = df.ipadSc_urls_num.astype("int")
         df.lang_num = df.lang_num.astype("int")
 
+        #generate necessary features for the model
         df['rating_count_before'] = df['rating_count_tot'] - df['rating_count_ver']
         ##create 'isnotfree' variables
         df['isNotFree'] = df['price'].apply(lambda x: 1 if x > 0 else 0)
@@ -116,28 +114,16 @@ def add_entry():
         df.loc[:, 'descLen'] = df['app_desc'].apply(lambda x: len(x.lower()))
         df['descLen'] = np.log(df['descLen'])
 
-
-        # rating_count_before = df['rating_count_before']
-        # isNotFree = df['isNotFree']
-        # Education = df['Education']
-        # Entertainment = df['Entertainment']
-        # Games = df['Games']
-        # isGame = df['isGame']
-        # descLen = df['descLen']
-
-
-
-        # df.loc[0] = [size_bytes, price, sup_devices_num, ipadSc_urls_num, lang_num, rating_count_before, 
-        #             isNotFree, '12+', '17+', '4+', Education, Entertainment, Games, isGame, descLen]
-
+        #drop the uneecessary column to match the model features
         df = df.drop(["cont_rating","genre","prime_genre", "app_desc", "rating_count_tot", "rating_count_ver", "Other","12+"], axis = 1)
         df['4+'] = df['4+'].astype('float')
-        #print()
 
-                    
+
+        #predic the rating            
         rating = model.predict(df)
         logger.info('prediction made: %0.3f' % rating)
 
+        #add user input entry to user_input database
         user1 = user_input(size_bytes=float(size_bytes),price=float(price),rating_count_tot=int(rating_count_tot),
             rating_count_ver=int(rating_count_ver), cont_rating=str(cont_rating), prime_genre=str(prime_genre),
             sup_devices_num= int(sup_devices_num), ipadSc_urls_num=int(ipadSc_urls_num), lang_num=int(lang_num),
@@ -151,13 +137,13 @@ def add_entry():
 
         print(db)
 
-
+        #direct to the prediction page
         return render_template('prediction.html', result=result)
 
     except:
         traceback.print_exc()
-        logger.warning("Not able to display evaluations, error page returned")
-        return "something is wrong202"
-        
+        logger.warning("Not able to display prediction, error page returned")
+        return render_template('error.html')
+
 if __name__ == "__main__":
     app.run(debug=app.config["DEBUG"], port=app.config["PORT"], host=app.config["HOST"])
