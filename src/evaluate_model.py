@@ -37,7 +37,7 @@ def evaluate_model(label_df, X_split, y_predicted, path_to_tmo, **kwargs):
 		r2 = model.score(X_split,label_df)
 		print('r2 on test: %0.3f' % r2)
 	if "accuracy" in kwargs["metrics"]:
-		errors = abs(y_predicted-label_df)
+		errors = abs(y_predicted.iloc[:,0]-label_df.iloc[:,0])
 		mad = np.mean(errors)
 		accuracy = 1-mad/np.mean(label_df)
 		print('Accuracy on test: %0.3f' % accuracy)
