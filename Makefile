@@ -1,8 +1,8 @@
-.PHONY: venv clean clean-pyc clean-env model-evaluation test-score trained-model features dataset predictions test clean-tests app 
+.PHONY: venv model-evaluation test-score trained-model features dataset predictions test clean-tests app database clean-pyc clean-env
 
 
 data/user_input.db: src/Create_database.py
-	python Create_database.py 
+	python src/Create_database.py 
 database: data/user_input.db
 
 data/app.csv: src/load_data.py config/model_config.yml 
@@ -29,12 +29,13 @@ predictions:
 	python test/app_predict.py --config=config/model_config.yml --input=test/user_input_test.csv
 
 # Create a virtual environment named avcproject
-avcproject/bin/activate: requirements.txt
-	test -d avcproject || virtualenv avcproject
-	. avcproject/bin/activate; pip install -r requirements.txt
-	touch avcproject/bin/activate
+avcproject-env/bin/activate: requirements.txt
+	test -d avcproject-env || virtualenv avcproject-env
+	. avcproject-env/bin/activate; pip install -r requirements.txt
+	#avcproject/bin/pip install -r requirements.txt
+	touch avcproject-env/bin/activate
 
-venv: avcproject/bin/activate
+venv: avcproject-env/bin/activate
 	
 
 # Run the Flask application

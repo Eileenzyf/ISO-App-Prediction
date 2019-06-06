@@ -56,7 +56,7 @@ def get_engine_string(RDS = False):
 		logging.debug("engine string: %s"%engine_string)
 		return  engine_string
 	else:
-		return 'sqlite:///../data/user_input.db' # relative path
+		return 'sqlite:///data/user_input.db' # relative path
 
 
 def create_db(args, engine=None):
@@ -88,8 +88,8 @@ def create_db(args, engine=None):
 	session = Session()
 
 	#test unit for the user_input table
-	user1 = user_input(size_bytes='28899', price=3.99, rating_count_tot=355, rating_count_ver=10, cont_rating='4+', 
-		prime_genre='Games', sup_devices_num=4, ipadSc_urls_num=6, lang_num=6, app_desc='Games are fun', prediction = 4.5)
+	user1 = user_input(size_bytes='100788224', price=3.99, rating_count_tot=21292, rating_count_ver=26, cont_rating='4+', 
+						prime_genre='Games', sup_devices_num=38, ipadSc_urls_num=5, lang_num=10, app_desc='SAVE 20%, now only $3.99 for a limited time! One of the most popular video games in arcade history! 2015 World Video Game Hall of Fame Inductee', prediction = 4)
 	session.add(user1)
 
 	logger.info("Data added")
