@@ -73,10 +73,12 @@ class AppPredict:
 
 
 def run_apppredict(args):
+    #run the predcition 
     data_df = pd.read_csv(args.input)
 
     apppredict_instance = AppPredict(args.config, args.debug)
-
+    
+    #predicted result
     results = apppredict_instance.run(data_df)
 
     if args.output is not None:

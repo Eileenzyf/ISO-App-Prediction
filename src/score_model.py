@@ -31,25 +31,16 @@ def score_model(X_split, path_to_tmo, save_scores=None, **kwargs):
 		save_scores (str, optional): If given, will save the predicted socre to the given path.
 		**kwargs:
 	Returns:
-		X (:py:class:`pandas.DataFrame`): DataFrame containing extracted features (and target, it applicable)
+		y_predcited (:py:class:`pandas.DataFrame`): DataFrame containing the predicted value for the target 
 	"""
 
+	#load the model
 	with open(path_to_tmo, "rb") as f:
 		model = pickle.load(f)
-
-	# if "get_target" in kwargs:
- #        y = get_target(df_feature, **kwargs["get_target"])
- #        df_feature = df_feature.drop(labels=[kwargs["get_target"]["target"]], axis=1)
- #    else:
- #        y = None
-
-	# if "choose_features" in kwargs:
-	# 	X = choose_features(df_feature, **kwargs["choose_features"])
-	# else:
-	# 	X = df
-
-	# X, y = split_data(X, y, **kwargs["split_data"])
+	#drop the index column
 	X_split = X_split.drop(X_split.columns[0], axis=1)
+
+	#predict the y value
 	y_predicted = model.predict(X_split)
 
 	if save_scores is not None:
@@ -58,6 +49,14 @@ def score_model(X_split, path_to_tmo, save_scores=None, **kwargs):
 	return y_predicted
 
 def run_scoring(args):
+	"""Loads config and executes load data set
+    Args:
+        args: From argparse, should contain args.config, args.input and args.ouput
+            args.config (str): Path to yaml file with load_data as a top level key containing relevant configurations
+            args.input (str): input file path
+            args.output (str): output file path
+    Returns: None
+    """
 	with open(args.config, "r") as f:
 		config = yaml.load(f)
 

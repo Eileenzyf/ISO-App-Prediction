@@ -8,8 +8,11 @@ password = os.environ.get("MYSQL_PASSWORD")
 host = os.environ.get("MYSQL_HOST") 
 port = os.environ.get("MYSQL_PORT")  
 DATABASE_NAME = 'msia423'  
+#rds
 SQLALCHEMY_DATABASE_URI = "{}://{}:{}@{}:{}/{}".\
         format(conn_type, user, password, host, port, DATABASE_NAME)
+#local
+SQLALCHEMY_DATABASE_URI = 'sqlite:///../data/user_input.db'
 APP_NAME = "IOS App Prediction"
 PATH_TO_MODEL = 'models/app-prediction.pkl'
 SQLALCHEMY_TRACK_MODIFICATIONS = True

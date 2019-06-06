@@ -53,6 +53,7 @@ def split_data(X, y, train_size=1, test_size=0, random_state=123, save_split_pre
 		raise ValueError("train_size + test_size "
 			"must equal 1 or equal the number of rows in the dataset")
 
+	#split data into train and test set
 	if train_size == 1:
 
 		X_train, y_train = X, y
@@ -67,6 +68,7 @@ def split_data(X, y, train_size=1, test_size=0, random_state=123, save_split_pre
 		X["test"] = X_test
 		y["test"] = y_test
 
+	#save the train and test set 
 	if save_split_prefix is not None:
 		for split in X:
 			pd.DataFrame(X[split]).to_csv("%s-%s-features.csv" % (save_split_prefix, split))
@@ -85,7 +87,15 @@ def split_data(X, y, train_size=1, test_size=0, random_state=123, save_split_pre
 	return X,y
 
 def train_model(df_feature, method=None, save_tmo=None, add_evalset=True, **kwargs):
-	#assert method in method.keys() # `method` defined at top of file, possible method for training
+	"""
+	Args:
+		df_feature (:py:class:`pandas.DataFrame`): DataFrame that contains the traning set
+		method (str): Name of the model
+		save_mo (str, optional): If given, the dataset will save to the given path. 
+		test_size (`float`): Fraction of dataset to use for testing. Default 0 (no data). Must be between 0 and 1.
+	Returns:
+		model (pickle): The fitted mdeol
+	"""
 
 	# If "get_target" in the config file under "train_model", will get the target data for supervised learning
 	# Otherwise y = None and the model must be unsupervised.
@@ -94,7 +104,6 @@ def train_model(df_feature, method=None, save_tmo=None, add_evalset=True, **kwar
 		df_feature = df_feature.drop(labels=[kwargs["get_target"]["target"]], axis=1)
 	else:
 		y = None
-
 	
 
 	# If "choose_features" in the config file under "train_model", will reduce the feature set to those listed

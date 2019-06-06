@@ -23,6 +23,7 @@ def evaluate_model(label_df, X_split, y_predicted, path_to_tmo, **kwargs):
 	    label_df (:py:class:`pandas.DataFrame`): Dataframe containing true y label
 	    X_split (:py:class:`pandas.DataFrame`): Daataframe containing test varaibles
 	    y_predicted (:py:class:`pandas.DataFrame`): Dataframe containing predicted probability and score
+	    path_to_tmo (str) : Path to the pre-trained model
 	Returns: 
 	    metric_df (:py:class:`pandas.DataFrame`): Dataframe reporting r2 and accuracy
 	"""

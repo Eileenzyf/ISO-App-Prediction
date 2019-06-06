@@ -39,7 +39,7 @@ def choose_features(df, features_to_use=None, target=None,save_path=None, **kwar
 	else:
 		logger.debug("features_to_use is None, df being returned")
 		X = df
-
+	
 	if save_path is not None:
 		X.to_csv(save_path, **kwargs)
 

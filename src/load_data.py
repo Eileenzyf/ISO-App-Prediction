@@ -11,8 +11,17 @@ logging.basicConfig(level=logging.INFO, filename="logfile")
 logger = logging.getLogger(__name__)
 
 def load_from_s3(s3_bucket, filename, columns_1, columns_2):
+	"""Download dataset from S3 bucket and save to destinated pass. 
+	Args:
+		s3_bucket (str): name of the desinated S3 bucket
+		filename (:obj:`list`): List of filename needed to be downlaod
+		columns_1 (:obj:`list`): List of Column names to be included in the first dataset
+		columns_1 (:obj:`list`): List of Column names to be included in the second dataset
+	Returns:
+	df (:py:class:`pandas.DataFrame`): The finak DataFrame for this project. 
+	"""
 	for file in filename:
-                sourceurl = 'https://nw-eileenzhang-test.s3-us-west-2.amazonaws.com/'+file
+                sourceurl = 'https://'+ s3_bucket+'.s3-us-west-2.amazonaws.com/'+file
                 r = requests.get(sourceurl)
                 open('../data/'+file, 'wb').write(r.content)
 

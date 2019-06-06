@@ -30,8 +30,8 @@ class AppPredict:
         self.config = config
 
         # Load in configurations for generating features
-        self.choose_original = config["generate_features"]["choose_features"]["features_to_use"]
-        self.generate_features = config["generate_features"]["choose_features"]
+        self.choose_original = config["generate_features"]["choose_features"]
+        self.generate_features = config["generate_features"]
         self.choose_features = config["score_model"]["choose_features"]
 
         # Load trained model object
@@ -56,13 +56,14 @@ class AppPredict:
         """
 
         # Generate features
-        data = gf.choose_original(data, **self.choose_original)
+        data = gf.choose_features(data, **self.choose_original)
         data = gf.generate_features(data, **self.generate_features)
         self.logger.info("Features generated")
 
         # Choose which features to use
         features = gf.choose_features(data, **self.choose_features)
         self.logger.info("Features being used are: %s", ",".join(features.columns.tolist()))
+
 
         # Make predictions
         results = self.tmo.predict(features, **self.predict)
@@ -72,14 +73,16 @@ class AppPredict:
 
 
 def run_apppredict(args):
+    #run the predcition 
     data_df = pd.read_csv(args.input)
 
     apppredict_instance = AppPredict(args.config, args.debug)
-
+    
+    #predicted result
     results = apppredict_instance.run(data_df)
 
     if args.output is not None:
-        results.to_csv(args.output)
+        pd.DataFrame(results).to_csv(args.output)
 
 
 if __name__ == "__main__":

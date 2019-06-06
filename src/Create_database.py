@@ -12,12 +12,12 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, MetaData
 
 import argparse
-#import ConnectRDS
 
+#get logger
 logging.basicConfig(level=logging.INFO, filename="logfile")
 logger = logging.getLogger('Create_database')
 
-
+#define base
 Base = declarative_base()
 
 class user_input(Base):
@@ -59,7 +59,7 @@ def get_engine_string(RDS = False):
 		return 'sqlite:///../data/user_input.db' # relative path
 
 
-def create_db(engine=None, engine_string=None):
+def create_db(args, engine=None):
 	"""Creates a database with the data models inherited from `Base`.
 
     Args:
@@ -71,17 +71,15 @@ def create_db(engine=None, engine_string=None):
     Returns:
         None
     """
-    # if args.RDS:
-		# 	engine_string = get_engine_string()
-		# else:
-		# 	engine_string = args.local_URI
-		# logger.info("RDS:%s"%args.RDS)
-		# engine = sql.create_engine(engine_string)
-
-	if engine is None:
+    #if running on RDS
+	if args.RDS:
 		engine = sql.create_engine(get_engine_string(RDS = True))
+	#if running a local
+	else:
+		engine = sql.create_engine(get_engine_string(RDS = False))
+	logger.info("RDS:%s"%args.RDS)
 
-	print(engine)
+
 	Base.metadata.create_all(engine)
 	logging.info("database created")
 
@@ -101,8 +99,14 @@ def create_db(engine=None, engine_string=None):
 
 
 if __name__ == "__main__":
+	#user input
+	parser = argparse.ArgumentParser(description="Create Database")
+	parser.add_argument('--RDS', default = False, help='Whether connect to RDS')
+	
 
-	engine = create_db()
+	args = parser.parse_args()
+
+	engine = create_db(args)
 
 	query = "SELECT * FROM user_input"
 	df = pd.read_sql(query, con=engine)
