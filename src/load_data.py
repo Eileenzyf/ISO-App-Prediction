@@ -21,13 +21,14 @@ def load_from_s3(s3_bucket, filename, columns_1, columns_2):
 	df (:py:class:`pandas.DataFrame`): The finak DataFrame for this project. 
 	"""
 	for file in filename:
-                sourceurl = 'https://'+ s3_bucket+'.s3-us-west-2.amazonaws.com/'+file
-                r = requests.get(sourceurl)
-                open('../data/'+file, 'wb').write(r.content)
+		sourceurl = 'https://'+ s3_bucket+'.s3-us-west-2.amazonaws.com/'+file
+		r = requests.get(sourceurl)
+		with open('data/'+file, 'wb') as f:
+			f.write(r.content)
 
 	#import data
-	data1 = pd.read_csv('../data/AppleStore.csv', index_col = 0)
-	data2 = pd.read_csv('../data/appleStore_description.csv')
+	data1 = pd.read_csv('data/AppleStore.csv', index_col = 0)
+	data2 = pd.read_csv('data/appleStore_description.csv')
 
 	#select dolumns
 	data1 = data1[columns_1]

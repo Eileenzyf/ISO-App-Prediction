@@ -12,8 +12,8 @@ from sklearn import metrics
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
 
-from src.load_data import load_data
-from src.generate_features import get_target, choose_features
+from load_data import load_data
+from generate_features import get_target, choose_features
 
 logging.basicConfig(level=logging.INFO, filename="logfile")
 logger = logging.getLogger(__name__)
@@ -123,9 +123,9 @@ def train_model(df_feature, method=None, save_tmo=None, add_evalset=True, **kwar
 
 	 # Save the trained model object
 	if save_tmo is not None:
-		path = os.getcwd()
-		sub_dir = path+'/models/'
-		os.mkdir(sub_dir)
+#		path = os.getcwd()
+#		sub_dir = path+'/models/'
+#		os.mkdir(sub_dir)
 		with open(save_tmo, "wb") as f:
 			pickle.dump(model, f)
 		logger.info("Trained model object saved to %s", save_tmo)

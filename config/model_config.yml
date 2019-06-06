@@ -12,7 +12,7 @@ load_data:
     s3_bucket: nw-eileenzhang-test
     filename: [AppleStore.csv,appleStore_description.csv]
     columns_1: ['id', 'size_bytes', 'price', 'rating_count_tot', 'rating_count_ver','user_rating',
-                'user_rating_ver', 'cont_rating','prime_genre','sup_devices.num', 'ipadSc_urls.num', 'lang.num']
+                'user_rating_ver', 'cont_rating','prime_genre','sup_devices_num', 'ipadSc_urls_num', 'lang_num']
     columns_2: ['id','app_desc']
   save_data: app.csv
 
@@ -31,7 +31,7 @@ train_model:
     train_size: 0.8
     test_size: 0.2
     random_state: 42
-    save_split_prefix: app
+    save_split_prefix: data/app
   params:
      min_samples_leaf: 6
      min_samples_split: 5

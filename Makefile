@@ -1,28 +1,32 @@
-.PHONY: venv clean clean-pyc clean-env model-evaluation test-score trained-model features dataset predictions app
+.PHONY: venv clean clean-pyc clean-env model-evaluation test-score trained-model features dataset predictions test clean-tests app 
 
 
-data/app.csv: load_data.py ../config/model_config.yml 
-	python load_data.py --config=../config/model_config.yml --output=../data/app.csv
-dataset:data/app.csv
+data/user_input.db: src/Create_database.py
+	python Create_database.py 
+database: data/user_input.db
 
-data/app_processed.csv: data/app.csv generate_features.py model_config.yml
-	python  generate_features.py --config=model_config.yml --input=data/app.csv --output=data/app_processed.csv
+data/app.csv: src/load_data.py config/model_config.yml 
+	python src/load_data.py --config=config/model_config.yml --output=data/app.csv
+dataset: data/app.csv
+
+data/app_processed.csv: data/app.csv src/generate_features.py config/model_config.yml
+	python  src/generate_features.py --config=config/model_config.yml --input=data/app.csv --output=data/app_processed.csv
 features: data/app_processed.csv
 
-models/app-prediction.pkl: data/app_processed.csv train_model.py model_config.yml
-	python  train_model.py --config=model_config.yml --input=data/app_processed.csv --output=models/app-prediction.pkl
+models/app-prediction.pkl: data/app_processed.csv src/train_model.py config/model_config.yml
+	python  src/train_model.py --config=config/model_config.yml --input=data/app_processed.csv --output=models/app-prediction.pkl
 trained-model: models/app-prediction.pkl
 
-models/app_test_scores.csv: models/app-prediction.pkl data/app-test-features.csv score_model.py model_config.yml
-	python  score_model.py --config=model_config.yml --input=data/app-test-features.csv --output=models/app_test_scores.csv
+models/app_test_scores.csv: models/app-prediction.pkl data/app-test-features.csv src/score_model.py config/model_config.yml
+	python  src/score_model.py --config=config/model_config.yml --input=data/app-test-features.csv --output=models/app_test_scores.csv
 test-score: models/app_test_scores.csv
 
-models/evaluation.csv: data/app-test-targets.csv evaluate_model.py model_config.yml
-	python  evaluate_model.py --config=model_config.yml --input=data/app-test-targets.csv --output=models/evaluation.csv
+models/evaluation.csv: data/app-test-targets.csv src/evaluate_model.py config/model_config.yml
+	python  src/evaluate_model.py --config=config/model_config.yml --input=data/app-test-targets.csv --output=models/evaluation.csv
 model-evaluation: models/evaluation.csv
 
 predictions:
-	python app_predict.py --config=config/model_config.yml --input=test/user_input_test.csv
+	python test/app_predict.py --config=config/model_config.yml --input=test/user_input_test.csv
 
 # Create a virtual environment named avcproject
 avcproject/bin/activate: requirements.txt
@@ -41,8 +45,7 @@ test:
 	py.test
 
 clean-tests:
-	rm -rf .pytest_cache
-	rm -r test/model
+	rm -rf test/.pytest_cache
 # 	mkdir test/model/test
 # 	touch test/model/test/.gitkeep
 	
@@ -54,4 +57,4 @@ clean-pyc:
 	rm -rf .pytest_cache
 
 
-all: venv dataset features trained-model test-score model-evaluation predictions app  clean-tests clean-env clean-pyc
+all: venv database dataset features trained-model test-score model-evaluation predictions test clean-tests app clean-env clean-pyc

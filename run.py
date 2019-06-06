@@ -12,11 +12,11 @@ logging.config.fileConfig(app.config["LOGGING_CONFIG"])
 logger = logging.getLogger("run-iso-app")
 logger.debug('Test log')
 
-from src.Create_database import create_db, user_input, get_engine_string
-from src.load_data import run_loading
-from src.generate_features import run_features
-from src.train_model import run_training
-from src.score_model import run_scoring
+from Create_database import create_db, user_input, get_engine_string
+from load_data import run_loading
+from generate_features import run_features
+from train_model import run_training
+from score_model import run_scoring
 
 def run_app(args):
     app.run(debug=app.config["DEBUG"], port=app.config["PORT"], host=app.config["HOST"])

@@ -2,16 +2,18 @@ import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
 import pickle
+import sys
+sys.path.insert(0, 'src')
 
-from src.generate_features import choose_features
-from src.train_model import split_data
-from src.score_model import score_model
-from src.evaluate_model import evaluate_model
+from generate_features import choose_features
+from train_model import split_data
+from score_model import score_model
+from evaluate_model import evaluate_model
 from sklearn.ensemble import RandomForestRegressor
 
 def test_choose_features():
     # load sample test data
-    data = pd.read_csv("test_data.csv")
+    data = pd.read_csv("test/test_data.csv")
 
     features = ['size_bytes', 'price', 'rating_count_tot', 'rating_count_ver',
     			'cont_rating','prime_genre','sup_devices_num', 'ipadSc_urls_num', 'lang_num', 'app_desc']
@@ -25,7 +27,7 @@ def test_choose_features():
 
 def test_split_data():
     # load sample test data
-    data = pd.read_csv("test_data.csv")
+    data = pd.read_csv("test/test_data.csv")
     X_df = data.drop('user_rating',axis=1)
     y_df = data['user_rating']
     X_train, X_test, y_train, y_test = train_test_split(X_df, y_df, test_size=0.3, random_state=123)
@@ -62,7 +64,7 @@ def test_score_model():
     x_df = pd.DataFrame(x_input)
 
     #model predictions
-    target_score = score_model(x_df, '../models/app-prediction.pkl')
+    target_score = score_model(x_df, 'models/app-prediction.pkl')
     target_score = np.around(target_score, decimals=6)
 
     # raise AssertionError if dataframes do not match
@@ -99,7 +101,7 @@ def test_evaluate_model():
     y_predict = pd.DataFrame(score_output)
 
     #import model
-    with open('../models/app-prediction.pkl', "rb") as f:
+    with open('models/app-prediction.pkl', "rb") as f:
         model = pickle.load(f)
 
     r2 = model.score(x_df_1,label_df_1)
@@ -114,7 +116,7 @@ def test_evaluate_model():
     pre_defined_kwargs = {'metrics':["r2", "accuracy"]}
     
     # raise AssertionError if dataframes do not match
-    assert metric_df.equals(evaluate_model(label_df, x_df, y_predict, '../models/app-prediction.pkl', **pre_defined_kwargs))
+    assert metric_df.equals(evaluate_model(label_df, x_df, y_predict, 'models/app-prediction.pkl', **pre_defined_kwargs))
 
 
 

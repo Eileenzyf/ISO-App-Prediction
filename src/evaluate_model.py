@@ -8,9 +8,9 @@ import sklearn
 from sklearn import metrics
 import pandas as pd
 
-from src.load_data import load_data
-from src.generate_features import choose_features, get_target
-from src.train_model import split_data
+from load_data import load_data
+from generate_features import choose_features, get_target
+from train_model import split_data
 from sklearn.ensemble import RandomForestRegressor
 
 
