@@ -149,10 +149,11 @@ To run the entire application, there are two ways of doing it. The first one is 
 		- ```bash
 			make all
 			```
-	- Go to [http://127.0.0.1:3000/](http://127.0.0.1:3000/) to interact with the current version of hte app.
+	- Go to [http://127.0.0.1:3000/](http://127.0.0.1:3000/) to interact with the current version of the app.
 		
  - If running on RDS
-
+	
+### Run each step separately  
 ### 1. Set up environment 
 
 The `requirements.txt` file contains the packages required to run the model code. An environment can be set up in two ways. See bottom of README for exploratory data analysis environment setup. 
@@ -162,7 +163,7 @@ The `requirements.txt` file contains the packages required to run the model code
 ```bash
 pip install virtualenv
 
-virtualenv pennylane
+virtualenv avcproject-env
 
 source pennylane/bin/activate
 
@@ -219,6 +220,6 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mzc2NzgxOTgsLTg3NjI3NTU0MywtMT
+eyJoaXN0b3J5IjpbLTE0NjUyMDgyMzYsLTg3NjI3NTU0MywtMT
 g0NzMyNTQ4NiwyMDUzNTkyNjU1XX0=
 -->
