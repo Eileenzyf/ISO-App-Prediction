@@ -153,14 +153,19 @@ To run the entire application, there are two ways of doing it. The first one is 
  - If running on RDS
 	 - Set up environment by running:
 		 - ```bash
-			 Install virtualenv 
-			 make venv
+			Install virtualenv 
+			virtualenv avcproject-env
+			source avcproject-env/bin/activate
+			pip install -r requirements.txt
 			```
 	 - Change the URI in `flask_config.py` to connect to the database in RDS by (in root directory) 
 		 - ```bash
 			vi config/flask_config.py
 			 ```
 		- Then commenting out the `SQLALCHEMY_DATABASE_URI = 'sqlite:///../data/user_input.db'`
+	- Change the Makefile to run on RDS
+		- `vi Makefile`
+		-  Then delete `database` after the `all:` on the  
 	- Then in root directory, run `python Create_database.py ---RDS True`
 	- 
 	
@@ -261,7 +266,7 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3Mjg2MjAyMCwzNTkxOTY4MDcsMTU3Mj
+eyJoaXN0b3J5IjpbLTE4NTMxMjgwOSwzNTkxOTY4MDcsMTU3Mj
 IzNzY1MSwtMTg3MzY5Njk4MSwxNjY0NDY4NDYxLC04NzYyNzU1
 NDMsLTE4NDczMjU0ODYsMjA1MzU5MjY1NV19
 -->
