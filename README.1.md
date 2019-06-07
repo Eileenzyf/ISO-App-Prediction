@@ -87,7 +87,7 @@
 ├── app
 │   ├── static/                       <- CSS, JS files that remain static 
 │   ├── templates/                    <- HTML (or other code) that is templated and changes based on a set of inputs
-│   ├──app.py                         <- Creates the data model for the database connected to the Flask app 
+│   ├── app.py                         <- Flask wrapper for running the model 
 │   ├── __init__.py                   <- Initializes the Flask app and database connection
 │
 ├── config                            <- Directory for yaml configuration files for model training, scoring, etc
@@ -114,13 +114,15 @@
 │   ├── sql/                          <- SQL source code
 │   ├── Create_database.py            <- Script for creating a (temporary) MySQL database and adding new user input to it 
 │   ├── load_data.py                  <- Script for downloading data from S3
-│   ├── load_data.py                  <- Script for downloading data from S3
+│   ├── upload_data.py                  <- Script for uploading data from to a desinated S3 bucket if needed
 │   ├── generate_features.py          <- Script for cleaning and transforming data and generating features used for use in training and scoring.
 │   ├── train_model.py                <- Script for training machine learning model(s)
 │   ├── score_model.py                <- Script for scoring new predictions using a trained model.
 │   ├── evaluate_model.py             <- Script for evaluating model performance 
 │
 ├── test                              <- Files necessary for running model tests (see documentation below) 
+│   ├── test_helpers.py               <- Script for unit testing functions in the src scripts
+
 
 ├── run.py                            <- Simplifies the execution of one or more of the src scripts 
 ├── app.py                            <- Flask wrapper for running the model 
@@ -201,6 +203,6 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjQ1ODc1MzYsLTg3NjI3NTU0MywtMT
+eyJoaXN0b3J5IjpbLTIwNTQ5Mjg0MzUsLTg3NjI3NTU0MywtMT
 g0NzMyNTQ4NiwyMDUzNTkyNjU1XX0=
 -->
