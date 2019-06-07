@@ -135,6 +135,7 @@ This project structure was partially influenced by the [Cookiecutter Data Scienc
 * See `docs/README.md` for keeping docs up to date with additions to the repository.
 
 ## Running the application 
+To run the entire application, there are two ways of doing it. The first one is throu
 ### 1. Set up environment 
 
 The `requirements.txt` file contains the packages required to run the model code. An environment can be set up in two ways. See bottom of README for exploratory data analysis environment setup. 
@@ -201,6 +202,6 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mjk2MDI1MDksLTg3NjI3NTU0MywtMT
-g0NzMyNTQ4NiwyMDUzNTkyNjU1XX0=
+eyJoaXN0b3J5IjpbMjEzODg0Nzg3MywtODc2Mjc1NTQzLC0xOD
+Q3MzI1NDg2LDIwNTM1OTI2NTVdfQ==
 -->
