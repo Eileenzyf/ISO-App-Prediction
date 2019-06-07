@@ -136,8 +136,13 @@ This project structure was partially influenced by the [Cookiecutter Data Scienc
 * Open up `docs/build/html/index.html` to see Sphinx documentation docs. 
 * See `docs/README.md` for keeping docs up to date with additions to the repository.
 
-## Running the application 
-To run the entire application, there are two ways of doing it. The first one is through Make
+## Running the application
+To run the entire application, there are two ways of doing it. The first one is through Makefile, the second one is to run each step individually to allow flexible user configuration. 
+### Through MakeFile
+
+ -If running on local
+	 - Install 
+
 ### 1. Set up environment 
 
 The `requirements.txt` file contains the packages required to run the model code. An environment can be set up in two ways. See bottom of README for exploratory data analysis environment setup. 
@@ -204,11 +209,11 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3NjIxNDM3OSwtMjE0MzA5NTE0NCwtMT
-gzNzEyMTU0NCwtODc2Mjc1NTQzLC0xODQ3MzI1NDg2LDIwNTM1
-OTI2NTUsMjAxNjAwOTUyNSwzODEyODYwNDYsLTE1NDkzNjYyOT
-IsLTE5NDMxODg0NTUsLTE5MzY0ODQwODAsMTAxMDQ0MjM4Nyw2
-MDUzOTY2MjcsMTcxNjg4Mjk2MywxNDA5MzgyMDM2LDE1NjUxOD
-E2NTUsLTEwMjYzMDM0NzMsMTU2ODkxMjY4NCwxMTA3Mjc5OTEz
-LC00MDA2MTMzNTZdfQ==
+eyJoaXN0b3J5IjpbMTAzNDMyMDI0LC0yMTQzMDk1MTQ0LC0xOD
+M3MTIxNTQ0LC04NzYyNzU1NDMsLTE4NDczMjU0ODYsMjA1MzU5
+MjY1NSwyMDE2MDA5NTI1LDM4MTI4NjA0NiwtMTU0OTM2NjI5Mi
+wtMTk0MzE4ODQ1NSwtMTkzNjQ4NDA4MCwxMDEwNDQyMzg3LDYw
+NTM5NjYyNywxNzE2ODgyOTYzLDE0MDkzODIwMzYsMTU2NTE4MT
+Y1NSwtMTAyNjMwMzQ3MywxNTY4OTEyNjg0LDExMDcyNzk5MTMs
+LTQwMDYxMzM1Nl19
 -->
