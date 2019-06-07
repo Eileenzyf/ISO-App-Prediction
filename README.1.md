@@ -124,8 +124,8 @@
 │   ├── test_data.csv                 <- Dataframe for unit testing
 │   ├── app_predict.py                <- Script for testing if the prediction works
 │   ├── user-input_test.csv           <- Dataframe for app_predict.py
-
-├── requirements.txt                  <-    <- Python package dependencies
+├── run.py                            <- Simplifies the execution of one or more of the src scripts 
+├── requirements.txt                  <- Python package dependencies
 ├── Makefile                          <- MakeFile to run the entire application
 ```
 This project structure was partially influenced by the [Cookiecutter Data Science project](https://drivendata.github.io/cookiecutter-data-science/).
@@ -185,7 +185,7 @@ pip install -r requirements.txt
 ```python
 DEBUG = True  # Keep True for debugging, change to False when moving to production 
 LOGGING_CONFIG = "config/logging/local.conf"  # Path to file that configures Python logger
-PORT = 3000  # What port to expose app on 
+PORT = 300  # What port to expose app on 
 SQLALCHEMY_DATABASE_URI = 'sqlite:///../data/user_input.db'  # URI for database that contains tracks
 
 ```
@@ -199,14 +199,16 @@ To create the database in the location configured in `config.py` with one initia
 
 ### 4. Load the source dataset
  ```bash
- python app.py 
+ To add additional songs:
+
+`python appr
+ .py 
  ```
 
 ### 4. Run the application 
  
  ```bash
- python app.py 
- ```
+ python app
 
 ### 5. Interact with the application 
 
@@ -219,6 +221,6 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzQwNzg3ODQsMTY2NDQ2ODQ2MSwtOD
+eyJoaXN0b3J5IjpbLTE4NzM2OTY5ODEsMTY2NDQ2ODQ2MSwtOD
 c2Mjc1NTQzLC0xODQ3MzI1NDg2LDIwNTM1OTI2NTVdfQ==
 -->
