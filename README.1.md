@@ -223,6 +223,8 @@ Get the prediction of test dataset
 python src/score_model.py --config=config/model_config.yml --input=data/app-test-features.csv --output=models/app_test_scores.csv
 ```
 ### 8. Evaluate the model
+Evaluate the performance of the model using R squared and accuracy
+
 
 ### 4. Run the application 
  
@@ -240,7 +242,7 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3OTc1NDA0NSwxNTcyMjM3NjUxLC0xOD
-czNjk2OTgxLDE2NjQ0Njg0NjEsLTg3NjI3NTU0MywtMTg0NzMy
-NTQ4NiwyMDUzNTkyNjU1XX0=
+eyJoaXN0b3J5IjpbMTc0MDYyNTA3LDE1NzIyMzc2NTEsLTE4Nz
+M2OTY5ODEsMTY2NDQ2ODQ2MSwtODc2Mjc1NTQzLC0xODQ3MzI1
+NDg2LDIwNTM1OTI2NTVdfQ==
 -->
