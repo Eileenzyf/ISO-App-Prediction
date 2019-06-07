@@ -121,7 +121,9 @@
 │
 ├── test                              <- Files necessary for running model tests (see documentation below) 
 │   ├── test_helpers.py               <- Script for unit testing functions in the src scripts
-
+│   ├── test_data.csv                 <- Dataframe for unit testing
+│   ├── app_predict.py                <- Script for testing if the prediction works
+│   ├── user-input_test.csv           <- Dataframe for app_predict.py
 
 ├── run.py                            <- Simplifies the execution of one or more of the src scripts 
 ├── app.py                            <- Flask wrapper for running the model 
@@ -202,7 +204,7 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExMDczMDQwNiwtMTgzNzEyMTU0NCwtOD
+eyJoaXN0b3J5IjpbLTQxNjc4NTg5OCwtMTgzNzEyMTU0NCwtOD
 c2Mjc1NTQzLC0xODQ3MzI1NDg2LDIwNTM1OTI2NTUsMjAxNjAw
 OTUyNSwzODEyODYwNDYsLTE1NDkzNjYyOTIsLTE5NDMxODg0NT
 UsLTE5MzY0ODQwODAsMTAxMDQ0MjM4Nyw2MDUzOTY2MjcsMTcx
