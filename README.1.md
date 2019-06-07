@@ -120,7 +120,6 @@
 │   ├── generate_features.py          <- Script for cleaning and transforming data and generating features used for use in training and scoring.
 │   ├── train_model.py                <- Script for training machine learning model(s)
 │   ├── score_model.py                <- Script for scoring new predictions using a trained model.
-│   ├── postprocess.py                <- Script for postprocessing predictions and model results
 │   ├── evaluate_model.py             <- Script for evaluating model performance 
 │
 ├── test                              <- Files necessary for running model tests (see documentation below) 
@@ -204,5 +203,5 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MzU5MjY1NV19
+eyJoaXN0b3J5IjpbLTg3MDA0NDIwMywyMDUzNTkyNjU1XX0=
 -->
