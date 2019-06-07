@@ -193,7 +193,7 @@ SQLALCHEMY_DATABASE_URI = 'sqlite:///../data/user_input.db'  # URI for database 
 
 ### 3. Initialize the database 
 
-To create the database in the location configured in `flask_config.py` with one intialonyn src/Create_database.py`
+To create the database in the location configured in `flask_config.py` with one intialn src/Create_database.py`
 
 You can also use `run.py` by:
 
@@ -221,6 +221,7 @@ Get the prediction of test dataset
 python src/score_model.py --config=config/model_config.yml --input=data/app-test-features.csv --output=models/app_test_scores.csv
 ```
 ### 8. Evaluate the model
+Evaluate the performance of the model using R squared and accuracy
 
 
 ### 4. Run the application 
@@ -239,11 +240,11 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1ODMzNjk4NywxNzIwNzg0MTcxLDE1Nz
-IyMzc2NTEsLTE4NzM2OTY5ODEsMTQ2MDgyNTAzMiwxNjY0NDY4
-NDYxLDIxMTQ5MDYwODgsLTIxNDMwOTUxNDQsLTE4MzcxMjE1ND
-QsLTg3NjI3NTU0MywtMTg0NzMyNTQ4NiwyMDUzNTkyNjU1LDIw
-MTYwMDk1MjUsMzgxMjg2MDQ2LC0xNTQ5MzY2MjkyLC0xOTQzMT
-g4NDU1LC0xOTM2NDg0MDgwLDEwMTA0NDIzODcsNjA1Mzk2NjI3
-LDE3MTY4ODI5NjNdfQ==
+eyJoaXN0b3J5IjpbLTE4ODIzODQ2OTEsMTI1ODMzNjk4NywxNT
+cyMjM3NjUxLC0xODczNjk2OTgxLDE0NjA4MjUwMzIsMTY2NDQ2
+ODQ2MSwyMTE0OTA2MDg4LC0yMTQzMDk1MTQ0LC0xODM3MTIxNT
+Q0LC04NzYyNzU1NDMsLTE4NDczMjU0ODYsMjA1MzU5MjY1NSwy
+MDE2MDA5NTI1LDM4MTI4NjA0NiwtMTU0OTM2NjI5MiwtMTk0Mz
+E4ODQ1NSwtMTkzNjQ4NDA4MCwxMDEwNDQyMzg3LDYwNTM5NjYy
+NywxNzE2ODgyOTYzXX0=
 -->
