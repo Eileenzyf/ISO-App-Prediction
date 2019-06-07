@@ -181,7 +181,7 @@ pip install -r requirements.txt
 
 ### 2. Configure Flask app 
 
-`config.py` holds the configurations for the Flask app. It includes the following configurations:
+`flask_config.py` holds the configurations for the Flask app. It includes the following configurations:
 
 ```python
 DEBUG = True  # Keep True for debugging, change to False when moving to production 
@@ -196,7 +196,7 @@ SQLALCHEMY_DATABASE_URI = 'sqlite:///../data/user_input.db'  # URI for database 
 
 To create the database in the location configured in `config.py` with one initial song, run: 
 
-`python run.py create --artist=<ARTIST> --title=<TITLE> --album=<ALBUM>`
+`python src/Create_database.py`
 
 To add additional songs:
 
@@ -220,6 +220,6 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTMxMTE5NTAsMTY2NDQ2ODQ2MSwtOD
-c2Mjc1NTQzLC0xODQ3MzI1NDg2LDIwNTM1OTI2NTVdfQ==
+eyJoaXN0b3J5IjpbMTQ3MzMwNjM1LDE2NjQ0Njg0NjEsLTg3Nj
+I3NTU0MywtMTg0NzMyNTQ4NiwyMDUzNTkyNjU1XX0=
 -->
