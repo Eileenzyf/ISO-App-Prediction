@@ -119,7 +119,7 @@
 │   ├── score_model.py                <- Script for scoring new predictions using a trained model.
 │   ├── evaluate_model.py             <- Script for evaluating model performance 
 │
-├── test                 <- Fi necessary for running model tests (see documentation below) 
+├── test                 <- Finecessary for running model tests (see documentation below) 
 │   ├── test_helpers.py               <- Script for unit testing functions in the src scripts
 │   ├── test_data.csv                 <- Dataframe for unit testing
 │   ├── app_predict.py                <- Script for testing if the prediction works
@@ -127,7 +127,7 @@
 
 ├── requirements.txtun.py                            <-    
 ├── MakefileSimplifiest ution n the src scripts ├── a.                 <- MakeFile to run the entire applicationarae for uning   ├── c.py                          urin fe for app
-├── r                  
+├── r                 
 ```
 This project structure was partially influenced by the [Cookiecutter Data Science project](https://drivendata.github.io/cookiecutter-data-science/).
 
@@ -165,7 +165,7 @@ pip install virtualenv
 
 virtualenv avcproject-env
 
-source pennylane/bin/activate
+source avcproject-env/bin/activate
 
 pip install -r requirements.txt
 
@@ -173,8 +173,8 @@ pip install -r requirements.txt
 #### With `conda`
 
 ```bash
-conda create -n pennylane python=3.7
-conda activate pennylane
+conda create -n avcproject-env python=3.7
+conda activate avcproject-env
 pip install -r requirements.txt
 
 ```
@@ -220,6 +220,6 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjUyMDgyMzYsLTg3NjI3NTU0MywtMT
-g0NzMyNTQ4NiwyMDUzNTkyNjU1XX0=
+eyJoaXN0b3J5IjpbMTY2NDQ2ODQ2MSwtODc2Mjc1NTQzLC0xOD
+Q3MzI1NDg2LDIwNTM1OTI2NTVdfQ==
 -->
