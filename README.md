@@ -119,7 +119,7 @@
 │   ├── score_model.py                <- Script for scoring new predictions using a trained model.
 │   ├── evaluate_model.py             <- Script for evaluating model performance 
 │
-├── test                 <- Fipnecessary for running model tests (see documentation below) 
+├── test                 <- Fi necessary for running model tests (see documentation below) 
 │   ├── test_helpers.py               <- Script for unit testing functions in the src scripts
 │   ├── test_data.csv                 <- Dataframe for unit testing
 │   ├── app_predict.py                <- Script for testing if the prediction works
@@ -127,7 +127,7 @@
 
 ├── requirements.txtun.py                            <-    
 ├── MakefileSimplifiest ution n the src scripts ├── a.                 <- MakeFile to run the entire applicationarae for uning   ├── c.py                          urin fe for app
-├── r                  <- Python package dependencies 
+├── r                  
 ```
 This project structure was partially influenced by the [Cookiecutter Data Science project](https://drivendata.github.io/cookiecutter-data-science/).
 
@@ -137,6 +137,7 @@ This project structure was partially influenced by the [Cookiecutter Data Scienc
 * See `docs/README.md` for keeping docs up to date with additions to the repository.
 
 ## Running the application 
+To run the entire application, there are two ways of doing it. The first one is through Make
 ### 1. Set up environment 
 
 The `requirements.txt` file contains the packages required to run the model code. An environment can be set up in two ways. See bottom of README for exploratory data analysis environment setup. 
@@ -203,11 +204,11 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDMwOTUxNDQsLTE3Mjk2MDI1MDksLT
-E4MzcxMjE1NDQsLTg3NjI3NTU0MywtMTg0NzMyNTQ4NiwyMDUz
-NTkyNjU1LDIwMTYwMDk1MjUsMzgxMjg2MDQ2LC0xNTQ5MzY2Mj
-kyLC0xOTQzMTg4NDU1LC0xOTM2NDg0MDgwLDEwMTA0NDIzODcs
-NjA1Mzk2NjI3LDE3MTY4ODI5NjMsMTQwOTM4MjAzNiwxNTY1MT
-gxNjU1LC0xMDI2MzAzNDczLDE1Njg5MTI2ODQsMTEwNzI3OTkx
-MywtNDAwNjEzMzU2XX0=
+eyJoaXN0b3J5IjpbMTI3NjIxNDM3OSwtMjE0MzA5NTE0NCwtMT
+gzNzEyMTU0NCwtODc2Mjc1NTQzLC0xODQ3MzI1NDg2LDIwNTM1
+OTI2NTUsMjAxNjAwOTUyNSwzODEyODYwNDYsLTE1NDkzNjYyOT
+IsLTE5NDMxODg0NTUsLTE5MzY0ODQwODAsMTAxMDQ0MjM4Nyw2
+MDUzOTY2MjcsMTcxNjg4Mjk2MywxNDA5MzgyMDM2LDE1NjUxOD
+E2NTUsLTEwMjYzMDM0NzMsMTU2ODkxMjY4NCwxMTA3Mjc5OTEz
+LC00MDA2MTMzNTZdfQ==
 -->
