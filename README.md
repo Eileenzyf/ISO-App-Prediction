@@ -186,7 +186,7 @@ pip install -r requirements.txt
 ```python
 DEBUG = True  # Keep True for debugging, change to False when moving to production 
 LOGGING_CONFIG = "config/logging/local.conf"  # Path to file that configures Python logger
-PORT = 3000  # What port to expose app on 
+PORT = 300  # What port to expose app on 
 SQLALCHEMY_DATABASE_URI = 'sqlite:///../data/user_input.db'  # URI for database that contains tracks
 
 ```
@@ -200,8 +200,10 @@ To create the database in the location configured in `config.py` with one initia
 
 ### 4. Load the source dataset
  ```bash
- python app.py 
- ```
+ To add additional songs:
+
+`python appr
+ 
 
 ### 4. Run the application 
  
@@ -220,11 +222,11 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzNDk2MjIwNiwxNjY0NDY4NDYxLDIxMT
-Q5MDYwODgsLTIxNDMwOTUxNDQsLTE4MzcxMjE1NDQsLTg3NjI3
-NTU0MywtMTg0NzMyNTQ4NiwyMDUzNTkyNjU1LDIwMTYwMDk1Mj
-UsMzgxMjg2MDQ2LC0xNTQ5MzY2MjkyLC0xOTQzMTg4NDU1LC0x
-OTM2NDg0MDgwLDEwMTA0NDIzODcsNjA1Mzk2NjI3LDE3MTY4OD
-I5NjMsMTQwOTM4MjAzNiwxNTY1MTgxNjU1LC0xMDI2MzAzNDcz
-LDE1Njg5MTI2ODRdfQ==
+eyJoaXN0b3J5IjpbMTQ2MDgyNTAzMiwtMjM0OTYyMjA2LDE2Nj
+Q0Njg0NjEsMjExNDkwNjA4OCwtMjE0MzA5NTE0NCwtMTgzNzEy
+MTU0NCwtODc2Mjc1NTQzLC0xODQ3MzI1NDg2LDIwNTM1OTI2NT
+UsMjAxNjAwOTUyNSwzODEyODYwNDYsLTE1NDkzNjYyOTIsLTE5
+NDMxODg0NTUsLTE5MzY0ODQwODAsMTAxMDQ0MjM4Nyw2MDUzOT
+Y2MjcsMTcxNjg4Mjk2MywxNDA5MzgyMDM2LDE1NjUxODE2NTUs
+LTEwMjYzMDM0NzNdfQ==
 -->
