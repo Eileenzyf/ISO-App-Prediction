@@ -125,7 +125,7 @@
 │   ├── app_predict.py                <- Script for testing if the prediction works
 │   ├── user-input_test.csv           <- Dataframe for app_predict.py
 ├── requirements.txt                  <- Python package dependencies 
-├── Makefile                          <- MakeFile to run the entire project
+├── Makefile                          <- MakeFile to run the entire application
 ```
 This project structure was partially influenced by the [Cookiecutter Data Science project](https://drivendata.github.io/cookiecutter-data-science/).
 
@@ -201,11 +201,11 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3ODExNzMyMiwtMTgzNzEyMTU0NCwtOD
-c2Mjc1NTQzLC0xODQ3MzI1NDg2LDIwNTM1OTI2NTUsMjAxNjAw
-OTUyNSwzODEyODYwNDYsLTE1NDkzNjYyOTIsLTE5NDMxODg0NT
-UsLTE5MzY0ODQwODAsMTAxMDQ0MjM4Nyw2MDUzOTY2MjcsMTcx
-Njg4Mjk2MywxNDA5MzgyMDM2LDE1NjUxODE2NTUsLTEwMjYzMD
-M0NzMsMTU2ODkxMjY4NCwxMTA3Mjc5OTEzLC00MDA2MTMzNTYs
-MTA1MDQyMTYzOF19
+eyJoaXN0b3J5IjpbLTE3Mjk2MDI1MDksLTE4MzcxMjE1NDQsLT
+g3NjI3NTU0MywtMTg0NzMyNTQ4NiwyMDUzNTkyNjU1LDIwMTYw
+MDk1MjUsMzgxMjg2MDQ2LC0xNTQ5MzY2MjkyLC0xOTQzMTg4ND
+U1LC0xOTM2NDg0MDgwLDEwMTA0NDIzODcsNjA1Mzk2NjI3LDE3
+MTY4ODI5NjMsMTQwOTM4MjAzNiwxNTY1MTgxNjU1LC0xMDI2Mz
+AzNDczLDE1Njg5MTI2ODQsMTEwNzI3OTkxMywtNDAwNjEzMzU2
+LDEwNTA0MjE2MzhdfQ==
 -->
