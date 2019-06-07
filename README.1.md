@@ -124,11 +124,8 @@
 │   ├── test_data.csv                 <- Dataframe for unit testing
 │   ├── app_predict.py                <- Script for testing if the prediction works
 │   ├── user-input_test.csv           <- Dataframe for app_predict.py
-
-├── run.py                            <- Simplifies the execution of one or more of the src scripts 
-├── app.py                            <- Flask wrapper for running the model 
-├── config.py                         <- Configuration file for Flask app
 ├── requirements.txt                  <- Python package dependencies 
+├── Makefile                          <- MakeFile to run the entire project
 ```
 This project structure was partially influenced by the [Cookiecutter Data Science project](https://drivendata.github.io/cookiecutter-data-science/).
 
@@ -204,6 +201,6 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxNjc4NTg5OCwtODc2Mjc1NTQzLC0xOD
+eyJoaXN0b3J5IjpbMTk3ODExNzMyMiwtODc2Mjc1NTQzLC0xOD
 Q3MzI1NDg2LDIwNTM1OTI2NTVdfQ==
 -->
