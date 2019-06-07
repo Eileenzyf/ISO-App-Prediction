@@ -186,8 +186,8 @@ pip install -r requirements.txt
 ```python
 DEBUG = True  # Keep True for debugging, change to False when moving to production 
 LOGGING_CONFIG = "config/logging/local.conf"  # Path to file that configures Python logger
-PORT = 3002  # What port to expose app on 
-SQLALCHEMY_DATABASE_URI = 'sqlite:////tmp/tracks.db'  # URI for database that contains tracks
+PORT = 3000  # What port to expose app on 
+SQLALCHEMY_DATABASE_URI = 'sqlite:///../data/user_input.db'  # URI for database that contains tracks
 
 ```
 
@@ -196,7 +196,7 @@ SQLALCHEMY_DATABASE_URI = 'sqlite:////tmp/tracks.db'  # URI for database that co
 
 To create the database in the location configured in `config.py` with one initial song, run: 
 
-`python run.py create --artist=<ARTIST> --title=<TITLE> --album=<ALBUM>`
+`python s r c --artist=<ARTIST> --title=<TITLE> --album=<ALBUM>`
 
 To add additional songs:
 
@@ -220,11 +220,11 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2NDQ2ODQ2MSwyMTE0OTA2MDg4LC0yMT
-QzMDk1MTQ0LC0xODM3MTIxNTQ0LC04NzYyNzU1NDMsLTE4NDcz
-MjU0ODYsMjA1MzU5MjY1NSwyMDE2MDA5NTI1LDM4MTI4NjA0Ni
-wtMTU0OTM2NjI5MiwtMTk0MzE4ODQ1NSwtMTkzNjQ4NDA4MCwx
-MDEwNDQyMzg3LDYwNTM5NjYyNywxNzE2ODgyOTYzLDE0MDkzOD
-IwMzYsMTU2NTE4MTY1NSwtMTAyNjMwMzQ3MywxNTY4OTEyNjg0
-LDExMDcyNzk5MTNdfQ==
+eyJoaXN0b3J5IjpbLTg3Njk3Mjc1OCwxNjY0NDY4NDYxLDIxMT
+Q5MDYwODgsLTIxNDMwOTUxNDQsLTE4MzcxMjE1NDQsLTg3NjI3
+NTU0MywtMTg0NzMyNTQ4NiwyMDUzNTkyNjU1LDIwMTYwMDk1Mj
+UsMzgxMjg2MDQ2LC0xNTQ5MzY2MjkyLC0xOTQzMTg4NDU1LC0x
+OTM2NDg0MDgwLDEwMTA0NDIzODcsNjA1Mzk2NjI3LDE3MTY4OD
+I5NjMsMTQwOTM4MjAzNiwxNTY1MTgxNjU1LC0xMDI2MzAzNDcz
+LDE1Njg5MTI2ODRdfQ==
 -->
