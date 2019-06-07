@@ -173,8 +173,8 @@ pip install -r requirements.txt
 #### With `conda`
 
 ```bash
-conda create -n pennylane python=3.7
-conda activate pennylane
+conda create -n avcproject-env python=3.7
+conda activate avcproject-env
 pip install -r requirements.txt
 
 ```
@@ -220,11 +220,11 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjU1OTc1OTksMjExNDkwNjA4OCwtMj
-E0MzA5NTE0NCwtMTgzNzEyMTU0NCwtODc2Mjc1NTQzLC0xODQ3
-MzI1NDg2LDIwNTM1OTI2NTUsMjAxNjAwOTUyNSwzODEyODYwND
-YsLTE1NDkzNjYyOTIsLTE5NDMxODg0NTUsLTE5MzY0ODQwODAs
-MTAxMDQ0MjM4Nyw2MDUzOTY2MjcsMTcxNjg4Mjk2MywxNDA5Mz
-gyMDM2LDE1NjUxODE2NTUsLTEwMjYzMDM0NzMsMTU2ODkxMjY4
-NCwxMTA3Mjc5OTEzXX0=
+eyJoaXN0b3J5IjpbMTY2NDQ2ODQ2MSwyMTE0OTA2MDg4LC0yMT
+QzMDk1MTQ0LC0xODM3MTIxNTQ0LC04NzYyNzU1NDMsLTE4NDcz
+MjU0ODYsMjA1MzU5MjY1NSwyMDE2MDA5NTI1LDM4MTI4NjA0Ni
+wtMTU0OTM2NjI5MiwtMTk0MzE4ODQ1NSwtMTkzNjQ4NDA4MCwx
+MDEwNDQyMzg3LDYwNTM5NjYyNywxNzE2ODgyOTYzLDE0MDkzOD
+IwMzYsMTU2NTE4MTY1NSwtMTAyNjMwMzQ3MywxNTY4OTEyNjg0
+LDExMDcyNzk5MTNdfQ==
 -->
