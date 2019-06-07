@@ -207,6 +207,18 @@ You can also use `run.py` by:
  python src/load_data.py src/load_data.py --config=config/model_config.yml --output=data/app.csv
  ```
 
+### 5. Generate features
+ ```bash
+ python src/generate_features.py --config=config/model_config.yml --input=data/app.csv --output=data/app_processed.csv
+ ```
+
+### 6. Train model
+ ```bash
+ python src/train_model.py --config=config/model_config.yml --input=data/app_processed.csv --output=models/app-prediction.pkl
+ ```
+
+### 7. Score m
+
 ### 4. Run the application 
  
  ```bash
@@ -223,7 +235,7 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5OTQxOTMzNiwxNTcyMjM3NjUxLC0xOD
+eyJoaXN0b3J5IjpbLTM4ODkyMzc4MywxNTcyMjM3NjUxLC0xOD
 czNjk2OTgxLDE0NjA4MjUwMzIsMTY2NDQ2ODQ2MSwyMTE0OTA2
 MDg4LC0yMTQzMDk1MTQ0LC0xODM3MTIxNTQ0LC04NzYyNzU1ND
 MsLTE4NDczMjU0ODYsMjA1MzU5MjY1NSwyMDE2MDA5NTI1LDM4
