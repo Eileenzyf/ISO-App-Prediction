@@ -91,11 +91,10 @@
 │   ├── __init__.py                   <- Initializes the Flask app and database connection
 │
 ├── config                            <- Directory for yaml configuration files for model training, scoring, etc
-│   ├── logging/                      <- Configuration files for python loggers
-│   ├── flask_config.py               <- Configurations that link the flask app to local database or RDS
-│   ├── model_config.yml              <- YAML file that contains the pipline of the entire model
-│
-├── data                              <- Folder that contains data used or generated
+│├──                      <- Configuration files for python loggers
+│   ├── flask_config.py              <- Configurations that link the flask app to local database or RDS
+│   ├── model_config.yml              <- YAML file that contains the pipline of the entire mat l th as ato al t sample/ subdirectories are tracked by git. 
+
 │
 ├── docs                              <- A default Sphinx project; see sphinx-doc.org for details.
 │
@@ -112,9 +111,9 @@
 ├── src                               <- Source data for the project 
 │   ├── helpers/                      <- Helper scripts used in main src files 
 │   ├── sql/                          <- SQL source code
-│   ├── Create_database.py            <- Script for creating a (temporary) MySQL database and adding new user input to it 
-│   ├── load_data.py                  <- Script for downloading data from S3
-│   ├── upload_data.py                  <- Script for uploading data from to a desinated S3 bucket if needed
+│   ├── Create_database.py             <- Script for creating a (temporary) MySQL database and adding new user input to it 
+│   ├── load_data.py                  <- Script for downloading data from 
+│   ├── upload_data.py                  <- Script for uploading data from S3to a desinated S3 bucket if needed
 │   ├── generate_features.py          <- Script for cleaning and transforming data and generating features used for use in training and scoring.
 │   ├── train_model.py                <- Script for training machine learning model(s)
 │   ├── score_model.py                <- Script for scoring new predictions using a trained model.
@@ -122,7 +121,9 @@
 │
 ├── test                              <- Files necessary for running model tests (see documentation below) 
 │   ├── test_helpers.py               <- Script for unit testing functions in the src scripts
-
+│   ├── test_data.csv                 <- Dataframe for unit testing
+│   ├── app_predict.py                <- Script for testing if the prediction works
+│   ├── user-input_test.csv           <- Dataframe for app_predict.py
 
 ├── run.py                            <- Simplifies the execution of one or more of the src scripts 
 ├── app.py                            <- Flask wrapper for running the model 
@@ -203,6 +204,6 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTQ5Mjg0MzUsLTg3NjI3NTU0MywtMT
-g0NzMyNTQ4NiwyMDUzNTkyNjU1XX0=
+eyJoaXN0b3J5IjpbLTQxNjc4NTg5OCwtODc2Mjc1NTQzLC0xOD
+Q3MzI1NDg2LDIwNTM1OTI2NTVdfQ==
 -->
