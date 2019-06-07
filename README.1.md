@@ -193,9 +193,14 @@ SQLALCHEMY_DATABASE_URI = 'sqlite:///../data/user_input.db'  # URI for database 
 
 ### 3. Initialize the database 
 
-To create the database in the location configured in `config.py` with one initial song, run: 
+To create the database in the location configured in `flask_config.py` with one initial song, run: 
 
 `python src/Create_database.py`
+
+You can also use `run.py` by:
+
+`python run.py create`
+
 
 ### 4. Load the source dataset
  ```bash
@@ -221,6 +226,7 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzM2OTY5ODEsMTY2NDQ2ODQ2MSwtOD
-c2Mjc1NTQzLC0xODQ3MzI1NDg2LDIwNTM1OTI2NTVdfQ==
+eyJoaXN0b3J5IjpbMTU3MjIzNzY1MSwtMTg3MzY5Njk4MSwxNj
+Y0NDY4NDYxLC04NzYyNzU1NDMsLTE4NDczMjU0ODYsMjA1MzU5
+MjY1NV19
 -->
