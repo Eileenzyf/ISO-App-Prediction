@@ -140,8 +140,14 @@ This project structure was partially influenced by the [Cookiecutter Data Scienc
 To run the entire application, there are two ways of doing it. The first one is through Makefile, the second one is to run each step individually to allow flexible user configuration. 
 ### Through MakeFile
 
- -If running on local
-	 - Install 
+ - If running on local
+	 - Install `virtualenv` 
+		 - ```bash
+			pip install virtualenv
+		```
+	- 
+		
+ - If running on RDS
 
 ### 1. Set up environment 
 
@@ -209,6 +215,6 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNDMyMDI0LC04NzYyNzU1NDMsLTE4ND
+eyJoaXN0b3J5IjpbODM4Nzg2MjE3LC04NzYyNzU1NDMsLTE4ND
 czMjU0ODYsMjA1MzU5MjY1NV19
 -->
