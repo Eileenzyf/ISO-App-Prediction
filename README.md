@@ -110,11 +110,11 @@
 │   ├── template.ipynb                <- Template notebook for analysis with useful imports and helper functions. 
 │
 ├── src                               <- Source data for the project 
-│   ├── archive/                      <- No longer current scripts.
 │   ├── helpers/                      <- Helper scripts used in main src files 
 │   ├── sql/                          <- SQL source code
-│   ├── add_songs.py                  <- Script for creating a (temporary) MySQL database and adding songs to it 
-│   ├── ingest_data.py                <- Script for ingesting data from different sources 
+│   ├── Create_database.py            <- Script for creating a (temporary) MySQL database and adding new user input to it 
+│   ├── load_data.py                  <- Script for downloading data from S3
+│   ├── load_data.py                  <- Script for upl data from S3
 │   ├── generate_features.py          <- Script for cleaning and transforming data and generating features used for use in training and scoring.
 │   ├── train_model.py                <- Script for training machine learning model(s)
 │   ├── score_model.py                <- Script for scoring new predictions using a trained model.
@@ -201,7 +201,7 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0NDQ3ODYxMCwtODc2Mjc1NTQzLC0xOD
+eyJoaXN0b3J5IjpbMTIzMjYyMjg1NSwtODc2Mjc1NTQzLC0xOD
 Q3MzI1NDg2LDIwNTM1OTI2NTUsMjAxNjAwOTUyNSwzODEyODYw
 NDYsLTE1NDkzNjYyOTIsLTE5NDMxODg0NTUsLTE5MzY0ODQwOD
 AsMTAxMDQ0MjM4Nyw2MDUzOTY2MjcsMTcxNjg4Mjk2MywxNDA5
