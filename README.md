@@ -204,9 +204,7 @@ You can also use `run.py` by:
 
 ### 4. Load the source dataset
  ```bash
- To add additional songs:
-
-`python appr
+ python load_data.py
  .py 
  ```
 
@@ -226,11 +224,11 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3MjIzNzY1MSwtMTg3MzY5Njk4MSwxND
-YwODI1MDMyLDE2NjQ0Njg0NjEsMjExNDkwNjA4OCwtMjE0MzA5
-NTE0NCwtMTgzNzEyMTU0NCwtODc2Mjc1NTQzLC0xODQ3MzI1ND
-g2LDIwNTM1OTI2NTUsMjAxNjAwOTUyNSwzODEyODYwNDYsLTE1
-NDkzNjYyOTIsLTE5NDMxODg0NTUsLTE5MzY0ODQwODAsMTAxMD
-Q0MjM4Nyw2MDUzOTY2MjcsMTcxNjg4Mjk2MywxNDA5MzgyMDM2
-LDE1NjUxODE2NTVdfQ==
+eyJoaXN0b3J5IjpbLTkzMzU2NTMzNSwxNTcyMjM3NjUxLC0xOD
+czNjk2OTgxLDE0NjA4MjUwMzIsMTY2NDQ2ODQ2MSwyMTE0OTA2
+MDg4LC0yMTQzMDk1MTQ0LC0xODM3MTIxNTQ0LC04NzYyNzU1ND
+MsLTE4NDczMjU0ODYsMjA1MzU5MjY1NSwyMDE2MDA5NTI1LDM4
+MTI4NjA0NiwtMTU0OTM2NjI5MiwtMTk0MzE4ODQ1NSwtMTkzNj
+Q4NDA4MCwxMDEwNDQyMzg3LDYwNTM5NjYyNywxNzE2ODgyOTYz
+LDE0MDkzODIwMzZdfQ==
 -->
