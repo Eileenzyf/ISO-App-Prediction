@@ -186,8 +186,8 @@ pip install -r requirements.txt
 ```python
 DEBUG = True  # Keep True for debugging, change to False when moving to production 
 LOGGING_CONFIG = "config/logging/local.conf"  # Path to file that configures Python logger
-PORT = 3002  # What port to expose app on 
-SQLALCHEMY_DATABASE_URI = 'sqlite:////tmp/tracks.db'  # URI for database that contains tracks
+PORT = 3000  # What port to expose app on 
+SQLALCHEMY_DATABASE_URI = 'sqlite:///../data/user_input.db'  # URI for database that contains tracks
 
 ```
 
@@ -220,6 +220,6 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2NDQ2ODQ2MSwtODc2Mjc1NTQzLC0xOD
-Q3MzI1NDg2LDIwNTM1OTI2NTVdfQ==
+eyJoaXN0b3J5IjpbLTE4OTMxMTE5NTAsMTY2NDQ2ODQ2MSwtOD
+c2Mjc1NTQzLC0xODQ3MzI1NDg2LDIwNTM1OTI2NTVdfQ==
 -->
