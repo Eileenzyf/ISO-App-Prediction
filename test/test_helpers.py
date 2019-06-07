@@ -5,7 +5,7 @@ import pickle
 import sys
 sys.path.insert(0, 'src')
 
-from generate_features import choose_features
+from generate_features import choose_features, generate_features
 from train_model import split_data
 from score_model import score_model
 from evaluate_model import evaluate_model
@@ -24,6 +24,40 @@ def test_choose_features():
     
     # raise AssertionError if dataframes do not match
     assert output_df.equals(choose_features(df=data, features_to_use=features, target='user_rating'))
+
+def test_generate_features():
+    data1 = pd.read_csv("test/test_data.csv")
+
+    data = data1
+
+    data['rating_count_before'] = data['rating_count_tot'] - data['rating_count_ver']
+    ##create 'isnotfree' variables
+    data['isNotFree'] = data['price'].apply(lambda x: 1 if x > 0 else 0)
+    data['price'] = np.log(data['price']+1)
+    data['rating_count_tot'] = np.log(data['rating_count_tot']+1)
+    data['rating_count_ver'] = np.log(data['rating_count_ver']+1)
+    data['lang_num'] = np.log(data['lang_num']+1)
+    data['rating_count_before'] = np.log(data['rating_count_before']+1)
+    cont_rat_dum=pd.get_dummies(data.cont_rating)
+    data= data.join(cont_rat_dum)
+    data['genre'] = data['prime_genre'].apply(lambda x: x if x =="Games" or x== "Entertainment" or x=="Education" else "Other")
+    genre_dum = pd.get_dummies(data.genre)
+    data= data.join(genre_dum)
+    data.loc[:, 'isGame'] = data['app_desc'].apply(lambda x: 1 if 'game' in x.lower() else 0)
+    data.loc[:, 'descLen'] = data['app_desc'].apply(lambda x: len(x.lower()))
+    data['descLen'] = np.log(data['descLen'])
+
+    data = data.drop(data.columns[0], axis=1)
+    data = data.drop('user_rating', axis=1)
+    data = data.drop('user_rating_ver', axis=1)
+    data1 = pd.read_csv("test/test_data.csv")
+
+
+    pre_defined_kwargs = {'choose_features': {'features_to_use': ['size_bytes', 'price', 'rating_count_tot', 'rating_count_ver',
+                'cont_rating','prime_genre','sup_devices_num', 'ipadSc_urls_num', 'lang_num', 'app_desc']},
+                'target': 'user_rating'}
+
+    assert data.equals(generate_features(df=data1, **pre_defined_kwargs))
 
 def test_split_data():
     # load sample test data

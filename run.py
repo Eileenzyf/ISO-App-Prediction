@@ -40,23 +40,24 @@ if __name__ == '__main__':
     sb_create.add_argument("--lang_num", default=1, help="Number of support languages")
     sb_create.add_argument("--app_desc", default = 'Games are fun', help="Application descriptions")
 
-    sb_create.add_argument("--engine_string", default=get_engine_string(RDS=True),
+    sb_create.add_argument("--RDS", default=False,
                            help="SQLAlchemy connection URI for database")
     sb_create.set_defaults(func=create_db)
 
-    # # Sub-parser for ingesting new data
+    # Sub-parser for ingesting new data
     # sb_ingest = subparsers.add_parser("ingest", description="Add data to database")
-    # sb_ingest.add_argument("--size_bytes", help="Size of the application")
-    # sb_ingest.add_argument("--price", help="Price of the app")
-    # sb_ingest.add_argument("--rating_count_tot", help="Total ratings received so far")
-    # sb_ingest.add_argument("--rating_count_ver", help="Ratings received for the lastest version")
-    # sb_ingest.add_argument("--cont_rating", help="Content rating")
-    # sb_ingest.add_argument("--prime_genre", help="Genre of the app")
+    # sb_ingest.add_argument("--size_bytes", default = 28899, help="Size of the application")
+    # sb_ingest.add_argument("--price", default = 3.99, help="Price of the app")
+    # sb_ingest.add_argument("--rating_count_tot", default = 355, help="Total ratings received so far")
+    # sb_ingest.add_argument("--rating_count_ver", default = 10, help="Ratings received for the lastest version")
+    # sb_ingest.add_argument("--cont_rating", default = "4+", help="Content rating")
+    # sb_ingest.add_argument("--prime_genre", default = "Games", help="Genre of the app")
     # sb_ingest.add_argument("--sup_devices_num", default=1, help="Number of supported device")
     # sb_ingest.add_argument("--ipadSc_urls_num", default=0, help="Number of screenshots displayed")
     # sb_ingest.add_argument("--lang_num", default=1, help="Number of support languages")
-    # sb_ingest.add_argument("--app_desc", help="Application descriptions")
-    # sb_ingest.add_argument("--engine_string", default='sqlite:///../data/user_input.db',
+    # sb_ingest.add_argument("--app_desc", default = 'Games are fun', help="Application descriptions")
+
+    # sb_ingest.add_argument("--URI", default='sqlite:///../data/user_input.db',
     #                        help="SQLAlchemy connection URI for database")
     # sb_ingest.set_defaults(func=user_input)
 
