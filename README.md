@@ -204,8 +204,7 @@ You can also use `run.py` by:
 
 ### 4. Load the source dataset
  ```bash
- python load_data.py
- .py 
+ python src/load_data.py src/load_data.py --config=config/model_config.yml --output=data/app.csv
  ```
 
 ### 4. Run the application 
@@ -224,7 +223,7 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMzU2NTMzNSwxNTcyMjM3NjUxLC0xOD
+eyJoaXN0b3J5IjpbLTQ5OTQxOTMzNiwxNTcyMjM3NjUxLC0xOD
 czNjk2OTgxLDE0NjA4MjUwMzIsMTY2NDQ2ODQ2MSwyMTE0OTA2
 MDg4LC0yMTQzMDk1MTQ0LC0xODM3MTIxNTQ0LC04NzYyNzU1ND
 MsLTE4NDczMjU0ODYsMjA1MzU5MjY1NSwyMDE2MDA5NTI1LDM4
