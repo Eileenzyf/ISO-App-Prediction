@@ -229,8 +229,14 @@ Evaluate the performance of the model using R squared and accuracy
 ### 4. Run the application 
  
  ```bash
- python app
+ python app/app.py
  ```
+ 
+You can also use `make` by running:
+
+```bash
+make app
+```
 
 ### 5. Interact with the application 
 
@@ -243,11 +249,11 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyMDYxNDQ5NCwxMjU4MzM2OTg3LDE1Nz
-IyMzc2NTEsLTE4NzM2OTY5ODEsMTQ2MDgyNTAzMiwxNjY0NDY4
-NDYxLDIxMTQ5MDYwODgsLTIxNDMwOTUxNDQsLTE4MzcxMjE1ND
-QsLTg3NjI3NTU0MywtMTg0NzMyNTQ4NiwyMDUzNTkyNjU1LDIw
-MTYwMDk1MjUsMzgxMjg2MDQ2LC0xNTQ5MzY2MjkyLC0xOTQzMT
-g4NDU1LC0xOTM2NDg0MDgwLDEwMTA0NDIzODcsNjA1Mzk2NjI3
-LDE3MTY4ODI5NjNdfQ==
+eyJoaXN0b3J5IjpbMzU5MTk2ODA3LDEyNTgzMzY5ODcsMTU3Mj
+IzNzY1MSwtMTg3MzY5Njk4MSwxNDYwODI1MDMyLDE2NjQ0Njg0
+NjEsMjExNDkwNjA4OCwtMjE0MzA5NTE0NCwtMTgzNzEyMTU0NC
+wtODc2Mjc1NTQzLC0xODQ3MzI1NDg2LDIwNTM1OTI2NTUsMjAx
+NjAwOTUyNSwzODEyODYwNDYsLTE1NDkzNjYyOTIsLTE5NDMxOD
+g0NTUsLTE5MzY0ODQwODAsMTAxMDQ0MjM4Nyw2MDUzOTY2Mjcs
+MTcxNjg4Mjk2M119
 -->
