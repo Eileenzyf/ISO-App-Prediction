@@ -91,11 +91,10 @@
 │   ├── __init__.py                   <- Initializes the Flask app and database connection
 │
 ├── config                            <- Directory for yaml configuration files for model training, scoring, etc
-│   ├── logging/                      <- Configuration files for python loggers
-│   ├── flask_config.py               <- Configurations that link the flask app to local database or RDS
-│   ├── model_config.yml              <- YAML file that contains the pipline of the entire model
-│
-├── data                              <- Folder that contains data used or generated
+│├── data                     <- Configuration files for python loggers
+│   ├── flask_config.py              <- Configurations that link the flask app to local database or RDS
+│   ├── model_config.yml              <- YAML file that contains the pipline of the entire mat l th as ato al t sample/ subdirectories are tracked by git. 
+
 │
 ├── docs                              <- A default Sphinx project; see sphinx-doc.org for details.
 │
@@ -112,7 +111,7 @@
 ├── src                               <- Source data for the project 
 │   ├── helpers/                      <- Helper scripts used in main src files 
 │   ├── sql/                          <- SQL source code
-│   ├── Create_database.py            <- Script for creating a (temporary) MySQL database and adding new user input to it 
+│   ├── Create_database.py             <- Script for creating a (temporary) MySQL database and adding new user input to it 
 │   ├── load_data.py                  <- Script for downloading data from S3
 │   ├── load_data.py                  <- Script for upl data from S3
 │   ├── generate_features.py          <- Script for cleaning and transforming data and generating features used for use in training and scoring.
@@ -201,11 +200,11 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzMjYyMjg1NSwtODc2Mjc1NTQzLC0xOD
-Q3MzI1NDg2LDIwNTM1OTI2NTUsMjAxNjAwOTUyNSwzODEyODYw
-NDYsLTE1NDkzNjYyOTIsLTE5NDMxODg0NTUsLTE5MzY0ODQwOD
-AsMTAxMDQ0MjM4Nyw2MDUzOTY2MjcsMTcxNjg4Mjk2MywxNDA5
-MzgyMDM2LDE1NjUxODE2NTUsLTEwMjYzMDM0NzMsMTU2ODkxMj
-Y4NCwxMTA3Mjc5OTEzLC00MDA2MTMzNTYsMTA1MDQyMTYzOCwy
-MzA3NzQ5OTVdfQ==
+eyJoaXN0b3J5IjpbLTE4MzcxMjE1NDQsMTIzMjYyMjg1NSwtOD
+c2Mjc1NTQzLC0xODQ3MzI1NDg2LDIwNTM1OTI2NTUsMjAxNjAw
+OTUyNSwzODEyODYwNDYsLTE1NDkzNjYyOTIsLTE5NDMxODg0NT
+UsLTE5MzY0ODQwODAsMTAxMDQ0MjM4Nyw2MDUzOTY2MjcsMTcx
+Njg4Mjk2MywxNDA5MzgyMDM2LDE1NjUxODE2NTUsLTEwMjYzMD
+M0NzMsMTU2ODkxMjY4NCwxMTA3Mjc5OTEzLC00MDA2MTMzNTYs
+MTA1MDQyMTYzOF19
 -->
