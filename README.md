@@ -95,15 +95,13 @@
 │   ├── flask_config.py               <- Configurations that link the flask app to local database or RDS
 │   ├── model_config.yml              <- YAML file that contains the pipline of the entire model
 │
-├── data                              <- Folder that contains data used or generated. Only the external/ and sample/ subdirectories are tracked by git. 
-
+├── data                              <- Folder that contains data used or generated
 │
 ├── docs                              <- A default Sphinx project; see sphinx-doc.org for details.
 │
 ├── figures                           <- Generated graphics and figures to be used in reporting.
 │
 ├── models                            <- Trained model objects (TMOs), model predictions, and/or model summaries
-│   ├── archive                       <- No longer current models. This directory is included in the .gitignore and is not tracked by git
 │
 ├── notebooks
 │   ├── develop                       <- Current notebooks being used in development.
@@ -203,7 +201,7 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyNzI5ODkxMSwtODc2Mjc1NTQzLC0xOD
+eyJoaXN0b3J5IjpbMTA0NDQ3ODYxMCwtODc2Mjc1NTQzLC0xOD
 Q3MzI1NDg2LDIwNTM1OTI2NTUsMjAxNjAwOTUyNSwzODEyODYw
 NDYsLTE1NDkzNjYyOTIsLTE5NDMxODg0NTUsLTE5MzY0ODQwOD
 AsMTAxMDQ0MjM4Nyw2MDUzOTY2MjcsMTcxNjg4Mjk2MywxNDA5
