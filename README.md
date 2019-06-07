@@ -88,11 +88,11 @@
 │   ├── static/                       <- CSS, JS files that remain static 
 │   ├── templates/                    <- HTML (or other code) that is templated and changes based on a set of inputs
 │   ├── app.py                         <- Flask wrapper for running the model 
-│   ├── __init__.py                   <- Initializes the Flask app and database connection
+│   ├── __init__.py                   <- Initializes the Flask as ae for nneion
 │
 ├── config                            <- Directory for yaml configuration files for model training, scoring, etc
-│├──                      <- Configuration files for python loggers
-│   ├── flask_config.py              <- Configurations that link the flask app to local database or RDS
+│├──                  <- Configuration files for python loggers
+│   ├── flask_config.py              <- Configurations that oel to local database or RDS
 │   ├── model_config.yml              <- YAML file that contains the pipline of the entire mat l th as ato al t sample/ subdirectories are tracked by git. 
 
 │
@@ -119,13 +119,15 @@
 │   ├── score_model.py                <- Script for scoring new predictions using a trained model.
 │   ├── evaluate_model.py             <- Script for evaluating model performance 
 │
-├── test                              <- Files necessary for running model tests (see documentation below) 
+├── test                 <- Fipnecessary for running model tests (see documentation below) 
 │   ├── test_helpers.py               <- Script for unit testing functions in the src scripts
 │   ├── test_data.csv                 <- Dataframe for unit testing
 │   ├── app_predict.py                <- Script for testing if the prediction works
 │   ├── user-input_test.csv           <- Dataframe for app_predict.py
-├── requirements.txt                  <- Python package dependencies 
-├── Makefile                          <- MakeFile to run the entire application
+
+├── requirements.txtun.py                            <-    
+├── MakefileSimplifiest ution n the src scripts ├── a.                 <- MakeFile to run the entire applicationarae for uning   ├── c.py                          urin fe for app
+├── r                  <- Python package dependencies 
 ```
 This project structure was partially influenced by the [Cookiecutter Data Science project](https://drivendata.github.io/cookiecutter-data-science/).
 
@@ -201,11 +203,11 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mjk2MDI1MDksLTE4MzcxMjE1NDQsLT
-g3NjI3NTU0MywtMTg0NzMyNTQ4NiwyMDUzNTkyNjU1LDIwMTYw
-MDk1MjUsMzgxMjg2MDQ2LC0xNTQ5MzY2MjkyLC0xOTQzMTg4ND
-U1LC0xOTM2NDg0MDgwLDEwMTA0NDIzODcsNjA1Mzk2NjI3LDE3
-MTY4ODI5NjMsMTQwOTM4MjAzNiwxNTY1MTgxNjU1LC0xMDI2Mz
-AzNDczLDE1Njg5MTI2ODQsMTEwNzI3OTkxMywtNDAwNjEzMzU2
-LDEwNTA0MjE2MzhdfQ==
+eyJoaXN0b3J5IjpbLTIxNDMwOTUxNDQsLTE3Mjk2MDI1MDksLT
+E4MzcxMjE1NDQsLTg3NjI3NTU0MywtMTg0NzMyNTQ4NiwyMDUz
+NTkyNjU1LDIwMTYwMDk1MjUsMzgxMjg2MDQ2LC0xNTQ5MzY2Mj
+kyLC0xOTQzMTg4NDU1LC0xOTM2NDg0MDgwLDEwMTA0NDIzODcs
+NjA1Mzk2NjI3LDE3MTY4ODI5NjMsMTQwOTM4MjAzNiwxNTY1MT
+gxNjU1LC0xMDI2MzAzNDczLDE1Njg5MTI2ODQsMTEwNzI3OTkx
+MywtNDAwNjEzMzU2XX0=
 -->
