@@ -119,7 +119,7 @@
 │   ├── score_model.py                <- Script for scoring new predictions using a trained model.
 │   ├── evaluate_model.py             <- Script for evaluating model performance 
 │
-├── test                 <- Fi necessary for running model tests (see documentation below) 
+├── test                 <- Finecessary for running model tests (see documentation below) 
 │   ├── test_helpers.py               <- Script for unit testing functions in the src scripts
 │   ├── test_data.csv                 <- Dataframe for unit testing
 │   ├── app_predict.py                <- Script for testing if the prediction works
@@ -127,7 +127,7 @@
 
 ├── requirements.txtun.py                            <-    
 ├── MakefileSimplifiest ution n the src scripts ├── a.                 <- MakeFile to run the entire applicationarae for uning   ├── c.py                          urin fe for app
-├── r                  
+├── r                 
 ```
 This project structure was partially influenced by the [Cookiecutter Data Science project](https://drivendata.github.io/cookiecutter-data-science/).
 
@@ -219,11 +219,11 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mzc2NzgxOTgsLTIxNDMwOTUxNDQsLT
-E4MzcxMjE1NDQsLTg3NjI3NTU0MywtMTg0NzMyNTQ4NiwyMDUz
-NTkyNjU1LDIwMTYwMDk1MjUsMzgxMjg2MDQ2LC0xNTQ5MzY2Mj
-kyLC0xOTQzMTg4NDU1LC0xOTM2NDg0MDgwLDEwMTA0NDIzODcs
-NjA1Mzk2NjI3LDE3MTY4ODI5NjMsMTQwOTM4MjAzNiwxNTY1MT
-gxNjU1LC0xMDI2MzAzNDczLDE1Njg5MTI2ODQsMTEwNzI3OTkx
-MywtNDAwNjEzMzU2XX0=
+eyJoaXN0b3J5IjpbMjExNDkwNjA4OCwtMTczNzY3ODE5OCwtMj
+E0MzA5NTE0NCwtMTgzNzEyMTU0NCwtODc2Mjc1NTQzLC0xODQ3
+MzI1NDg2LDIwNTM1OTI2NTUsMjAxNjAwOTUyNSwzODEyODYwND
+YsLTE1NDkzNjYyOTIsLTE5NDMxODg0NTUsLTE5MzY0ODQwODAs
+MTAxMDQ0MjM4Nyw2MDUzOTY2MjcsMTcxNjg4Mjk2MywxNDA5Mz
+gyMDM2LDE1NjUxODE2NTUsLTEwMjYzMDM0NzMsMTU2ODkxMjY4
+NCwxMTA3Mjc5OTEzXX0=
 -->
