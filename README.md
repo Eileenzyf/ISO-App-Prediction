@@ -124,7 +124,7 @@
 │   ├── test_data.csv                 <- Dataframe for unit testing
 │   ├── app_predict.py                <- Script for testing if the prediction works
 │   ├── user-input_test.csv           <- Dataframe for app_predict.py
-
+├── run.py                            <- Simplifies the execution of one or more of the src scripts 
 ├── requirements.txt                  <- Python package dependencies
 ├── Makefile                          <- MakeFile to run the entire application
 ```
@@ -221,7 +221,7 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDQ2OTM2MDEsMTQ2MDgyNTAzMiwxNj
+eyJoaXN0b3J5IjpbLTE4NzM2OTY5ODEsMTQ2MDgyNTAzMiwxNj
 Y0NDY4NDYxLDIxMTQ5MDYwODgsLTIxNDMwOTUxNDQsLTE4Mzcx
 MjE1NDQsLTg3NjI3NTU0MywtMTg0NzMyNTQ4NiwyMDUzNTkyNj
 U1LDIwMTYwMDk1MjUsMzgxMjg2MDQ2LC0xNTQ5MzY2MjkyLC0x
