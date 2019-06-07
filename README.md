@@ -87,7 +87,7 @@
 ├── app
 │   ├── static/                       <- CSS, JS files that remain static 
 │   ├── templates/                    <- HTML (or other code) that is templated and changes based on a set of inputs
-│   ├── models.py                     <- Creates the data model for the database connected to the Flask app 
+│   ├──app.py                         <- Creates the data model for the database connected to the Flask app 
 │   ├── __init__.py                   <- Initializes the Flask app and database connection
 │
 ├── config                            <- Directory for yaml configuration files for model training, scoring, etc
@@ -204,11 +204,11 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDczMjU0ODYsMjA1MzU5MjY1NSwyMD
-E2MDA5NTI1LDM4MTI4NjA0NiwtMTU0OTM2NjI5MiwtMTk0MzE4
-ODQ1NSwtMTkzNjQ4NDA4MCwxMDEwNDQyMzg3LDYwNTM5NjYyNy
-wxNzE2ODgyOTYzLDE0MDkzODIwMzYsMTU2NTE4MTY1NSwtMTAy
-NjMwMzQ3MywxNTY4OTEyNjg0LDExMDcyNzk5MTMsLTQwMDYxMz
-M1NiwxMDUwNDIxNjM4LDIzMDc3NDk5NSwtMTg1MzM4NzQ3OCwt
-NDAyMTE2NjVdfQ==
+eyJoaXN0b3J5IjpbLTg3NjI3NTU0MywtMTg0NzMyNTQ4NiwyMD
+UzNTkyNjU1LDIwMTYwMDk1MjUsMzgxMjg2MDQ2LC0xNTQ5MzY2
+MjkyLC0xOTQzMTg4NDU1LC0xOTM2NDg0MDgwLDEwMTA0NDIzOD
+csNjA1Mzk2NjI3LDE3MTY4ODI5NjMsMTQwOTM4MjAzNiwxNTY1
+MTgxNjU1LC0xMDI2MzAzNDczLDE1Njg5MTI2ODQsMTEwNzI3OT
+kxMywtNDAwNjEzMzU2LDEwNTA0MjE2MzgsMjMwNzc0OTk1LC0x
+ODUzMzg3NDc4XX0=
 -->
