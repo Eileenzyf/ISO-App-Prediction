@@ -144,8 +144,12 @@ To run the entire application, there are two ways of doing it. The first one is 
 	 - Install `virtualenv` 
 		 - ```bash
 			pip install virtualenv
-		```
-	- 
+			```
+	- Run the app through Makefile
+		- ```bash
+			make all
+			```
+	- Go to [http://127.0.0.1:3000/](http://127.0.0.1:3000/) to interact with the current version of hte app.
 		
  - If running on RDS
 
@@ -215,6 +219,6 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM4Nzg2MjE3LC04NzYyNzU1NDMsLTE4ND
-czMjU0ODYsMjA1MzU5MjY1NV19
+eyJoaXN0b3J5IjpbLTE3Mzc2NzgxOTgsLTg3NjI3NTU0MywtMT
+g0NzMyNTQ4NiwyMDUzNTkyNjU1XX0=
 -->
