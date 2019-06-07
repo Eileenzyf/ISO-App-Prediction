@@ -236,7 +236,7 @@ You can also use `make` by running:
 
 ```bash
 make app
- ```
+```
 
 ### 5. Interact with the application 
 
@@ -249,11 +249,7 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyODU0NjQ2OSwzNTkxOTY4MDcsMTI1OD
-MzNjk4NywxNTcyMjM3NjUxLC0xODczNjk2OTgxLDE0NjA4MjUw
-MzIsMTY2NDQ2ODQ2MSwyMTE0OTA2MDg4LC0yMTQzMDk1MTQ0LC
-0xODM3MTIxNTQ0LC04NzYyNzU1NDMsLTE4NDczMjU0ODYsMjA1
-MzU5MjY1NSwyMDE2MDA5NTI1LDM4MTI4NjA0NiwtMTU0OTM2Nj
-I5MiwtMTk0MzE4ODQ1NSwtMTkzNjQ4NDA4MCwxMDEwNDQyMzg3
-LDYwNTM5NjYyN119
+eyJoaXN0b3J5IjpbMzU5MTk2ODA3LDE1NzIyMzc2NTEsLTE4Nz
+M2OTY5ODEsMTY2NDQ2ODQ2MSwtODc2Mjc1NTQzLC0xODQ3MzI1
+NDg2LDIwNTM1OTI2NTVdfQ==
 -->

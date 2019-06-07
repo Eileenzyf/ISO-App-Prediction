@@ -87,20 +87,23 @@
 ├── app
 │   ├── static/                       <- CSS, JS files that remain static 
 │   ├── templates/                    <- HTML (or other code) that is templated and changes based on a set of inputs
-│   ├── app.py                         <- Flask wrapper for running the model 
-│   ├── __init__.py                   <- Initializes the Flask as ae for nneion
+│   ├── models.py                     <- Creates the data model for the database connected to the Flask app 
+│   ├── __init__.py                   <- Initializes the Flask app and database connection
 │
 ├── config                            <- Directory for yaml configuration files for model training, scoring, etc
-│├──                  <- Configuration files for python loggers
-│   ├── flask_config.py              <- Configurations that oel to local database or RDS
-│   ├── model_config.yml              <- YAML file that contains the pipline of the entire mat l th as ato al t sample/ subdirectories are tracked by git. 
-
+│   ├── logging/                      <- Configuration files for python loggers
+│
+├── data                              <- Folder that contains data used or generated. Only the external/ and sample/ subdirectories are tracked by git. 
+│   ├── archive/                      <- Place to put archive data is no longer usabled. Not synced with git. 
+│   ├── external/                     <- External data sources, will be synced with git
+│   ├── sample/                       <- Sample data used for code development and testing, will be synced with git
 │
 ├── docs                              <- A default Sphinx project; see sphinx-doc.org for details.
 │
 ├── figures                           <- Generated graphics and figures to be used in reporting.
 │
 ├── models                            <- Trained model objects (TMOs), model predictions, and/or model summaries
+│   ├── archive                       <- No longer current models. This directory is included in the .gitignore and is not tracked by git
 │
 ├── notebooks
 │   ├── develop                       <- Current notebooks being used in development.
@@ -109,24 +112,23 @@
 │   ├── template.ipynb                <- Template notebook for analysis with useful imports and helper functions. 
 │
 ├── src                               <- Source data for the project 
+│   ├── archive/                      <- No longer current scripts.
 │   ├── helpers/                      <- Helper scripts used in main src files 
 │   ├── sql/                          <- SQL source code
-│   ├── Create_database.py             <- Script for creating a (temporary) MySQL database and adding new user input to it 
-│   ├── load_data.py                  <- Script for downloading data from 
-│   ├── upload_data.py                  <- Script for uploading data from S3to a desinated S3 bucket if needed
+│   ├── add_songs.py                  <- Script for creating a (temporary) MySQL database and adding songs to it 
+│   ├── ingest_data.py                <- Script for ingesting data from different sources 
 │   ├── generate_features.py          <- Script for cleaning and transforming data and generating features used for use in training and scoring.
 │   ├── train_model.py                <- Script for training machine learning model(s)
 │   ├── score_model.py                <- Script for scoring new predictions using a trained model.
+│   ├── postprocess.py                <- Script for postprocessing predictions and model results
 │   ├── evaluate_model.py             <- Script for evaluating model performance 
 │
-├── test                              <- Finecessary for running model tests (see documentation below) 
-│   ├── test_helpers.py               <- Script for unit testing functions in the src scripts
-│   ├── test_data.csv                 <- Dataframe for unit testing
-│   ├── app_predict.py                <- Script for testing if the prediction works
-│   ├── user-input_test.csv           <- Dataframe for app_predict.py
+├── test                              <- Files necessary for running model tests (see documentation below) 
+
 ├── run.py                            <- Simplifies the execution of one or more of the src scripts 
-├── requirements.txt                  <- Python package dependencies
-├── Makefile                          <- MakeFile to run the entire application
+├── app.py                            <- Flask wrapper for running the model 
+├── config.py                         <- Configuration file for Flask app
+├── requirements.txt                  <- Python package dependencies 
 ```
 This project structure was partially influenced by the [Cookiecutter Data Science project](https://drivendata.github.io/cookiecutter-data-science/).
 
@@ -135,24 +137,7 @@ This project structure was partially influenced by the [Cookiecutter Data Scienc
 * Open up `docs/build/html/index.html` to see Sphinx documentation docs. 
 * See `docs/README.md` for keeping docs up to date with additions to the repository.
 
-## Running the application
-To run the entire application, there are two ways of doing it. The first one is through Makefile, the second one is to run each step individually to allow flexible user configuration. 
-### Through MakeFile
-
- - If running on local
-	 - Install `virtualenv` 
-		 - ```bash
-			pip install virtualenv
-			```
-	- Run the app through Makefile
-		- ```bash
-			make all
-			```
-	- Go to [http://127.0.0.1:3000/](http://127.0.0.1:3000/) to interact with the current version of the app.
-		
- - If running on RDS
-	
-### Run each step separately  
+## Running the application 
 ### 1. Set up environment 
 
 The `requirements.txt` file contains the packages required to run the model code. An environment can be set up in two ways. See bottom of README for exploratory data analysis environment setup. 
@@ -162,9 +147,9 @@ The `requirements.txt` file contains the packages required to run the model code
 ```bash
 pip install virtualenv
 
-virtualenv avcproject-env
+virtualenv pennylane
 
-source avcproject-env/bin/activate
+source pennylane/bin/activate
 
 pip install -r requirements.txt
 
@@ -172,70 +157,40 @@ pip install -r requirements.txt
 #### With `conda`
 
 ```bash
-conda create -n avcproject-env python=3.7
-conda activate avcproject-env
+conda create -n pennylane python=3.7
+conda activate pennylane
 pip install -r requirements.txt
 
 ```
 
 ### 2. Configure Flask app 
 
-`flask_config.py` holds the configurations for the Flask app. It includes the following configurations:
+`config.py` holds the configurations for the Flask app. It includes the following configurations:
 
 ```python
 DEBUG = True  # Keep True for debugging, change to False when moving to production 
 LOGGING_CONFIG = "config/logging/local.conf"  # Path to file that configures Python logger
-PORT = 300  # What port to expose app on 
-SQLALCHEMY_DATABASE_URI = 'sqlite:///../data/user_input.db'  # URI for database that contains tracks
+PORT = 3002  # What port to expose app on 
+SQLALCHEMY_DATABASE_URI = 'sqlite:////tmp/tracks.db'  # URI for database that contains tracks
 
 ```
 
 
 ### 3. Initialize the database 
 
-To create the database in the location configured in `flask_config.py` with one intialn src/Create_database.py`
+To create the database in the location configured in `config.py` with one initial song, run: 
 
-You can also use `run.py` by:
+`python run.py create --artist=<ARTIST> --title=<TITLE> --album=<ALBUM>`
 
-`python run.py create`
+To add additional songs:
 
+`python run.py ingest --artist=<ARTIST> --title=<TITLE> --album=<ALBUM>`
 
-### 4. Load the source dataset
- ```bash
- on src/load_data.py src/load_data.py --config=config/model_config.yml --output=data/app.csv
- ```
-
-### 5. Generate features
- ```bash
- python src/generate_features.py --config=config/model_config.yml --input=data/app.csv --output=data/app_processed.csv
- ```
-
-### 6. Train model
- ```bash
- python src/train_model.py --config=config/model_config.yml --input=data/app_processed.csv --output=models/app-prediction.pkl
- ```
-
-### 7. Score model
-Get the prediction of test dataset
-```bash
-python src/score_model.py --config=config/model_config.yml --input=data/app-test-features.csv --output=models/app_test_scores.csv
-```
-### 8. Evaluate the model
-Evaluate the performance of the model using R squared and accuracy
-```bash
- python src/evaluate_model.py --config=config/model_config.yml --input=data/app-test-targets.csv --output=models/evaluation.csv
- ```
 
 ### 4. Run the application 
  
  ```bash
- python app/app.py
- ```
- 
-You can also use `make` by running:
-
-```bash
-make app
+ python app.py 
  ```
 
 ### 5. Interact with the application 
@@ -249,11 +204,5 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyODU0NjQ2OSwzNTkxOTY4MDcsMTI1OD
-MzNjk4NywxNTcyMjM3NjUxLC0xODczNjk2OTgxLDE0NjA4MjUw
-MzIsMTY2NDQ2ODQ2MSwyMTE0OTA2MDg4LC0yMTQzMDk1MTQ0LC
-0xODM3MTIxNTQ0LC04NzYyNzU1NDMsLTE4NDczMjU0ODYsMjA1
-MzU5MjY1NSwyMDE2MDA5NTI1LDM4MTI4NjA0NiwtMTU0OTM2Nj
-I5MiwtMTk0MzE4ODQ1NSwtMTkzNjQ4NDA4MCwxMDEwNDQyMzg3
-LDYwNTM5NjYyN119
+eyJoaXN0b3J5IjpbMjA1MzU5MjY1NV19
 -->
