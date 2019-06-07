@@ -88,11 +88,11 @@
 │   ├── static/                       <- CSS, JS files that remain static 
 │   ├── templates/                    <- HTML (or other code) that is templated and changes based on a set of inputs
 │   ├── app.py                         <- Flask wrapper for running the model 
-│   ├── __init__.py                   <- Initializes the Flask app and database connection
+│   ├── __init__.py                   <- Initializes the Flask as ae for nneion
 │
 ├── config                            <- Directory for yaml configuration files for model training, scoring, etc
-│├──                      <- Configuration files for python loggers
-│   ├── flask_config.py              <- Configurations that link the flask app to local database or RDS
+│├──                  <- Configuration files for python loggers
+│   ├── flask_config.py              <- Configurations that oel to local database or RDS
 │   ├── model_config.yml              <- YAML file that contains the pipline of the entire mat l th as ato al t sample/ subdirectories are tracked by git. 
 
 │
@@ -119,13 +119,15 @@
 │   ├── score_model.py                <- Script for scoring new predictions using a trained model.
 │   ├── evaluate_model.py             <- Script for evaluating model performance 
 │
-├── test                              <- Files necessary for running model tests (see documentation below) 
+├── test                 <- Fi necessary for running model tests (see documentation below) 
 │   ├── test_helpers.py               <- Script for unit testing functions in the src scripts
 │   ├── test_data.csv                 <- Dataframe for unit testing
 │   ├── app_predict.py                <- Script for testing if the prediction works
 │   ├── user-input_test.csv           <- Dataframe for app_predict.py
-├── requirements.txt                  <- Python package dependencies 
-├── Makefile                          <- MakeFile to run the entire application
+
+├── requirements.txtun.py                            <-    
+├── MakefileSimplifiest ution n the src scripts ├── a.                 <- MakeFile to run the entire applicationarae for uning   ├── c.py                          urin fe for app
+├── r                  
 ```
 This project structure was partially influenced by the [Cookiecutter Data Science project](https://drivendata.github.io/cookiecutter-data-science/).
 
@@ -134,8 +136,13 @@ This project structure was partially influenced by the [Cookiecutter Data Scienc
 * Open up `docs/build/html/index.html` to see Sphinx documentation docs. 
 * See `docs/README.md` for keeping docs up to date with additions to the repository.
 
-## Running the application 
-To run the entire application, there are two ways of doing it. The first one is throu
+## Running the application
+To run the entire application, there are two ways of doing it. The first one is through Makefile, the second one is to run each step individually to allow flexible user configuration. 
+### Through MakeFile
+
+ -If running on local
+	 - Install 
+
 ### 1. Set up environment 
 
 The `requirements.txt` file contains the packages required to run the model code. An environment can be set up in two ways. See bottom of README for exploratory data analysis environment setup. 
@@ -202,6 +209,6 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzODg0Nzg3MywtODc2Mjc1NTQzLC0xOD
-Q3MzI1NDg2LDIwNTM1OTI2NTVdfQ==
+eyJoaXN0b3J5IjpbMTAzNDMyMDI0LC04NzYyNzU1NDMsLTE4ND
+czMjU0ODYsMjA1MzU5MjY1NV19
 -->
