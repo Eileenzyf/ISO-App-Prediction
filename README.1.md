@@ -93,12 +93,10 @@
 ├── config                            <- Directory for yaml configuration files for model training, scoring, etc
 │   ├── logging/                      <- Configuration files for python loggers
 │   ├── flask_config.py               <- Configurations that link the flask app to local database or RDS
-│   ├── model_config.yml              
+│   ├── model_config.yml              <- YAML file that contains the pipline of the entire model
 │
 ├── data                              <- Folder that contains data used or generated. Only the external/ and sample/ subdirectories are tracked by git. 
-│   ├── archive/                      <- Place to put archive data is no longer usabled. Not synced with git. 
-│   ├── external/                     <- External data sources, will be synced with git
-│   ├── sample/                       <- Sample data used for code development and testing, will be synced with git
+development and testing, will be synced with git
 │
 ├── docs                              <- A default Sphinx project; see sphinx-doc.org for details.
 │
@@ -205,6 +203,6 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5NDUzMDY3NCwtODc2Mjc1NTQzLC0xOD
-Q3MzI1NDg2LDIwNTM1OTI2NTVdfQ==
+eyJoaXN0b3J5IjpbLTE5NDE1NjM3NTIsLTg3NjI3NTU0MywtMT
+g0NzMyNTQ4NiwyMDUzNTkyNjU1XX0=
 -->
