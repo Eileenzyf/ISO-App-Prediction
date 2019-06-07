@@ -119,15 +119,14 @@
 │   ├── score_model.py                <- Script for scoring new predictions using a trained model.
 │   ├── evaluate_model.py             <- Script for evaluating model performance 
 │
-├── test                 <- Finecessary for running model tests (see documentation below) 
+├── test                              <- Finecessary for running model tests (see documentation below) 
 │   ├── test_helpers.py               <- Script for unit testing functions in the src scripts
 │   ├── test_data.csv                 <- Dataframe for unit testing
 │   ├── app_predict.py                <- Script for testing if the prediction works
 │   ├── user-input_test.csv           <- Dataframe for app_predict.py
 
-├── requirements.txtun.py                            <-    
-├── MakefileSimplifiest ution n the src scripts ├── a.                 <- MakeFile to run the entire applicationarae for uning   ├── c.py                          urin fe for app
-├── r                 
+├── requirements.txt                  <- Python package dependencies
+├── Makefile                          <- MakeFile to run the entire application
 ```
 This project structure was partially influenced by the [Cookiecutter Data Science project](https://drivendata.github.io/cookiecutter-data-science/).
 
@@ -203,13 +202,13 @@ To create the database in the location configured in `config.py` with one initia
  To add additional songs:
 
 `python appr
- 
+ .py 
+ ```
 
 ### 4. Run the application 
  
  ```bash
- python app.py 
- ```
+ python app
 
 ### 5. Interact with the application 
 
@@ -222,11 +221,11 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2MDgyNTAzMiwtMjM0OTYyMjA2LDE2Nj
-Q0Njg0NjEsMjExNDkwNjA4OCwtMjE0MzA5NTE0NCwtMTgzNzEy
-MTU0NCwtODc2Mjc1NTQzLC0xODQ3MzI1NDg2LDIwNTM1OTI2NT
-UsMjAxNjAwOTUyNSwzODEyODYwNDYsLTE1NDkzNjYyOTIsLTE5
-NDMxODg0NTUsLTE5MzY0ODQwODAsMTAxMDQ0MjM4Nyw2MDUzOT
-Y2MjcsMTcxNjg4Mjk2MywxNDA5MzgyMDM2LDE1NjUxODE2NTUs
-LTEwMjYzMDM0NzNdfQ==
+eyJoaXN0b3J5IjpbLTEyNDQ2OTM2MDEsMTQ2MDgyNTAzMiwxNj
+Y0NDY4NDYxLDIxMTQ5MDYwODgsLTIxNDMwOTUxNDQsLTE4Mzcx
+MjE1NDQsLTg3NjI3NTU0MywtMTg0NzMyNTQ4NiwyMDUzNTkyNj
+U1LDIwMTYwMDk1MjUsMzgxMjg2MDQ2LC0xNTQ5MzY2MjkyLC0x
+OTQzMTg4NDU1LC0xOTM2NDg0MDgwLDEwMTA0NDIzODcsNjA1Mz
+k2NjI3LDE3MTY4ODI5NjMsMTQwOTM4MjAzNiwxNTY1MTgxNjU1
+LC0xMDI2MzAzNDczXX0=
 -->
