@@ -198,6 +198,10 @@ To create the database in the location configured in `config.py` with one initia
 
 `python src/Create_database.py`
 
+### 4. Load the source dataset
+ ```bash
+ python app.py 
+ ```
 
 ### 4. Run the application 
  
@@ -216,7 +220,7 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MzY2MTEyNSwxNjY0NDY4NDYxLDIxMT
+eyJoaXN0b3J5IjpbLTIzNDk2MjIwNiwxNjY0NDY4NDYxLDIxMT
 Q5MDYwODgsLTIxNDMwOTUxNDQsLTE4MzcxMjE1NDQsLTg3NjI3
 NTU0MywtMTg0NzMyNTQ4NiwyMDUzNTkyNjU1LDIwMTYwMDk1Mj
 UsMzgxMjg2MDQ2LC0xNTQ5MzY2MjkyLC0xOTQzMTg4NDU1LC0x
