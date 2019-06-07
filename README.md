@@ -92,7 +92,8 @@
 │
 ├── config                            <- Directory for yaml configuration files for model training, scoring, etc
 │   ├── logging/                      <- Configuration files for python loggers
-│   ├── flask_config.py/              <- Configurations to 
+│   ├── flask_config.py               <- Configurations that link the flask app to local database or RDS
+│   ├── model_config.yml              <
 │
 ├── data                              <- Folder that contains data used or generated. Only the external/ and sample/ subdirectories are tracked by git. 
 │   ├── archive/                      <- Place to put archive data is no longer usabled. Not synced with git. 
@@ -204,11 +205,11 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3NjI3NTU0MywtMTg0NzMyNTQ4NiwyMD
-UzNTkyNjU1LDIwMTYwMDk1MjUsMzgxMjg2MDQ2LC0xNTQ5MzY2
-MjkyLC0xOTQzMTg4NDU1LC0xOTM2NDg0MDgwLDEwMTA0NDIzOD
-csNjA1Mzk2NjI3LDE3MTY4ODI5NjMsMTQwOTM4MjAzNiwxNTY1
-MTgxNjU1LC0xMDI2MzAzNDczLDE1Njg5MTI2ODQsMTEwNzI3OT
-kxMywtNDAwNjEzMzU2LDEwNTA0MjE2MzgsMjMwNzc0OTk1LC0x
-ODUzMzg3NDc4XX0=
+eyJoaXN0b3J5IjpbMjA1Nzc4NTA3MiwtODc2Mjc1NTQzLC0xOD
+Q3MzI1NDg2LDIwNTM1OTI2NTUsMjAxNjAwOTUyNSwzODEyODYw
+NDYsLTE1NDkzNjYyOTIsLTE5NDMxODg0NTUsLTE5MzY0ODQwOD
+AsMTAxMDQ0MjM4Nyw2MDUzOTY2MjcsMTcxNjg4Mjk2MywxNDA5
+MzgyMDM2LDE1NjUxODE2NTUsLTEwMjYzMDM0NzMsMTU2ODkxMj
+Y4NCwxMTA3Mjc5OTEzLC00MDA2MTMzNTYsMTA1MDQyMTYzOCwy
+MzA3NzQ5OTVdfQ==
 -->
