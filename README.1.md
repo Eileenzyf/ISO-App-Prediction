@@ -151,6 +151,7 @@ To run the entire application, there are two ways of doing it. The first one is 
 	- Go to [http://127.0.0.1:3000/](http://127.0.0.1:3000/) to interact with the current version of the app.
 		
  - If running on RDS
+	 - Change the URI in `flask_config.py` to connect to the database in RDS by
 	
 ### Run each step separately  
 ### 1. Set up environment 
@@ -249,7 +250,7 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU5MTk2ODA3LDE1NzIyMzc2NTEsLTE4Nz
-M2OTY5ODEsMTY2NDQ2ODQ2MSwtODc2Mjc1NTQzLC0xODQ3MzI1
-NDg2LDIwNTM1OTI2NTVdfQ==
+eyJoaXN0b3J5IjpbNzY5OTAzMzYyLDM1OTE5NjgwNywxNTcyMj
+M3NjUxLC0xODczNjk2OTgxLDE2NjQ0Njg0NjEsLTg3NjI3NTU0
+MywtMTg0NzMyNTQ4NiwyMDUzNTkyNjU1XX0=
 -->
