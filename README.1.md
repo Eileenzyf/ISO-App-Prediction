@@ -125,7 +125,7 @@
 │   ├── app_predict.py                <- Script for testing if the prediction works
 │   ├── user-input_test.csv           <- Dataframe for app_predict.py
 ├── requirements.txt                  <- Python package dependencies 
-├── Makefile                          <- MakeFile to run the entire project
+├── Makefile                          <- MakeFile to run the entire application
 ```
 This project structure was partially influenced by the [Cookiecutter Data Science project](https://drivendata.github.io/cookiecutter-data-science/).
 
@@ -201,6 +201,6 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3ODExNzMyMiwtODc2Mjc1NTQzLC0xOD
-Q3MzI1NDg2LDIwNTM1OTI2NTVdfQ==
+eyJoaXN0b3J5IjpbLTE3Mjk2MDI1MDksLTg3NjI3NTU0MywtMT
+g0NzMyNTQ4NiwyMDUzNTkyNjU1XX0=
 -->
