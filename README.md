@@ -120,7 +120,6 @@
 │   ├── generate_features.py          <- Script for cleaning and transforming data and generating features used for use in training and scoring.
 │   ├── train_model.py                <- Script for training machine learning model(s)
 │   ├── score_model.py                <- Script for scoring new predictions using a trained model.
-│   ├── postprocess.py                <- Script for postprocessing predictions and model results
 │   ├── evaluate_model.py             <- Script for evaluating model performance 
 │
 ├── test                              <- Files necessary for running model tests (see documentation below) 
@@ -204,11 +203,11 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MzU5MjY1NSwyMDE2MDA5NTI1LDM4MT
-I4NjA0NiwtMTU0OTM2NjI5MiwtMTk0MzE4ODQ1NSwtMTkzNjQ4
-NDA4MCwxMDEwNDQyMzg3LDYwNTM5NjYyNywxNzE2ODgyOTYzLD
-E0MDkzODIwMzYsMTU2NTE4MTY1NSwtMTAyNjMwMzQ3MywxNTY4
-OTEyNjg0LDExMDcyNzk5MTMsLTQwMDYxMzM1NiwxMDUwNDIxNj
-M4LDIzMDc3NDk5NSwtMTg1MzM4NzQ3OCwtNDAyMTE2NjUsLTIw
-NjM2MzA2MTNdfQ==
+eyJoaXN0b3J5IjpbLTg3MDA0NDIwMywyMDUzNTkyNjU1LDIwMT
+YwMDk1MjUsMzgxMjg2MDQ2LC0xNTQ5MzY2MjkyLC0xOTQzMTg4
+NDU1LC0xOTM2NDg0MDgwLDEwMTA0NDIzODcsNjA1Mzk2NjI3LD
+E3MTY4ODI5NjMsMTQwOTM4MjAzNiwxNTY1MTgxNjU1LC0xMDI2
+MzAzNDczLDE1Njg5MTI2ODQsMTEwNzI3OTkxMywtNDAwNjEzMz
+U2LDEwNTA0MjE2MzgsMjMwNzc0OTk1LC0xODUzMzg3NDc4LC00
+MDIxMTY2NV19
 -->
