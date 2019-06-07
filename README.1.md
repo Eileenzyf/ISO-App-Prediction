@@ -198,10 +198,6 @@ To create the database in the location configured in `config.py` with one initia
 
 `python src/Create_database.py`
 
-To add additional songs:
-
-`python run.py ingest --artist=<ARTIST> --title=<TITLE> --album=<ALBUM>`
-
 
 ### 4. Run the application 
  
@@ -220,6 +216,6 @@ Run `pytest` from the command line in the main project repository.
 
 Tests exist in `test/test_helpers.py`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3MzMwNjM1LDE2NjQ0Njg0NjEsLTg3Nj
-I3NTU0MywtMTg0NzMyNTQ4NiwyMDUzNTkyNjU1XX0=
+eyJoaXN0b3J5IjpbMTA1MzY2MTEyNSwxNjY0NDY4NDYxLC04Nz
+YyNzU1NDMsLTE4NDczMjU0ODYsMjA1MzU5MjY1NV19
 -->
