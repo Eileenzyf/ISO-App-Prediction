@@ -170,7 +170,7 @@ To run the entire application, there are two ways of doing it. The first one is 
 			```
 		-  Then delete `database` after the `all:` on the last line of code
 		-  The last line of the Makefile should be : `all: venv dataset features trained-model test-score model-evaluation predictions test clean-tests app clean-env clean-pyc `
-	- Then in root directory, run `python Create_database.py ---RDS True` to initialize the database
+	- Then in root directory, run `python src/Create_database.py --RDS True` to initialize the database
 	- Last, to run the app, in root directory run  
 		- ```bash 
 			make all
