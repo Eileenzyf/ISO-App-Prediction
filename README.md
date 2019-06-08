@@ -163,6 +163,7 @@ To run the entire application, there are two ways of doing it. The first one is 
 			vi config/flask_config.py
 			 ```
 		- Then commenting out the `SQLALCHEMY_DATABASE_URI = 'sqlite:///../data/user_input.db'`
+		- The commenting out `HOST = 127.0.0.1`
 	- Change the Makefile to run on RDS
 		- ```bash 
 			vi Makefile
