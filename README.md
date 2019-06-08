@@ -153,7 +153,7 @@ To run the entire application, there are two ways of doing it. The first one is 
  - If running on RDS
 	 - Set up environment by running:
 		 - ```bash
-			Install virtualenv 
+			pip Install virtualenv 
 			virtualenv avcproject-env
 			source avcproject-env/bin/activate
 			pip install -r requirements.txt
