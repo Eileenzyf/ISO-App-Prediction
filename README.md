@@ -175,6 +175,7 @@ To run the entire application, there are two ways of doing it. The first one is 
 		- ```bash 
 			make all
 			```
+	- Now, you can access the website on http://3.16.57.100:3000. 
 	
 ### Run each step separately  
 ### 1. Set up environment 
