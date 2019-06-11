@@ -35,18 +35,22 @@ def score_model(X_split, path_to_tmo, save_scores=None, **kwargs):
 	"""
 
 	#load the model
-	with open(path_to_tmo, "rb") as f:
-		model = pickle.load(f)
-	#drop the index column
-	X_split = X_split.drop(X_split.columns[0], axis=1)
+	try:
+		with open(path_to_tmo, "rb") as f:
+			model = pickle.load(f)
+		#drop the index column
+		X_split = X_split.drop(X_split.columns[0], axis=1)
 
-	#predict the y value
-	y_predicted = model.predict(X_split)
+		#predict the y value
+		y_predicted = model.predict(X_split)
 
-	if save_scores is not None:
-		pd.DataFrame(y_predicted).to_csv(save_scores,  index=False)
+		if save_scores is not None:
+			pd.DataFrame(y_predicted).to_csv(save_scores,  index=False)
 
-	return y_predicted
+		return y_predicted
+	except:
+		logger.warning("Incorrect model path.")
+
 
 def run_scoring(args):
 	"""Loads config and executes load data set
