@@ -175,6 +175,7 @@ To run the entire application, there are two ways of doing it. The first one is 
 		- ```bash 
 			make all
 			```
+	- Now, you can access the website on http://3.16.57.100:3000. 
 	
 ### Run each step separately  
 ### 1. Set up environment 
@@ -226,7 +227,7 @@ You can also use `run.py` by:
 
 ### 4. Load the source dataset
  ```bash
- on src/load_data.py src/load_data.py --config=config/model_config.yml --output=data/app.csv
+ python src/load_data.py src/load_data.py --config=config/model_config.yml --output=data/app.csv
  ```
 
 ### 5. Generate features

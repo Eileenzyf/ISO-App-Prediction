@@ -4,7 +4,7 @@ import logging
 import logging.config
 import pandas as pd
 import sqlalchemy as sql
-import boto3
+
 
 from sqlalchemy import create_engine, Column, Integer, String, Text,Float
 from sqlalchemy.orm import sessionmaker
