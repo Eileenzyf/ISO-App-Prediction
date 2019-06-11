@@ -108,7 +108,28 @@ def test_score_model():
 
     # raise AssertionError if dataframes do not match
     assert all(0 <= x <= 5 for x in target_score)
+def test_score_model_bad():
+    '''test for bad path of score model'''
+    x_input = {'id':[1,2,3,4],
+                'size_bytes': [41779200, 288161792, 217378816, 39596032],
+                'price': [0.688134639, 0.688134639, 0, 0],
+                'sup_devices_num': [43,43,38,37],
+                'ipadSc_urls_num': [5,5,5,3],
+                'lang_num': [0.693147181, 1.098612289, 0.693147181, 1.098612289],
+                'rating_count_before': [5.093750201, 5.135798437, 2.397895273, 0],
+                'isNotFree': [1,1,0,0],
+                '12+': [0,0,0,0],
+                '17+': [0,0,1,0],
+                '4+': [1,1,0,1],
+                'Education':[0,0,0,0],
+                'Entertainment':[0,0,0,0],
+                'Games': [1,1,1,1],
+                'isGame':[1,1,0,1],
+                'descLen':[7.529406458, 7.507690078, 6.989335266,5.117993812]}
+    #label_input = {'user_rating':[4.5，3.5，4，0]}
 
+    x_df = pd.DataFrame(x_input)
+    assert "Incorrect model path." == score_model(x_df, 'app-prediction.pkl')
 
 def test_evaluate_model():
     #expected true y
