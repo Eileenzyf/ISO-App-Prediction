@@ -50,6 +50,8 @@ def score_model(X_split, path_to_tmo, save_scores=None, **kwargs):
 		return y_predicted
 	except:
 		logger.warning("Incorrect model path.")
+		return("Incorrect model path.")
+		
 
 
 def run_scoring(args):

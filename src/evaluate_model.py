@@ -28,27 +28,31 @@ def evaluate_model(label_df, X_split, y_predicted, path_to_tmo, **kwargs):
 	    metric_df (:py:class:`pandas.DataFrame`): Dataframe reporting r2 and accuracy
 	"""
 
-	#import the model
-	with open(path_to_tmo, "rb") as f:
-		model = pickle.load(f)
-	#drop the first index column 
-	X_split = X_split.drop(X_split.columns[0], axis=1)
-	
-	label_df = label_df.drop(label_df.columns[0], axis=1)
+	try:
+		#import the model
+		with open(path_to_tmo, "rb") as f:
+			model = pickle.load(f)
+		#drop the first index column 
+		X_split = X_split.drop(X_split.columns[0], axis=1)
+		
+		label_df = label_df.drop(label_df.columns[0], axis=1)
 
-	# calculate r2 and accuracy if specified
-	if "r2" in kwargs["metrics"]:
-		r2 = model.score(X_split,label_df)
-		print('r2 on test: %0.3f' % r2)
-	if "accuracy" in kwargs["metrics"]:
-		errors = abs(y_predicted.iloc[:,0]-label_df.iloc[:,0])
-		mad = np.mean(errors)
-		accuracy = 1-mad/np.mean(label_df)
-		print('Accuracy on test: %0.3f' % accuracy)
+		# calculate r2 and accuracy if specified
+		if "r2" in kwargs["metrics"]:
+			r2 = model.score(X_split,label_df)
+			print('r2 on test: %0.3f' % r2)
+		if "accuracy" in kwargs["metrics"]:
+			errors = abs(y_predicted.iloc[:,0]-label_df.iloc[:,0])
+			mad = np.mean(errors)
+			accuracy = 1-mad/np.mean(label_df)
+			print('Accuracy on test: %0.3f' % accuracy)
 
-	metric_df = pd.DataFrame({"r2": r2, "accuracy":accuracy})
+		metric_df = pd.DataFrame({"r2": r2, "accuracy":accuracy})
 
-	return metric_df
+		return metric_df
+	except:
+		logger.warning("wrong model path")
+		return ("wrong model path")
 
 
 def run_evaluation(args):

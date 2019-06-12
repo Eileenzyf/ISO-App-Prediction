@@ -6,7 +6,7 @@ import sys
 sys.path.insert(0, 'src')
 
 from generate_features import choose_features, generate_features
-from train_model import split_data
+from train_model import split_data, train_model
 from score_model import score_model
 from evaluate_model import evaluate_model
 from Create_database import get_engine_string
@@ -29,12 +29,17 @@ def test_choose_features():
     
     # raise AssertionError if dataframes do not match
     assert output_df.equals(choose_features(df=data, features_to_use=features, target='user_rating'))
+    # test for bad path
+    assert "wrong dataframe" == choose_features(df = 'a', features_to_use=features, target='user_rating')
 
 def test_generate_features():
+    '''test if features generated is correct'''
+
+    #load test dataset
     data1 = pd.read_csv("test/test_data.csv")
 
     data = data1
-
+    #generate right features
     data['rating_count_before'] = data['rating_count_tot'] - data['rating_count_ver']
     ##create 'isnotfree' variables
     data['isNotFree'] = data['price'].apply(lambda x: 1 if x > 0 else 0)
@@ -64,6 +69,9 @@ def test_generate_features():
 
     assert data.equals(generate_features(df=data1, **pre_defined_kwargs))
 
+    #test for bad path 
+    assert "wrong input" == generate_features(df='a', **pre_defined_kwargs)
+
 def test_split_data():
     # load sample test data
     data = pd.read_csv("test/test_data.csv")
@@ -77,6 +85,9 @@ def test_split_data():
     # raise AssertionError if keys do not match
     assert X_train.equals(X['train'])
     assert y_test.equals(y['test'])
+
+    #test for bad path 
+    assert "wrong input" == split_data(X, y, train_size=0.7, test_size=0.3, random_state=123)
 
 def test_score_model():
     # desired predcited score 
@@ -131,6 +142,14 @@ def test_score_model_bad():
     x_df = pd.DataFrame(x_input)
     assert "Incorrect model path." == score_model(x_df, 'app-prediction.pkl')
 
+def test_train_model():
+
+    with open("models/app-prediction.pkl", "rb") as f:
+            model = pickle.load(f)
+
+    assert "RandomForestRegressor" in str(type(model))
+    
+
 def test_evaluate_model():
     #expected true y
     label_input = {'id':[1,2,3,4],'user_rating':[4.5,3.5,4,0]}
@@ -178,6 +197,7 @@ def test_evaluate_model():
     
     # raise AssertionError if dataframes do not match
     assert metric_df.equals(evaluate_model(label_df, x_df, y_predict, 'models/app-prediction.pkl', **pre_defined_kwargs))
+    assert 'wrong model path' == evaluate_model(label_df, x_df, y_predict, 'models/app.pkl', **pre_defined_kwargs)
 
 
 

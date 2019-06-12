@@ -38,53 +38,55 @@ def split_data(X, y, train_size=1, test_size=0, random_state=123, save_split_pre
 		X (dict): Dictionary where keys are train, test, and/or validate and values are the X features for those splits.
 		y (dict): Dictionary where keys are train, test, and/or validate and values are the y targets for those splits.
 	"""
+	try:
+		if y is not None:
+			assert len(X) == len(y)
+			include_y = True
+		else:
+			y = [0] * len(X)
+			include_y = False
+		if train_size + test_size == 1:
+			prop = True
+		elif train_size + test_size == len(X):
+			prop = False
+		else:
+			raise ValueError("train_size + test_size "
+				"must equal 1 or equal the number of rows in the dataset")
 
-	if y is not None:
-		assert len(X) == len(y)
-		include_y = True
-	else:
-		y = [0] * len(X)
-		include_y = False
-	if train_size + test_size == 1:
-		prop = True
-	elif train_size + test_size == len(X):
-		prop = False
-	else:
-		raise ValueError("train_size + test_size "
-			"must equal 1 or equal the number of rows in the dataset")
+		#split data into train and test set
+		if train_size == 1:
 
-	#split data into train and test set
-	if train_size == 1:
+			X_train, y_train = X, y
+			X_test, y_test = [], []
+		else:
+			X_train, X_test, y_train, y_test = sklearn.model_selection.train_test_split(X, y,train_size=train_size,random_state=random_state)
 
-		X_train, y_train = X, y
-		X_test, y_test = [], []
-	else:
-		X_train, X_test, y_train, y_test = sklearn.model_selection.train_test_split(X, y,train_size=train_size,random_state=random_state)
+		X = dict(train=X_train)
+		y = dict(train=y_train)
 
-	X = dict(train=X_train)
-	y = dict(train=y_train)
+		if len(X_test) > 0:
+			X["test"] = X_test
+			y["test"] = y_test
 
-	if len(X_test) > 0:
-		X["test"] = X_test
-		y["test"] = y_test
-
-	#save the train and test set 
-	if save_split_prefix is not None:
-		for split in X:
-			pd.DataFrame(X[split]).to_csv("%s-%s-features.csv" % (save_split_prefix, split))
-			if include_y:
-				pd.DataFrame(y[split]).to_csv("%s-%s-targets.csv" % (save_split_prefix, split))
+		#save the train and test set 
+		if save_split_prefix is not None:
+			for split in X:
+				pd.DataFrame(X[split]).to_csv("%s-%s-features.csv" % (save_split_prefix, split))
+				if include_y:
+					pd.DataFrame(y[split]).to_csv("%s-%s-targets.csv" % (save_split_prefix, split))
 
 
-			logger.info("X_%s and y_%s saved to %s-%s-features.csv and %s-%s-targets.csv",
-			split, split,
-			save_split_prefix, split,
-			save_split_prefix, split)
+				logger.info("X_%s and y_%s saved to %s-%s-features.csv and %s-%s-targets.csv",
+				split, split,
+				save_split_prefix, split,
+				save_split_prefix, split)
 
-	if not include_y:
-		y = dict(train=None)
+		if not include_y:
+			y = dict(train=None)
 
-	return X,y
+		return X,y
+	except:
+		return ("wrong input")
 
 def train_model(df_feature, method=None, save_tmo=None, add_evalset=True, **kwargs):
 	"""
@@ -96,41 +98,43 @@ def train_model(df_feature, method=None, save_tmo=None, add_evalset=True, **kwar
 	Returns:
 		model (pickle): The fitted mdeol
 	"""
+	try:
+		# If "get_target" in the config file under "train_model", will get the target data for supervised learning
+		# Otherwise y = None and the model must be unsupervised.
+		if "get_target" in kwargs:
+			y = get_target(df_feature, **kwargs["get_target"])
+			df_feature = df_feature.drop(labels=[kwargs["get_target"]["target"]], axis=1)
+		else:
+			y = None
+		
 
-	# If "get_target" in the config file under "train_model", will get the target data for supervised learning
-	# Otherwise y = None and the model must be unsupervised.
-	if "get_target" in kwargs:
-		y = get_target(df_feature, **kwargs["get_target"])
-		df_feature = df_feature.drop(labels=[kwargs["get_target"]["target"]], axis=1)
-	else:
-		y = None
-	
-
-	# If "choose_features" in the config file under "train_model", will reduce the feature set to those listed
-	if "choose_features" in kwargs:
-		X = choose_features(df_feature, **kwargs["choose_features"])
-	else:
-		X = df_feature
+		# If "choose_features" in the config file under "train_model", will reduce the feature set to those listed
+		if "choose_features" in kwargs:
+			X = choose_features(df_feature, **kwargs["choose_features"])
+		else:
+			X = df_feature
 
 
 
-	X, y = split_data(X, y, **kwargs["split_data"])
-	model = methods[method](**kwargs["params"])
+		X, y = split_data(X, y, **kwargs["split_data"])
+		model = methods[method](**kwargs["params"])
 
-	# Fit the model with the training data 
+		# Fit the model with the training data 
 
-	model.fit(X = X["train"], y = y["train"])
+		model.fit(X = X["train"], y = y["train"])
 
-	 # Save the trained model object
-	if save_tmo is not None:
-#		path = os.getcwd()
-#		sub_dir = path+'/models/'
-#		os.mkdir(sub_dir)
-		with open(save_tmo, "wb") as f:
-			pickle.dump(model, f)
-		logger.info("Trained model object saved to %s", save_tmo)
+		 # Save the trained model object
+		if save_tmo is not None:
+	#		path = os.getcwd()
+	#		sub_dir = path+'/models/'
+	#		os.mkdir(sub_dir)
+			with open(save_tmo, "wb") as f:
+				pickle.dump(model, f)
+			logger.info("Trained model object saved to %s", save_tmo)
 
-	return model
+		return model
+	except:
+		return('wrong DataFrame')
 def run_training(args):
 	"""Orchestrates the training of the model using command line arguments."""
 

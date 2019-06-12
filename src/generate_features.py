@@ -27,24 +27,28 @@ def choose_features(df, features_to_use=None, target=None,save_path=None, **kwar
 
 	logger.debug("Choosing features")
 
-	if features_to_use is not None:
-		features = []
-		for column in df.columns:
-			# Identifies if this column is in the features to use 
-			if column in features_to_use or column == target:
-				features.append(column)
+	try:
+		if features_to_use is not None:
+			features = []
+			for column in df.columns:
+				# Identifies if this column is in the features to use 
+				if column in features_to_use or column == target:
+					features.append(column)
 
-		logger.debug(features)
-		X = df[features]
-	else:
-		logger.debug("features_to_use is None, df being returned")
-		X = df
-	
-	if save_path is not None:
-		X.to_csv(save_path, **kwargs)
+			logger.debug(features)
+			X = df[features]
+		else:
+			logger.debug("features_to_use is None, df being returned")
+			X = df
+		
+		if save_path is not None:
+			X.to_csv(save_path, **kwargs)
 
 
-	return X
+		return X
+	except:
+		logger.warning('wrong dataframe')
+		return ('wrong dataframe')
 
 
 def get_target(df, target, save_path=None, **kwargs):
@@ -67,32 +71,35 @@ def generate_features(df, save_features=None, **kwargs):
 	df (:py:class:`pandas.DataFrame`): DataFrame containing original features and transformed features.
 
 	"""
+	try:
+		df= choose_features(df, **kwargs["choose_features"])
 
-	df= choose_features(df, **kwargs["choose_features"])
+		# generate new features
+		#create 'rating_count_before' vairable
+		df['rating_count_before'] = df['rating_count_tot'] - df['rating_count_ver']
+		##create 'isnotfree' variables
+		df['isNotFree'] = df['price'].apply(lambda x: 1 if x > 0 else 0)
+		df['price'] = np.log(df['price']+1)
+		df['rating_count_tot'] = np.log(df['rating_count_tot']+1)
+		df['rating_count_ver'] = np.log(df['rating_count_ver']+1)
+		df['lang_num'] = np.log(df['lang_num']+1)
+		df['rating_count_before'] = np.log(df['rating_count_before']+1)
+		cont_rat_dum=pd.get_dummies(df.cont_rating)
+		df= df.join(cont_rat_dum)
+		df['genre'] = df['prime_genre'].apply(lambda x: x if x =="Games" or x== "Entertainment" or x=="Education" else "Other")
+		genre_dum = pd.get_dummies(df.genre)
+		df= df.join(genre_dum)
+		df.loc[:, 'isGame'] = df['app_desc'].apply(lambda x: 1 if 'game' in x.lower() else 0)
+		df.loc[:, 'descLen'] = df['app_desc'].apply(lambda x: len(x.lower()))
+		df['descLen'] = np.log(df['descLen'])
 
-	# generate new features
-	#create 'rating_count_before' vairable
-	df['rating_count_before'] = df['rating_count_tot'] - df['rating_count_ver']
-	##create 'isnotfree' variables
-	df['isNotFree'] = df['price'].apply(lambda x: 1 if x > 0 else 0)
-	df['price'] = np.log(df['price']+1)
-	df['rating_count_tot'] = np.log(df['rating_count_tot']+1)
-	df['rating_count_ver'] = np.log(df['rating_count_ver']+1)
-	df['lang_num'] = np.log(df['lang_num']+1)
-	df['rating_count_before'] = np.log(df['rating_count_before']+1)
-	cont_rat_dum=pd.get_dummies(df.cont_rating)
-	df= df.join(cont_rat_dum)
-	df['genre'] = df['prime_genre'].apply(lambda x: x if x =="Games" or x== "Entertainment" or x=="Education" else "Other")
-	genre_dum = pd.get_dummies(df.genre)
-	df= df.join(genre_dum)
-	df.loc[:, 'isGame'] = df['app_desc'].apply(lambda x: 1 if 'game' in x.lower() else 0)
-	df.loc[:, 'descLen'] = df['app_desc'].apply(lambda x: len(x.lower()))
-	df['descLen'] = np.log(df['descLen'])
+		if save_features is not None:
+			df.to_csv(save_features,index=False)
 
-	if save_features is not None:
-		df.to_csv(save_features,index=False)
-
-	return df
+		return df
+	except:
+		logger.warning("wrong input")
+		return ('wrong input')
 	
 def run_features(args):
 	"""Orchestrates the generating of features from commandline arguments."""
