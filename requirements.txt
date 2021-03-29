@@ -54,7 +54,7 @@ ptyprocess==0.6.0
 py==1.8.0
 pyasn1==0.4.5
 pycparser==2.19
-Pygments==2.4.0
+Pygments==2.7.4
 PyMySQL==0.9.3
 pyOpenSSL==19.0.0
 pyrsistent==0.14.11
